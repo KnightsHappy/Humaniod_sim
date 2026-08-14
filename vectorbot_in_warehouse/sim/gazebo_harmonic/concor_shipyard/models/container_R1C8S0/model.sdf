@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="container_R1C8S0">
+    <static>true</static>
+    <link name="link">
+      <visual name="body"><geometry><box><size>6.06 2.44 2.59</size></box></geometry>
+        <material><ambient>0 0.3 0.6 1</ambient><diffuse>0 0.3 0.6 1</diffuse></material>
+      </visual>
+
+                 <visual name="vertical_edge_1">
+                <pose>3.03 1.22 0 0 0 0</pose>
+                <geometry><box><size>0.1 0.1 2.59</size></box></geometry>
+                <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+            </visual>
+            <visual name="vertical_edge_2">
+                <pose>3.03 -1.22 0 0 0 0</pose>
+                <geometry><box><size>0.1 0.1 2.59</size></box></geometry>
+                <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+            </visual>
+            <visual name="vertical_edge_3">
+                <pose>-3.03 1.22 0 0 0 0</pose>
+                <geometry><box><size>0.1 0.1 2.59</size></box></geometry>
+                <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+            </visual>
+            <visual name="vertical_edge_4">
+                <pose>-3.03 -1.22 0 0 0 0</pose>
+                <geometry><box><size>0.1 0.1 2.59</size></box></geometry>
+                <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+            </visual>
+            <visual name="edge_long_top_left">
+                <pose>0 1.22 1.295 0 0 0</pose>
+                <geometry><box><size>6.06 0.1 0.1</size></box></geometry>
+                <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+            </visual>
+            <visual name="edge_long_top_right">
+                <pose>0 -1.22 1.295 0 0 0</pose>
+                <geometry><box><size>6.06 0.1 0.1</size></box></geometry>
+                <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+            </visual>
+            <visual name="edge_long_bottom_left">
+                <pose>0 1.22 -1.295 0 0 0</pose>
+                <geometry><box><size>6.06 0.1 0.1</size></box></geometry>
+                <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+            </visual>
+            <visual name="edge_long_bottom_right">
+                <pose>0 -1.22 -1.295 0 0 0</pose>
+                <geometry><box><size>6.06 0.1 0.1</size></box></geometry>
+                <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+            </visual>
+
+            <visual name="edge_width_top_front">
+                <pose>3.03 0 1.295 0 0 0</pose>
+                <geometry><box><size>0.1 2.44 0.1</size></box></geometry>
+                <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+            </visual>
+            <visual name="edge_width_top_back">
+                <pose>-3.03 0 1.295 0 0 0</pose>
+                <geometry><box><size>0.1 2.44 0.1</size></box></geometry>
+                <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+            </visual>
+
+      <visual name="id_plate">
+        <pose>2.8 1.226 0.5 0 1.5708 1.5708</pose>
+        <geometry><plane><normal>0 0 1</normal><size>1.2 0.4</size></plane></geometry>
+        <material><pbr><metal><albedo_map>model://container_R1C8S0/materials/textures/label_R1C8S0.png</albedo_map>
+        <emissive_map>model://container_R1C8S0/materials/textures/label_R1C8S0.png</emissive_map></metal></pbr></material>
+      </visual>
+      </link>
+  </model>
+</sdf>

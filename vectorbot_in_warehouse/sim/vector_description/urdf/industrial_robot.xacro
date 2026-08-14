@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Define xacro property for ros2_controllers config file path -->
+  <!-- This allows the launch file to pass in the correct absolute path -->
+  <!-- Default value is used if not provided by launch file -->
+  <xacro:arg name="ros2_controllers_config" default="config/industrial_robot_ros2_controllers.yaml" />
+  
+  <material name="grey">
+    <color rgba="0.5 0.5 0.5 1"/>
+  </material>
+
+  <material name="darkgrey">
+    <color rgba="0.8 0.8 0.8 1"/>
+  </material>
+
+  <material name="blue">
+    <color rgba="0 0 1 1"/>
+  </material>
+
+  <material name="red">
+    <color rgba="1 0 0 1"/>
+  </material>
+
+  <material name="green">
+    <color rgba="0 1 0 1"/>
+  </material>
+
+  <material name="black">
+    <color rgba="0 0 0 1"/>
+  </material>
+  <!-- ================= TORSO ================= -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.143 0.205 0.222"/>
+      </geometry>
+      <origin xyz="0 0 0.3"/>
+      <material name="black"/>
+      
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.143 0.205 0.222"/>
+      </geometry>
+      <origin xyz="0 0 0.3"/>
+    </collision>
+
+    <inertial>
+      <mass value="5.0" />
+      <origin xyz="0 0 0.3" rpy="0 0 0"/>
+      <inertia ixx="0.0228" ixy="0.0" ixz="0.0"
+                iyy="0.0174" iyz="0.0"
+                izz="0.0156"/>
+    </inertial>
+  </link>
+
+  <!-- Shoulder height = 0.304 m -->
+  <!-- Arm lateral offset = ±0.1025 m (half torso width) -->
+
+  <!-- ================= LEFT ARM ================= -->
+
+  <!-- Shoulder Pitch -->
+  <joint name="left_shoulder_1" type="revolute">
+    <parent link="base_link"/>
+    <child link="left_link_1"/>
+    
+    <origin xyz="0 0.1025 0.354" rpy="0 0 0"/>
+    
+    <axis xyz="0 -1 0"/>
+    
+    <limit lower="-1.26" upper="4.44" effort="60" velocity="1.5"/>
+  </joint>
+
+  <!-- Link 1 - 11 cm -->
+  <link name="left_link_1">
+    <visual>
+      <geometry>
+        <cylinder length="0.11" radius="0.008"/>
+      </geometry>
+      <origin xyz="0 0.055 0" rpy="1.5708 0 0"/>
+      <material name="black"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.016 0.016 0.11"/>
+      </geometry>
+      <origin xyz="0 0.055 0" rpy="1.5708 0 0"/>
+    </collision>
+
+    <inertial>
+      <origin xyz="0 0.055 0" rpy="1.5708 0 0"/>
+      <mass value="1.0"/>
+      <inertia
+        ixx="0.001025" ixy="0.0" ixz="0.0"
+        iyy="0.001025" iyz="0.0"
+        izz="0.000032"/>
+    </inertial>
+
+  </link>
+
+
+  <!-- Shoulder Roll -->
+  <joint name="left_shoulder_2" type="revolute">
+    <parent link="left_link_1"/>
+    <child link="left_link_2"/>
+    
+    <origin xyz="0 0.11 0" rpy="-1.57 0 0"/>
+    
+    <axis xyz="1 0 0"/>
+    
+    <limit lower="2.7" upper="6.28" effort="60" velocity="1.5"/>
+  </joint>
+
+  <!-- Link 2 - 13 cm -->
+  <link name="left_link_2">
+    <visual>
+      <geometry>
+        <cylinder length="0.13" radius="0.008"/>
+      </geometry>
+      <origin xyz="0 0.065 0" rpy="1.5708 0 0"/>
+      <material name="dgrey"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.016 0.016 0.13"/>
+      </geometry>      
+      <origin xyz="0 0.065 0" rpy="1.5708 0 0"/>
+
+    </collision>
+
+    <inertial>
+      <origin xyz="0 0.065 0" rpy="1.5708 0 0"/>
+      <mass value="1.0"/>
+      <inertia
+        ixx="0.001025" ixy="0.0" ixz="0.0"
+        iyy="0.001025" iyz="0.0"
+        izz="0.000032"/>
+    </inertial>
+  </link>
+
+
+  <!-- Elbow Roll -->
+  <joint name="left_elbow_1" type="revolute">
+    <parent link="left_link_2"/>
+    <child link="left_link_3"/>
+    <origin xyz="0 0.13 0" rpy="0 1.57 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="0.0" upper="6.28" effort="50" velocity="1.5"/>
+  </joint>
+
+  <!-- Link 3 - 13 cm -->
+  <link name="left_link_3">
+    <visual>
+      <geometry>
+        <cylinder length="0.13" radius="0.008"/>
+      </geometry>
+      <origin xyz="0 0.065 0" rpy="1.5708 0 0"/>
+      <material name="grey"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.016 0.016 0.13"/>
+      </geometry>            
+      <origin xyz="0 0.065 0" rpy="1.5708 0 0"/>
+
+
+    </collision>
+
+    <inertial>
+      <origin xyz="0 0.065 0" rpy="1.5708 0 0"/>
+      <mass value="1.0"/>
+      <inertia
+        ixx="0.001025" ixy="0.0" ixz="0.0"
+        iyy="0.001025" iyz="0.0"
+        izz="0.000032"/>
+    </inertial>
+  </link>
+
+
+  <!-- Elbow Pitch -->
+  <joint name="left_elbow_2" type="revolute">
+    <parent link="left_link_3"/>
+    <child link="left_link_4"/>
+    <origin xyz="0 0.13 0" rpy="3.14 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0" upper="6.28" effort="50" velocity="1.5"/>
+  </joint>
+
+  <!-- Link 4 - 15 cm -->
+  <link name="left_link_4">
+    <visual>
+      <geometry>
+        <cylinder length="0.15" radius="0.008"/>
+      </geometry>
+      <origin xyz="0 0.075 0" rpy="1.5708 0 0"/>
+      <material name="dgrey"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.016 0.016 0.15"/>
+      </geometry>            
+        <origin xyz="0 0.075 0" rpy="1.5708 0 0"/>
+
+    </collision>
+
+    <inertial>
+      <origin xyz="0 0.075 0" rpy="1.5708 0 0"/>
+      <mass value="1.0"/>
+      <inertia
+        ixx="0.001025" ixy="0.0" ixz="0.0"
+        iyy="0.001025" iyz="0.0"
+        izz="0.000032"/>
+    </inertial>
+  </link>
+
+  <!-- Wrist Roll -->
+  <joint name="left_wrist_roll_joint" type="revolute">
+    <parent link="left_link_4"/>
+    <child link="left_link_5"/>
+    <origin xyz="0 0.13 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-3.2" upper="3.2" effort="50" velocity="1.5"/>
+  </joint>
+
+    <!-- Link 3 - 13 cm -->
+  <link name="left_link_5">
+    <visual>
+      <geometry>
+        <cylinder length="0.13" radius="0.008"/>
+      </geometry>
+      <origin xyz="0 0.065 0" rpy="1.5708 0 0"/>
+      <material name="grey"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.016 0.016 0.15"/>
+      </geometry>            
+        <origin xyz="0 0.065 0" rpy="1.5708 0 0"/>
+    </collision>
+
+    <inertial>
+      <origin xyz="0 0.065 0" rpy="1.5708 0 0"/>
+      <mass value="1.0"/>
+      <inertia
+        ixx="0.001025" ixy="0.0" ixz="0.0"
+        iyy="0.001025" iyz="0.0"
+        izz="0.000032"/>
+    </inertial>
+
+  </link>
+
+  <!-- ================= RIGHT ARM ================= -->
+
+  <!-- <link name="right_shoulder_pitch_link"/> -->
+  <joint name="right_shoulder_1" type="revolute">
+    <parent link="base_link"/>
+    <child link="right_link_1"/>
+    <origin xyz="0 -0.1025 0.354"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="6.28" effort="60" velocity="1.5"/>
+  </joint>
+
+  <link name="right_link_1">
+    <visual>
+      <geometry>
+        <cylinder length="0.11" radius="0.008"/>
+      </geometry>
+      <origin xyz="0 -0.055 0" rpy="1.5708 0 0"/>
+      <material name="red"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.016 0.016 0.11"/>
+      </geometry>        
+        <origin xyz="0 -0.055 0" rpy="1.5708 0 0"/>
+
+    </collision>
+
+    <inertial>
+      <origin xyz="0 -0.055 0" rpy="1.5708 0 0"/>
+      <mass value="1.0"/>
+      <inertia
+        ixx="0.001025" ixy="0.0" ixz="0.0"
+        iyy="0.001025" iyz="0.0"
+        izz="0.000032"/>
+    </inertial>
+
+  </link>
+
+
+  <joint name="right_shoulder_2" type="revolute">
+    <parent link="right_link_1"/>
+    <child link="right_link_2"/>
+    <origin xyz="0 -0.11 0" rpy="-4.71 0 0"/>
+    <axis xyz="-1 0 0"/>
+    <limit lower="0.0" upper="6.28" effort="60" velocity="1.5"/>
+  </joint>
+
+  <link name="right_link_2">
+    <visual>
+      <geometry>
+        <cylinder length="0.13" radius="0.008"/>
+      </geometry>
+      <origin xyz="0 -0.065 0" rpy="1.5708 0 0"/>
+      <material name="green"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.016 0.016 0.13"/>
+      </geometry>             
+      <origin xyz="0 -0.065 0" rpy="1.5708 0 0"/>
+
+    </collision>
+
+    <inertial>
+      <origin xyz="0 -0.065 0" rpy="1.5708 0 0"/>
+      <mass value="1.0"/>
+      <inertia
+        ixx="0.001025" ixy="0.0" ixz="0.0"
+        iyy="0.001025" iyz="0.0"
+        izz="0.000032"/>
+    </inertial>
+
+  </link>
+
+  <joint name="right_elbow_1" type="revolute">
+    <parent link="right_link_2"/>
+    <child link="right_link_3"/>
+    <origin xyz="0 -0.13 0" rpy="0 1.57 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="0" upper="6.28" effort="50" velocity="1.5"/>
+  </joint>
+
+  <link name="right_link_3">
+    <visual>
+      <geometry>
+        <cylinder length="0.13" radius="0.008"/>
+      </geometry>
+      <origin xyz="0 -0.065 0" rpy="1.5708 0 0"/>
+      <material name="red"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.016 0.016 0.13"/>
+      </geometry>             
+        <origin xyz="0 -0.065 0" rpy="1.5708 0 0"/>
+
+    </collision>
+
+    <inertial>
+      <origin xyz="0 -0.065 0" rpy="1.5708 0 0"/>
+      <mass value="1.0"/>
+      <inertia
+        ixx="0.001025" ixy="0.0" ixz="0.0"
+        iyy="0.001025" iyz="0.0"
+        izz="0.000032"/>
+    </inertial>
+
+
+  </link>
+
+  <joint name="right_elbow_2" type="revolute">
+    <parent link="right_link_3"/>
+    <child link="right_link_4"/>
+    <origin xyz="0 -0.13 0" rpy="-3.14 0 0"/>
+    <axis xyz="-1 0 0"/>
+    <limit lower="0" upper="6.28" effort="50" velocity="1.5"/>
+  </joint>
+
+  <link name="right_link_4">
+    <visual>
+      <geometry>
+        <cylinder length="0.15" radius="0.008"/>
+      </geometry>
+      <origin xyz="0 -0.075 0" rpy="1.5708 0 0"/>
+      <material name="green"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.016 0.016 0.15"/>
+      </geometry>             
+      <origin xyz="0 -0.075 0" rpy="1.5708 0 0"/>
+    </collision>
+
+    <inertial>
+      <origin xyz="0 -0.075 0" rpy="1.5708 0 0"/>
+      <mass value="1.0"/>
+      <inertia
+        ixx="0.001025" ixy="0.0" ixz="0.0"
+        iyy="0.001025" iyz="0.0"
+        izz="0.000032"/>
+    </inertial>
+
+  </link>
+
+  <gazebo>
+    <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <!-- Use the dynamically provided config file path from xacro argument -->
+      <!-- This path is passed from the launch file where ROS package resolution is available -->
+      <!-- Reference xacro arguments using $(arg name) syntax, not ${...} -->
+      <parameters>$(arg ros2_controllers_config)</parameters>
+    </plugin>
+  </gazebo>
+
+
+
+</robot>

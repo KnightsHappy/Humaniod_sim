@@ -1,0 +1,8002 @@
+header {
+  stamp {
+    sec: 20
+    nsec: 680000000
+  }
+}
+pose {
+  name: "ground_plane"
+  id: 4
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "warehouse"
+  id: 7
+  position {
+    z: -0.1
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_big_0"
+  id: 12
+  position {
+    x: -8.5
+    y: -13
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_big_1"
+  id: 16
+  position {
+    x: 6.5
+    y: -13
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_big_2"
+  id: 20
+  position {
+    x: -1.5
+    y: -13
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_big_3"
+  id: 24
+  position {
+    x: 3.5
+    y: 9.5
+  }
+  orientation {
+    z: 0.70682518110536585
+    w: 0.70738826916719977
+  }
+}
+pose {
+  name: "shelf_big_4"
+  id: 28
+  position {
+    x: -1.3
+    y: 18.5
+  }
+  orientation {
+    z: 0.70682518110536585
+    w: 0.70738826916719977
+  }
+}
+pose {
+  name: "shelf_0"
+  id: 32
+  position {
+    x: -10
+    y: 21.5
+  }
+  orientation {
+    z: 0.70682518110536585
+    w: 0.70738826916719977
+  }
+}
+pose {
+  name: "shelf_1"
+  id: 36
+  position {
+    x: -6.9999999999999991
+    y: 23.6
+  }
+  orientation {
+    z: 0.70682518110536585
+    w: 0.70738826916719977
+  }
+}
+pose {
+  name: "shelf_2"
+  id: 40
+  position {
+    x: -3.9999999999999996
+    y: 21.5
+  }
+  orientation {
+    z: 0.70682518110536585
+    w: 0.70738826916719977
+  }
+}
+pose {
+  name: "shelf_3"
+  id: 44
+  position {
+    x: 13.5
+    y: 4.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_4"
+  id: 48
+  position {
+    x: 10
+    y: 4.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_5"
+  id: 52
+  position {
+    x: 13.5
+    y: -21
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_6"
+  id: 56
+  position {
+    x: 13.5
+    y: -15
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_7"
+  id: 60
+  position {
+    x: 0.4
+    y: -2
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_box_0"
+  id: 64
+  position {
+    x: 3
+    y: 3
+    z: 0.01
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_box_1"
+  id: 73
+  position {
+    x: -3
+    y: 3
+    z: 0.01
+  }
+  orientation {
+    z: 0.70682518110536585
+    w: 0.70738826916719977
+  }
+}
+pose {
+  name: "pallet_box_2"
+  id: 82
+  position {
+    x: 5
+    y: -3
+    z: 0.01
+  }
+  orientation {
+    z: 0.34289780745545129
+    w: 0.939372712847379
+  }
+}
+pose {
+  name: "pallet_box_3"
+  id: 91
+  position {
+    x: -4
+    y: -5
+    z: 0.01
+  }
+  orientation {
+    z: -0.24740395925452291
+    w: 0.96891242171064484
+  }
+}
+pose {
+  name: "pallet_box_4"
+  id: 100
+  position {
+    x: 8
+    y: 8
+    z: 0.01
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_box_5"
+  id: 109
+  position {
+    x: -9
+    y: -2
+    z: 0.01
+  }
+  orientation {
+    z: 0.70682518110536585
+    w: 0.70738826916719977
+  }
+}
+pose {
+  name: "pallet_box_6"
+  id: 118
+  position {
+    x: 10
+    y: -8
+    z: 0.01
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "barrier_0"
+  id: 127
+  position {
+    x: -10.4
+    y: 14.75
+  }
+  orientation {
+    z: 0.70682518110536585
+    w: 0.70738826916719977
+  }
+}
+pose {
+  name: "barrier_1"
+  id: 136
+  position {
+    x: -10.4
+    y: 10.5
+  }
+  orientation {
+    z: 0.70682518110536585
+    w: 0.70738826916719977
+  }
+}
+pose {
+  name: "barrier_2"
+  id: 145
+  position {
+    x: -10.4
+    y: 6.5
+  }
+  orientation {
+    z: 0.70682518110536585
+    w: 0.70738826916719977
+  }
+}
+pose {
+  name: "chair_0"
+  id: 154
+  position {
+    x: 14.3
+    y: -5.5
+    z: -7.1367296187313521e-12
+  }
+  orientation {
+    x: 3.6333407090398748e-12
+    y: -2.5764164264217336e-13
+    z: -0.99749498660405445
+    w: -0.070737201667702976
+  }
+}
+pose {
+  name: "chair_1"
+  id: 158
+  position {
+    x: 14.3
+    y: -4
+    z: -7.1367296187313521e-12
+  }
+  orientation {
+    x: 3.6333384291916395e-12
+    y: 2.5767377717870872e-13
+    z: -0.99749498660405433
+    w: 0.070737201667703087
+  }
+}
+pose {
+  name: "table0"
+  id: 162
+  position {
+    x: -12.7
+    y: 6.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "vector_robot"
+  id: 176
+  position {
+    x: 6.7945518449499478e-08
+    y: 5.0093469921842247e-08
+    z: 0.16522704407213223
+  }
+  orientation {
+    x: -2.525769732966296e-07
+    y: 3.8198488227562375e-08
+    z: -0.70710807986027135
+    w: 0.7071054825103924
+  }
+}
+pose {
+  name: "link"
+  id: 5
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "warehouse_base"
+  id: 8
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_big_base"
+  id: 13
+  position {
+    x: -0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_big_base"
+  id: 17
+  position {
+    x: -0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_big_base"
+  id: 21
+  position {
+    x: -0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_big_base"
+  id: 25
+  position {
+    x: -0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_big_base"
+  id: 29
+  position {
+    x: -0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_base"
+  id: 33
+  position {
+    x: -0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_base"
+  id: 37
+  position {
+    x: -0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_base"
+  id: 41
+  position {
+    x: -0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_base"
+  id: 45
+  position {
+    x: -0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_base"
+  id: 49
+  position {
+    x: -0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_base"
+  id: 53
+  position {
+    x: -0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_base"
+  id: 57
+  position {
+    x: -0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_base"
+  id: 61
+  position {
+    x: -0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_base"
+  id: 65
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_base"
+  id: 74
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_base"
+  id: 83
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_base"
+  id: 92
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_base"
+  id: 101
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_base"
+  id: 110
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_base"
+  id: 119
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 128
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 137
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "link"
+  id: 146
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "body"
+  id: 155
+  position {
+  }
+  orientation {
+    z: 0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "body"
+  id: 159
+  position {
+  }
+  orientation {
+    z: 0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "link"
+  id: 163
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link"
+  id: 177
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "left_wheel_link"
+  id: 427
+  position {
+    x: -0.18616400000419972
+    y: 0.13445486409739044
+    z: -0.089027783201414967
+  }
+  orientation {
+    x: -0.70710714167428346
+    y: 0.7071064206973835
+    z: 9.3813675069986147e-07
+    w: -9.3819325157583687e-07
+  }
+}
+pose {
+  name: "right_wheel_link"
+  id: 430
+  position {
+    x: 0.26906800000018977
+    y: 0.1344549320457058
+    z: -0.089027849091411176
+  }
+  orientation {
+    x: 2.4895848254969137e-12
+    y: 2.4895939702631357e-12
+    z: 0.7071045443232219
+    w: -0.7071090180427968
+  }
+}
+pose {
+  name: "torso_link"
+  id: 433
+  position {
+    x: 0.14999999545289222
+    y: 6.1026438311819239e-09
+    z: 1.3825157755886335
+  }
+  orientation {
+    x: -1.9715524367150855e-09
+    y: -1.4690341240276355e-09
+    z: 2.8477220581635265e-14
+    w: 0.99999999999999989
+  }
+}
+pose {
+  name: "right_shoulder_link_1"
+  id: 549
+  position {
+    x: 0.19182399536276695
+    y: 0.052366006223597
+    z: 1.4131897755050307
+  }
+  orientation {
+    x: -1.9715524367151053e-09
+    y: -1.1573820432142952e-09
+    z: 2.8810287489022812e-14
+    w: 0.99999999999999956
+  }
+}
+pose {
+  name: "right_shoulder_link_2"
+  id: 554
+  position {
+    x: 0.21497399536276579
+    y: 0.11336600622359434
+    z: 1.4131887753180881
+  }
+  orientation {
+    x: -2.26577029256987e-09
+    y: -1.1573820432142423e-09
+    z: 2.9198865547641617e-14
+    w: 0.99999999999999933
+  }
+}
+pose {
+  name: "right_elbow_link_1"
+  id: 577
+  position {
+    x: 0.28158899548545185
+    y: 0.0483540059834268
+    z: 1.3601887757668909
+  }
+  orientation {
+    x: -2.2657702925699029e-09
+    y: -1.1573820432142423e-09
+    z: 3.0531133177191805e-14
+    w: 0.99999999999999845
+  }
+}
+pose {
+  name: "right_elbow_link_2"
+  id: 582
+  position {
+    x: 0.29546699601483695
+    y: 0.072677004947063889
+    z: 1.1314887756887946
+  }
+  orientation {
+    x: -2.467483055893891e-09
+    y: -1.1573820432142423e-09
+    z: 3.2363001167823313e-14
+    w: 0.99999999999999656
+  }
+}
+pose {
+  name: "wrist_link_1"
+  id: 598
+  position {
+    x: 0.33265699457354658
+    y: 0.18925600801981141
+    z: 1.7541367751995671
+  }
+  orientation {
+    x: -2.4674830558938976e-09
+    y: -1.1573820432142158e-09
+    z: 3.602673714908633e-14
+    w: 0.999999999999993
+  }
+}
+pose {
+  name: "ee_link"
+  id: 612
+  position {
+    x: 0.33096799437516849
+    y: 0.16768100844275
+    z: 1.8398387753021295
+  }
+  orientation {
+    x: -2.4674830558939108e-09
+    y: -1.2140067785010422e-09
+    z: 4.3132164506687332e-14
+    w: 0.999999999999986
+  }
+}
+pose {
+  name: "shoulder_link_1_link"
+  id: 614
+  position {
+    x: -0.12217600463723
+    y: 0.052366006223575096
+    z: 1.4131887745824774
+  }
+  orientation {
+    x: -1.9715524367150888e-09
+    y: -1.5717424897911898e-09
+    z: 2.8699265186560297e-14
+    w: 0.99999999999999967
+  }
+}
+pose {
+  name: "shoulder_link_2"
+  id: 619
+  position {
+    x: -0.14532600463723361
+    y: 0.11336600622357376
+    z: 1.4131887742691762
+  }
+  orientation {
+    x: -1.8941033108371067e-09
+    y: -1.5717424897911898e-09
+    z: 2.9198865547641617e-14
+    w: 0.99999999999999911
+  }
+}
+pose {
+  name: "elbow_link_1"
+  id: 640
+  position {
+    x: -0.21194100447062497
+    y: 0.048354006022795264
+    z: 1.3601887743060521
+  }
+  orientation {
+    x: -1.8941033108371696e-09
+    y: -1.5717424897911898e-09
+    z: 2.9920510513647969e-14
+    w: 0.99999999999999833
+  }
+}
+pose {
+  name: "elbow_link_2"
+  id: 645
+  position {
+    x: -0.22581900375171149
+    y: 0.072677005156431246
+    z: 1.1314887741702864
+  }
+  orientation {
+    x: -1.754555804139783e-09
+    y: -1.5717424897911898e-09
+    z: 3.1807889655510735e-14
+    w: 0.99999999999999645
+  }
+}
+pose {
+  name: "warehouse_visual"
+  id: 9
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "drop_area_visual"
+  id: 10
+  position {
+    z: 0.101
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_big_chassi_visual"
+  id: 14
+  position {
+  }
+  orientation {
+    z: 0.70710678118481629
+    w: 0.70710678118827874
+  }
+}
+pose {
+  name: "shelf_big_chassi_visual"
+  id: 18
+  position {
+  }
+  orientation {
+    z: 0.70710678118481629
+    w: 0.70710678118827874
+  }
+}
+pose {
+  name: "shelf_big_chassi_visual"
+  id: 22
+  position {
+  }
+  orientation {
+    z: 0.70710678118481629
+    w: 0.70710678118827874
+  }
+}
+pose {
+  name: "shelf_big_chassi_visual"
+  id: 26
+  position {
+  }
+  orientation {
+    z: 0.70710678118481629
+    w: 0.70710678118827874
+  }
+}
+pose {
+  name: "shelf_big_chassi_visual"
+  id: 30
+  position {
+  }
+  orientation {
+    z: 0.70710678118481629
+    w: 0.70710678118827874
+  }
+}
+pose {
+  name: "shelf_chassi_visual"
+  id: 34
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_chassi_visual"
+  id: 38
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_chassi_visual"
+  id: 42
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_chassi_visual"
+  id: 46
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_chassi_visual"
+  id: 50
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_chassi_visual"
+  id: 54
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_chassi_visual"
+  id: 58
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "shelf_chassi_visual"
+  id: 62
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_visual"
+  id: 66
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "boxes_visual"
+  id: 67
+  position {
+    x: -0.053875
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_visual"
+  id: 75
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "boxes_visual"
+  id: 76
+  position {
+    x: -0.053875
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_visual"
+  id: 84
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "boxes_visual"
+  id: 85
+  position {
+    x: -0.053875
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_visual"
+  id: 93
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "boxes_visual"
+  id: 94
+  position {
+    x: -0.053875
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_visual"
+  id: 102
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "boxes_visual"
+  id: 103
+  position {
+    x: -0.053875
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_visual"
+  id: 111
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "boxes_visual"
+  id: 112
+  position {
+    x: -0.053875
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "pallet_visual"
+  id: 120
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "boxes_visual"
+  id: 121
+  position {
+    x: -0.053875
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 129
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 138
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 147
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 156
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 160
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual1"
+  id: 164
+  position {
+    z: 1
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "front_left_leg"
+  id: 165
+  position {
+    x: 0.68
+    y: 0.38
+    z: 0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "front_right_leg"
+  id: 166
+  position {
+    x: 0.68
+    y: -0.38
+    z: 0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "back_right_leg"
+  id: 167
+  position {
+    x: -0.68
+    y: -0.38
+    z: 0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "back_left_leg"
+  id: 168
+  position {
+    x: -0.68
+    y: 0.38
+    z: 0.5
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "overheadVisual"
+  id: 175
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual"
+  id: 178
+  position {
+    x: 0.219836
+    y: 0.157455
+    z: 0.0584722
+  }
+  orientation {
+    x: 8.1201791192944147e-17
+    y: 1.2536098905184781e-16
+    z: 0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "base_link_visual_1"
+  id: 179
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_2"
+  id: 180
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_3"
+  id: 181
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_4"
+  id: 182
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_5"
+  id: 183
+  position {
+    x: 0.0433357
+    y: -0.0400452
+    z: 0.0424722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_6"
+  id: 184
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_7"
+  id: 185
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_8"
+  id: 186
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_9"
+  id: 187
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_10"
+  id: 188
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_11"
+  id: 189
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_12"
+  id: 190
+  position {
+    x: 0.0433357
+    y: -0.224049
+    z: -0.129728
+  }
+  orientation {
+    x: -1.2879443343580421e-32
+    y: -1.287939603483029e-32
+    z: -0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "base_link_visual_13"
+  id: 191
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_14"
+  id: 192
+  position {
+    x: 0.0433357
+    y: -0.0400452
+    z: 0.0424722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_15"
+  id: 193
+  position {
+    x: -0.133164
+    y: -0.235545
+    z: 0.0464722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_16"
+  id: 194
+  position {
+    x: 0.219836
+    y: -0.235545
+    z: 0.0464722
+  }
+  orientation {
+    x: 4.9065162098575335e-18
+    y: 1.4719638743271022e-17
+    z: 0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "base_link_visual_17"
+  id: 195
+  position {
+    x: 0.0433357
+    y: -0.0315452
+    z: -0.0430278
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_18"
+  id: 196
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_19"
+  id: 197
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_20"
+  id: 198
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_21"
+  id: 199
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_22"
+  id: 200
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_23"
+  id: 201
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_24"
+  id: 202
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_25"
+  id: 203
+  position {
+    x: 0.0433357
+    y: -0.0390452
+    z: 0.0414722
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_26"
+  id: 204
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_27"
+  id: 205
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_28"
+  id: 206
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_29"
+  id: 207
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_30"
+  id: 208
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_31"
+  id: 209
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_32"
+  id: 210
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_33"
+  id: 211
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_34"
+  id: 212
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_35"
+  id: 213
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_36"
+  id: 214
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_37"
+  id: 215
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_38"
+  id: 216
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_39"
+  id: 217
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_40"
+  id: 218
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_41"
+  id: 219
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_42"
+  id: 220
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_43"
+  id: 221
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_44"
+  id: 222
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_45"
+  id: 223
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_46"
+  id: 224
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_47"
+  id: 225
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_48"
+  id: 226
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_49"
+  id: 227
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_50"
+  id: 228
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_51"
+  id: 229
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_52"
+  id: 230
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_53"
+  id: 231
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_54"
+  id: 232
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_55"
+  id: 233
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_56"
+  id: 234
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_57"
+  id: 235
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_58"
+  id: 236
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_59"
+  id: 237
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_60"
+  id: 238
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_61"
+  id: 239
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_62"
+  id: 240
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_63"
+  id: 241
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_64"
+  id: 242
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_65"
+  id: 243
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_66"
+  id: 244
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_67"
+  id: 245
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_68"
+  id: 246
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_69"
+  id: 247
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_70"
+  id: 248
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_71"
+  id: 249
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_72"
+  id: 250
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_73"
+  id: 251
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_74"
+  id: 252
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_75"
+  id: 253
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_76"
+  id: 254
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_77"
+  id: 255
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_78"
+  id: 256
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_79"
+  id: 257
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_80"
+  id: 258
+  position {
+    x: 0.137884
+    y: 0.0846082
+    z: 0.0492947
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -1.582915000263295e-16
+    z: -1.9739429645595007e-20
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_81"
+  id: 259
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_82"
+  id: 260
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_83"
+  id: 261
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_84"
+  id: 262
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_85"
+  id: 263
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_86"
+  id: 264
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_87"
+  id: 265
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_88"
+  id: 266
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_89"
+  id: 267
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_90"
+  id: 268
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_91"
+  id: 269
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_92"
+  id: 270
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_93"
+  id: 271
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_94"
+  id: 272
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_95"
+  id: 273
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_96"
+  id: 274
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_97"
+  id: 275
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_98"
+  id: 276
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_99"
+  id: 277
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_100"
+  id: 278
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_101"
+  id: 279
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_102"
+  id: 280
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_103"
+  id: 281
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_104"
+  id: 282
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_105"
+  id: 283
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_106"
+  id: 284
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_107"
+  id: 285
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_108"
+  id: 286
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_109"
+  id: 287
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_110"
+  id: 288
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_111"
+  id: 289
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_112"
+  id: 290
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_113"
+  id: 291
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_114"
+  id: 292
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_115"
+  id: 293
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_116"
+  id: 294
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_117"
+  id: 295
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_118"
+  id: 296
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_119"
+  id: 297
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_120"
+  id: 298
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_121"
+  id: 299
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_122"
+  id: 300
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_123"
+  id: 301
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_124"
+  id: 302
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_125"
+  id: 303
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_126"
+  id: 304
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_127"
+  id: 305
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_128"
+  id: 306
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_129"
+  id: 307
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_130"
+  id: 308
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_131"
+  id: 309
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_132"
+  id: 310
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_133"
+  id: 311
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_134"
+  id: 312
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_135"
+  id: 313
+  position {
+    x: -0.0512126
+    y: 0.0846082
+    z: -0.22735
+  }
+  orientation {
+    x: -1.9928159983711371e-20
+    y: 1.6046200026454713e-17
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_136"
+  id: 314
+  position {
+    x: -0.065477
+    y: -0.100634
+    z: 1.13335
+  }
+  orientation {
+    x: -1.2344387343242274e-17
+    y: -0.70710678118654768
+    z: -1.2344387343242267e-17
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "base_link_visual_137"
+  id: 315
+  position {
+    x: 0.034824
+    y: -0.125809
+    z: 0.122251
+  }
+  orientation {
+    x: 0.49999999999662686
+    y: 0.5000018366025516
+    z: 0.49999999999662686
+    w: 0.49999816339744829
+  }
+}
+pose {
+  name: "base_link_visual_138"
+  id: 316
+  position {
+    x: -0.0821798
+    y: -0.141741
+    z: 1.01785
+  }
+  orientation {
+    x: -6.1901837911925065e-17
+    y: -2.3492365142326784e-19
+    z: 0.99999279396008767
+    w: 0.0037963176760648218
+  }
+}
+pose {
+  name: "base_link_visual_139"
+  id: 317
+  position {
+    x: -0.065477
+    y: -0.100634
+    z: 1.13335
+  }
+  orientation {
+    x: -1.2344387343242274e-17
+    y: -0.70710678118654768
+    z: -1.2344387343242267e-17
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "base_link_visual_140"
+  id: 318
+  position {
+    x: 0.177824
+    y: -0.103634
+    z: 0.0365308
+  }
+  orientation {
+    x: 0.5000009183004327
+    y: -0.499999081697881
+    z: 0.50000091830043236
+    w: 0.49999908169788077
+  }
+}
+pose {
+  name: "base_link_visual_141"
+  id: 319
+  position {
+    x: 0.00432396
+    y: -0.163634
+    z: -0.136998
+  }
+  orientation {
+    x: 4.3771731368092314e-17
+    y: 8.706926562290545e-17
+    z: -0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "base_link_visual_142"
+  id: 320
+  position {
+    x: 0.034824
+    y: -0.0536334
+    z: 0.403851
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_143"
+  id: 321
+  position {
+    x: 0.034824
+    y: -0.0536336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_144"
+  id: 322
+  position {
+    x: 0.039824
+    y: -0.0586336
+    z: 0.422351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_145"
+  id: 323
+  position {
+    x: -0.065477
+    y: -0.100634
+    z: 1.13335
+  }
+  orientation {
+    x: -1.2344387343242274e-17
+    y: -0.70710678118654768
+    z: -1.2344387343242267e-17
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "base_link_visual_146"
+  id: 324
+  position {
+    x: 0.033824
+    y: -0.0756336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_147"
+  id: 325
+  position {
+    x: 0.029824
+    y: -0.0586336
+    z: 1.12835
+  }
+  orientation {
+    x: 1.326794896676365e-06
+    y: -0.99999999999823963
+    z: -1.326794896676365e-06
+    w: 1.760415313999545e-12
+  }
+}
+pose {
+  name: "base_link_visual_148"
+  id: 326
+  position {
+    x: 0.034824
+    y: -0.0361336
+    z: 0.639351
+  }
+  orientation {
+    x: 4.3578990924526932e-33
+    y: -0.70710678118654768
+    z: 4.3578990924526912e-33
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "base_link_visual_149"
+  id: 327
+  position {
+    x: 0.034824
+    y: -0.0361336
+    z: 0.975601
+  }
+  orientation {
+    x: 4.3578990924526932e-33
+    y: 0.70710678118654768
+    z: -4.3578990924526912e-33
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "base_link_visual_150"
+  id: 328
+  position {
+    x: 0.034824
+    y: -0.0536336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_151"
+  id: 329
+  position {
+    x: 0.034824
+    y: -0.0536334
+    z: 0.0958508
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_152"
+  id: 330
+  position {
+    x: 0.034824
+    y: -0.0361336
+    z: 0.975601
+  }
+  orientation {
+    x: 4.3578990924526932e-33
+    y: 0.70710678118654768
+    z: -4.3578990924526912e-33
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "base_link_visual_153"
+  id: 331
+  position {
+    x: 0.184824
+    y: 0.0513664
+    z: 0.937501
+  }
+  orientation {
+    x: 9.3818739177864771e-07
+    y: 0.70710807985885127
+    z: 0.707105482510614
+    w: 9.3818394558696394e-07
+  }
+}
+pose {
+  name: "base_link_visual_154"
+  id: 332
+  position {
+    x: -0.065477
+    y: -0.100634
+    z: 1.13335
+  }
+  orientation {
+    x: -1.2344387343242274e-17
+    y: -0.70710678118654768
+    z: -1.2344387343242267e-17
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "base_link_visual_155"
+  id: 333
+  position {
+    x: -0.054176
+    y: -0.0536336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_156"
+  id: 334
+  position {
+    x: 0.172824
+    y: -0.103634
+    z: 1.10935
+  }
+  orientation {
+    x: -0.70710678118592529
+    y: 9.381856686843883e-07
+    z: 0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "base_link_visual_157"
+  id: 335
+  position {
+    x: 0.0355182
+    y: -0.0535322
+    z: 0.568351
+  }
+  orientation {
+    x: 5.9710613005692616e-17
+    y: -6.2127590575640481e-17
+    z: -0.0037956908856841146
+    w: 0.99999279633940386
+  }
+}
+pose {
+  name: "base_link_visual_158"
+  id: 336
+  position {
+    x: 0.034824
+    y: -0.14056
+    z: 0.112788
+  }
+  orientation {
+    x: 0.0050226527696673471
+    y: 0.70708896119912235
+    z: 0.0050226527696664589
+    w: 0.70708892430065473
+  }
+}
+pose {
+  name: "base_link_visual_159"
+  id: 337
+  position {
+    x: 0.034824
+    y: -0.0536336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_160"
+  id: 338
+  position {
+    x: 0.190324
+    y: -0.163634
+    z: -0.136998
+  }
+  orientation {
+    x: 4.3771731368092314e-17
+    y: 8.706926562290545e-17
+    z: -0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "base_link_visual_161"
+  id: 339
+  position {
+    x: 0.034824
+    y: -0.0361336
+    z: 0.975601
+  }
+  orientation {
+    x: 4.3578990924526932e-33
+    y: 0.70710678118654768
+    z: -4.3578990924526912e-33
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "base_link_visual_162"
+  id: 340
+  position {
+    x: 0.033824
+    y: -0.0756336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_163"
+  id: 341
+  position {
+    x: 0.034824
+    y: -0.0236336
+    z: 0.960601
+  }
+  orientation {
+    x: -3.0616149999973045e-17
+    y: -4.0621351569750849e-23
+    z: -0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_164"
+  id: 342
+  position {
+    x: -0.065477
+    y: -0.100634
+    z: 1.13335
+  }
+  orientation {
+    x: -1.2344387343242274e-17
+    y: -0.70710678118654768
+    z: -1.2344387343242267e-17
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "base_link_visual_165"
+  id: 343
+  position {
+    x: 0.034824
+    y: -0.0361336
+    z: 0.975601
+  }
+  orientation {
+    x: 4.3578990924526932e-33
+    y: 0.70710678118654768
+    z: -4.3578990924526912e-33
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "base_link_visual_166"
+  id: 344
+  position {
+    x: 0.020824
+    y: -0.0536336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_167"
+  id: 345
+  position {
+    x: 0.034824
+    y: -0.0536336
+    z: 0.569351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_168"
+  id: 346
+  position {
+    x: 0.034824
+    y: -0.0536336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_169"
+  id: 347
+  position {
+    x: 0.034824
+    y: -0.0536336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_170"
+  id: 348
+  position {
+    x: -0.0821798
+    y: -0.141741
+    z: 0.467851
+  }
+  orientation {
+    x: -6.1901837911925065e-17
+    y: -2.3492365142326784e-19
+    z: 0.99999279396008767
+    w: 0.0037963176760648218
+  }
+}
+pose {
+  name: "base_link_visual_171"
+  id: 349
+  position {
+    x: 0.034824
+    y: -0.0361336
+    z: 0.975601
+  }
+  orientation {
+    x: 4.3578990924526932e-33
+    y: 0.70710678118654768
+    z: -4.3578990924526912e-33
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "base_link_visual_172"
+  id: 350
+  position {
+    x: -0.067276
+    y: -0.132409
+    z: 0.467851
+  }
+  orientation {
+    x: -4.3771597131151804e-17
+    y: -4.3771757913501071e-17
+    z: 0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "base_link_visual_173"
+  id: 351
+  position {
+    x: 0.034824
+    y: -0.0674355
+    z: 0.569198
+  }
+  orientation {
+    x: 0.0071018403004149046
+    y: 1.4497990739509274e-17
+    z: 7.6265460876907467e-17
+    w: 0.99997478161419029
+  }
+}
+pose {
+  name: "base_link_visual_174"
+  id: 352
+  position {
+    x: -0.065477
+    y: -0.100634
+    z: 1.13335
+  }
+  orientation {
+    x: -1.2344387343242274e-17
+    y: -0.70710678118654768
+    z: -1.2344387343242267e-17
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "base_link_visual_175"
+  id: 353
+  position {
+    x: 0.034824
+    y: -0.0536334
+    z: -0.202149
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_176"
+  id: 354
+  position {
+    x: 0.034824
+    y: -0.0536336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_177"
+  id: 355
+  position {
+    x: 0.034824
+    y: -0.115554
+    z: 1.45745
+  }
+  orientation {
+    x: 2.1649147981608868e-17
+    y: 6.4946763497058953e-17
+    z: -0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "base_link_visual_178"
+  id: 356
+  position {
+    x: 0.034824
+    y: -0.0536336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_179"
+  id: 357
+  position {
+    x: 0.034824
+    y: -0.0536336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_180"
+  id: 358
+  position {
+    x: 0.034824
+    y: -0.0536336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_181"
+  id: 359
+  position {
+    x: 0.034824
+    y: -0.0536336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_182"
+  id: 360
+  position {
+    x: 0.034824
+    y: -0.0536336
+    z: 0.568351
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link_visual_183"
+  id: 361
+  position {
+    x: -0.067276
+    y: -0.132409
+    z: 1.01785
+  }
+  orientation {
+    x: -4.3771597131151804e-17
+    y: -4.3771757913501071e-17
+    z: 0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "base_link_visual_184"
+  id: 362
+  position {
+    x: 0.172824
+    y: -0.103634
+    z: 0.0365308
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: 9.381856686843883e-07
+    z: -0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "base_link_visual_185"
+  id: 363
+  position {
+    x: -0.065477
+    y: -0.100634
+    z: 1.13335
+  }
+  orientation {
+    x: -1.2344387343242274e-17
+    y: -0.70710678118654768
+    z: -1.2344387343242267e-17
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "base_link_visual_186"
+  id: 364
+  position {
+    x: -0.065477
+    y: -0.100634
+    z: 1.13335
+  }
+  orientation {
+    x: -1.2344387343242274e-17
+    y: -0.70710678118654768
+    z: -1.2344387343242267e-17
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "base_link_visual_187"
+  id: 365
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_188"
+  id: 366
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_189"
+  id: 367
+  position {
+    x: 0.00325785
+    y: -0.144959
+    z: 0.186372
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_190"
+  id: 368
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_191"
+  id: 369
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_192"
+  id: 370
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_193"
+  id: 371
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_194"
+  id: 372
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_195"
+  id: 373
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_196"
+  id: 374
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_197"
+  id: 375
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_198"
+  id: 376
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_199"
+  id: 377
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_200"
+  id: 378
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_201"
+  id: 379
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_202"
+  id: 380
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_203"
+  id: 381
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_204"
+  id: 382
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_205"
+  id: 383
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_206"
+  id: 384
+  position {
+    x: 0.129824
+    y: -0.103634
+    z: 0.0365308
+  }
+  orientation {
+    x: 0.707105482510614
+    y: 0.70710807985885127
+    z: 9.3818739175699893e-07
+    w: 9.3818394560861283e-07
+  }
+}
+pose {
+  name: "base_link_visual_207"
+  id: 385
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_208"
+  id: 386
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_209"
+  id: 387
+  position {
+    x: 0.0108515
+    y: -0.152081
+    z: 0.175945
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_210"
+  id: 388
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_211"
+  id: 389
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_212"
+  id: 390
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_213"
+  id: 391
+  position {
+    x: 0.0297232
+    y: -0.134691
+    z: 0.173447
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_214"
+  id: 392
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_215"
+  id: 393
+  position {
+    x: 0.005199
+    y: -0.147238
+    z: 0.171522
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_216"
+  id: 394
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_217"
+  id: 395
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_218"
+  id: 396
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_219"
+  id: 397
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_220"
+  id: 398
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_221"
+  id: 399
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_222"
+  id: 400
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_223"
+  id: 401
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_224"
+  id: 402
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_225"
+  id: 403
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_226"
+  id: 404
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_227"
+  id: 405
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_228"
+  id: 406
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_229"
+  id: 407
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_230"
+  id: 408
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_231"
+  id: 409
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_232"
+  id: 410
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_233"
+  id: 411
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_234"
+  id: 412
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_235"
+  id: 413
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_236"
+  id: 414
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_237"
+  id: 415
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_238"
+  id: 416
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_239"
+  id: 417
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_240"
+  id: 418
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_241"
+  id: 419
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_visual_242"
+  id: 420
+  position {
+    x: 0.0318723
+    y: -0.15348
+    z: 0.174853
+  }
+  orientation {
+    x: -0.99999999999911982
+    y: -2.7146882158433097e-17
+    z: -6.1922463981709788e-17
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "base_link_fixed_joint_lump__9_1_gearbox_from_mas_automation_1_visual_243"
+  id: 421
+  position {
+    x: -0.149164
+    y: 0.134455
+    z: -0.0890278
+  }
+  orientation {
+    z: 0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "base_link_fixed_joint_lump__9_1_gearbox_from_mas_automation_visual_244"
+  id: 422
+  position {
+    x: 0.25056800000037988
+    y: 0.13445486409141119
+    z: -0.089027898182822363
+  }
+  orientation {
+    x: 0.707105482510614
+    y: 0.70710807985885127
+    z: 9.3818739175699893e-07
+    w: 9.3818394560861283e-07
+  }
+}
+pose {
+  name: "left_wheel_link_visual"
+  id: 428
+  position {
+    x: -2.7879505515851352e-19
+    y: 0.0185
+    z: 4.1051656423443372e-17
+  }
+  orientation {
+    z: 7.5350014907706359e-18
+    w: 1
+  }
+}
+pose {
+  name: "right_wheel_link_visual"
+  id: 431
+  position {
+    x: -8.3266726846886741e-17
+    y: 1.1102230246251565e-16
+    z: -1.3877787807814457e-17
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "torso_link_visual"
+  id: 434
+  position {
+    x: -0.115176
+    y: 0.121366
+    z: -0.025145
+  }
+  orientation {
+    x: 3.0615935376303764e-17
+    y: -1.617610406212092e-16
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_1"
+  id: 435
+  position {
+    x: -0.065176
+    y: 0.051366
+    z: -0.053926
+  }
+  orientation {
+    x: 9.3818739177864771e-07
+    y: 0.70710807985885127
+    z: 0.707105482510614
+    w: 9.3818394558696394e-07
+  }
+}
+pose {
+  name: "torso_link_visual_2"
+  id: 436
+  position {
+    x: 0.034824
+    y: 0.051766
+    z: -0.074326
+  }
+  orientation {
+    x: 1.6927570656181004e-16
+    y: -0.70710678118654768
+    z: 1.6927570656180996e-16
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "torso_link_visual_3"
+  id: 437
+  position {
+    x: -0.144776
+    y: 0.151366
+    z: -0.089326
+  }
+  orientation {
+    x: 1.9055714937647017e-16
+    y: -1.9055784933325011e-16
+    z: -0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "torso_link_visual_4"
+  id: 438
+  position {
+    x: -0.115176
+    y: -0.020634
+    z: -0.015826
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_5"
+  id: 439
+  position {
+    x: -0.065176
+    y: 0.050966
+    z: 0.025673
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.062135087121885e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_6"
+  id: 440
+  position {
+    x: 0.034824
+    y: 0.050966
+    z: 0.025673
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.062135087121885e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_7"
+  id: 441
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: -0.104326
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_8"
+  id: 442
+  position {
+    x: -0.265176
+    y: 0.051766
+    z: -0.074326
+  }
+  orientation {
+    x: -1.545558646978497e-16
+    y: -0.70710678118654768
+    z: -1.5455586469784963e-16
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "torso_link_visual_9"
+  id: 443
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: -0.104326
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_10"
+  id: 444
+  position {
+    x: -0.085576
+    y: 0.151366
+    z: -0.089326
+  }
+  orientation {
+    x: 0.707105482510614
+    y: -0.70710807985885127
+    z: -9.3818739175699893e-07
+    w: 9.3818394560861283e-07
+  }
+}
+pose {
+  name: "torso_link_visual_11"
+  id: 445
+  position {
+    x: -0.145176
+    y: 0.050966
+    z: 0.045673
+  }
+  orientation {
+    x: -0.70710678118592529
+    y: 9.381856686843883e-07
+    z: 0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_12"
+  id: 446
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: -0.104326
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_13"
+  id: 447
+  position {
+    x: -0.144776
+    y: -0.068634
+    z: 0.045673
+  }
+  orientation {
+    x: 0.5000009183004327
+    y: 0.499999081697881
+    z: -0.50000091830043236
+    w: 0.49999908169788077
+  }
+}
+pose {
+  name: "torso_link_visual_14"
+  id: 448
+  position {
+    x: -0.085576
+    y: -0.068634
+    z: 0.045673
+  }
+  orientation {
+    x: 0.49999974509610762
+    y: -0.50000025490376276
+    z: -0.49999974509610734
+    w: -0.50000025490376254
+  }
+}
+pose {
+  name: "torso_link_visual_15"
+  id: 449
+  position {
+    x: 0.034824
+    y: 0.051766
+    z: 0.025673
+  }
+  orientation {
+    x: -1.326794896676365e-06
+    y: -0.99999999999823963
+    z: 1.326794896676365e-06
+    w: 1.760415313999545e-12
+  }
+}
+pose {
+  name: "torso_link_visual_16"
+  id: 450
+  position {
+    x: -0.144776
+    y: 0.151366
+    z: 0.025673
+  }
+  orientation {
+    x: -2.1648847518387219e-17
+    y: 2.1648927039188797e-17
+    z: -0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "torso_link_visual_17"
+  id: 451
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: -0.104326
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_18"
+  id: 452
+  position {
+    x: -0.114426
+    y: 0.173666
+    z: -0.041127
+  }
+  orientation {
+    x: 1.555165068369699e-16
+    y: 5.1528936614969148e-18
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_19"
+  id: 453
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: -0.104326
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_20"
+  id: 454
+  position {
+    x: -0.265176
+    y: 0.050966
+    z: -0.074326
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: -9.381856686843883e-07
+    z: 0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_21"
+  id: 455
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: -0.104326
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_22"
+  id: 456
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: -0.104326
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_23"
+  id: 457
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: -0.125326
+  }
+  orientation {
+    x: 3.0615935376303764e-17
+    y: -1.617610406212092e-16
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_24"
+  id: 458
+  position {
+    x: -0.085576
+    y: 0.151366
+    z: 0.025673
+  }
+  orientation {
+    x: 0.707105482510614
+    y: -0.70710807985885127
+    z: -9.3818739175699893e-07
+    w: 9.3818394560861283e-07
+  }
+}
+pose {
+  name: "torso_link_visual_25"
+  id: 459
+  position {
+    x: -0.065176
+    y: 0.051366
+    z: -0.053926
+  }
+  orientation {
+    x: 9.3818739177864771e-07
+    y: 0.70710807985885127
+    z: 0.707105482510614
+    w: 9.3818394558696394e-07
+  }
+}
+pose {
+  name: "torso_link_visual_26"
+  id: 460
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: -0.104326
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_27"
+  id: 461
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: -0.104326
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_28"
+  id: 462
+  position {
+    x: -0.085176
+    y: 0.051766
+    z: 0.045673
+  }
+  orientation {
+    x: -1.6927570656181004e-16
+    y: 0.70710678118654768
+    z: 1.6927570656180996e-16
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "torso_link_visual_29"
+  id: 463
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: -0.104326
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_30"
+  id: 464
+  position {
+    x: 0.034824
+    y: 0.050966
+    z: -0.074326
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: -9.381856686843883e-07
+    z: 0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_31"
+  id: 465
+  position {
+    x: -0.144776
+    y: 0.051366
+    z: -0.074326
+  }
+  orientation {
+    x: -0.5000009183004327
+    y: -0.499999081697881
+    z: -0.50000091830043236
+    w: 0.49999908169788077
+  }
+}
+pose {
+  name: "torso_link_visual_32"
+  id: 466
+  position {
+    x: -0.115176
+    y: 0.123866
+    z: 0.000674
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_33"
+  id: 467
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: -0.104326
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_34"
+  id: 468
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: -0.104326
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_35"
+  id: 469
+  position {
+    x: -0.145176
+    y: 0.051766
+    z: 0.045673
+  }
+  orientation {
+    x: 1.545558646978497e-16
+    y: 0.70710678118654768
+    z: -1.5455586469784963e-16
+    w: 0.70710678118654735
+  }
+}
+pose {
+  name: "torso_link_visual_36"
+  id: 470
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: -0.104326
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621350589838851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_37"
+  id: 471
+  position {
+    x: -0.065176
+    y: 0.051766
+    z: 0.025673
+  }
+  orientation {
+    x: -1.326794896676365e-06
+    y: -0.99999999999823963
+    z: 1.326794896676365e-06
+    w: 1.760415313999545e-12
+  }
+}
+pose {
+  name: "torso_link_visual_38"
+  id: 472
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: 0.094273
+  }
+  orientation {
+    x: -2.4391974395487398e-17
+    y: 3.9614603236349587e-16
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_39"
+  id: 473
+  position {
+    x: -0.115176
+    y: 0.051366
+    z: 0.093673
+  }
+  orientation {
+    x: 3.0616149999973045e-17
+    y: -4.0621353206568851e-23
+    z: 0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_40"
+  id: 474
+  position {
+    x: -0.105326
+    y: 0.066066
+    z: 0.075423
+  }
+  orientation {
+    x: -0.707105482510614
+    y: 0.70710807985885127
+    z: -9.381873905821078e-07
+    w: 9.381839467835083e-07
+  }
+}
+pose {
+  name: "torso_link_visual_41"
+  id: 475
+  position {
+    x: -0.105326
+    y: 0.066066
+    z: 0.075423
+  }
+  orientation {
+    x: -0.707105482510614
+    y: 0.70710807985885127
+    z: -9.381873905821078e-07
+    w: 9.381839467835083e-07
+  }
+}
+pose {
+  name: "torso_link_visual_42"
+  id: 476
+  position {
+    x: -0.115326
+    y: 0.055066
+    z: 0.049673
+  }
+  orientation {
+    x: 0.49999999999662564
+    y: -0.50000183660255293
+    z: -0.49999999999662564
+    w: 0.49999816339744962
+  }
+}
+pose {
+  name: "torso_link_visual_43"
+  id: 477
+  position {
+    x: -0.115326
+    y: 0.055066
+    z: 0.049673
+  }
+  orientation {
+    x: -0.707105482510614
+    y: 0.70710807985885127
+    z: -9.381873905821078e-07
+    w: 9.381839467835083e-07
+  }
+}
+pose {
+  name: "torso_link_visual_44"
+  id: 478
+  position {
+    x: -0.115326
+    y: 0.055075
+    z: 0.101473
+  }
+  orientation {
+    x: -0.707105482510614
+    y: 0.70710807985885127
+    z: -9.381873905821078e-07
+    w: 9.381839467835083e-07
+  }
+}
+pose {
+  name: "torso_link_visual_45"
+  id: 479
+  position {
+    x: -0.115326
+    y: 0.055075
+    z: 0.102573
+  }
+  orientation {
+    x: -0.499999999996628
+    y: 0.50000183660255049
+    z: -0.499999999996628
+    w: 0.49999816339744718
+  }
+}
+pose {
+  name: "torso_link_visual_46"
+  id: 480
+  position {
+    x: -0.115326
+    y: 0.055066
+    z: 0.049673
+  }
+  orientation {
+    x: -0.707105482510614
+    y: 0.70710807985885127
+    z: -9.381873905821078e-07
+    w: 9.381839467835083e-07
+  }
+}
+pose {
+  name: "torso_link_visual_47"
+  id: 481
+  position {
+    x: -0.115326
+    y: 0.055066
+    z: 0.049673
+  }
+  orientation {
+    x: 0.49999999999662564
+    y: -0.50000183660255293
+    z: -0.49999999999662564
+    w: 0.49999816339744962
+  }
+}
+pose {
+  name: "torso_link_visual_48"
+  id: 482
+  position {
+    x: -0.115326
+    y: 0.055075
+    z: 0.101473
+  }
+  orientation {
+    x: -0.707105482510614
+    y: 0.70710807985885127
+    z: -9.381873905821078e-07
+    w: 9.381839467835083e-07
+  }
+}
+pose {
+  name: "torso_link_visual_49"
+  id: 483
+  position {
+    x: -0.115326
+    y: 0.055075
+    z: 0.102573
+  }
+  orientation {
+    x: -0.499999999996628
+    y: 0.50000183660255049
+    z: -0.499999999996628
+    w: 0.49999816339744718
+  }
+}
+pose {
+  name: "torso_link_visual_50"
+  id: 484
+  position {
+    x: -0.105326
+    y: 0.066066
+    z: 0.075423
+  }
+  orientation {
+    x: -0.707105482510614
+    y: 0.70710807985885127
+    z: -9.381873905821078e-07
+    w: 9.381839467835083e-07
+  }
+}
+pose {
+  name: "torso_link_visual_51"
+  id: 485
+  position {
+    x: -0.085576
+    y: 0.051366
+    z: -0.074326
+  }
+  orientation {
+    x: 0.5000009183004327
+    y: -0.499999081697881
+    z: 0.50000091830043236
+    w: 0.49999908169788077
+  }
+}
+pose {
+  name: "torso_link_visual_52"
+  id: 486
+  position {
+    x: -0.229956
+    y: 0.238738
+    z: -0.428489
+  }
+  orientation {
+    x: 0.27777333169873142
+    y: 0.3461015459935019
+    z: -0.59968360302293766
+    w: 0.66590935743787383
+  }
+}
+pose {
+  name: "torso_link_visual_53"
+  id: 487
+  position {
+    x: -0.378135
+    y: 0.074362
+    z: -0.249484
+  }
+  orientation {
+    x: 0.25428019690300996
+    y: -0.18227366084235216
+    z: 0.68796326473245661
+    w: 0.654846883175566
+  }
+}
+pose {
+  name: "torso_link_visual_54"
+  id: 488
+  position {
+    x: -0.378137
+    y: 0.074523
+    z: -0.249367
+  }
+  orientation {
+    x: 0.25428019690300996
+    y: -0.18227366084235216
+    z: 0.68796326473245661
+    w: 0.654846883175566
+  }
+}
+pose {
+  name: "torso_link_visual_55"
+  id: 489
+  position {
+    x: -0.378137
+    y: 0.074523
+    z: -0.249367
+  }
+  orientation {
+    x: 0.25428019690300996
+    y: -0.18227366084235216
+    z: 0.68796326473245661
+    w: 0.654846883175566
+  }
+}
+pose {
+  name: "torso_link_visual_56"
+  id: 490
+  position {
+    x: -0.378135
+    y: 0.074362
+    z: -0.249484
+  }
+  orientation {
+    x: 0.25428019690300996
+    y: -0.18227366084235216
+    z: 0.68796326473245661
+    w: 0.654846883175566
+  }
+}
+pose {
+  name: "torso_link_visual_57"
+  id: 491
+  position {
+    x: -0.378135
+    y: 0.074362
+    z: -0.249484
+  }
+  orientation {
+    x: 0.25428019690300996
+    y: -0.18227366084235216
+    z: 0.68796326473245661
+    w: 0.654846883175566
+  }
+}
+pose {
+  name: "torso_link_visual_58"
+  id: 492
+  position {
+    x: -0.42063
+    y: 0.180715
+    z: -0.398302
+  }
+  orientation {
+    x: -0.94830849516465843
+    y: -0.053192757440127171
+    z: 0.041206516743256053
+    w: 0.310134731257795
+  }
+}
+pose {
+  name: "torso_link_visual_59"
+  id: 493
+  position {
+    x: -0.42063
+    y: 0.180715
+    z: -0.398302
+  }
+  orientation {
+    x: -0.94830849516465843
+    y: -0.053192757440127171
+    z: 0.041206516743256053
+    w: 0.310134731257795
+  }
+}
+pose {
+  name: "torso_link_visual_60"
+  id: 494
+  position {
+    x: -0.42063
+    y: 0.180715
+    z: -0.398302
+  }
+  orientation {
+    x: -0.94830849516465843
+    y: -0.053192757440127171
+    z: 0.041206516743256053
+    w: 0.310134731257795
+  }
+}
+pose {
+  name: "torso_link_visual_61"
+  id: 495
+  position {
+    x: -0.396648
+    y: 0.203202
+    z: -0.385293
+  }
+  orientation {
+    x: 0.68796373746041239
+    y: -0.65484652299084189
+    z: -0.25427901562734406
+    w: -0.1822748185512599
+  }
+}
+pose {
+  name: "torso_link_visual_62"
+  id: 496
+  position {
+    x: -0.426728
+    y: 0.172761
+    z: -0.388313
+  }
+  orientation {
+    x: 0.18168823432881837
+    y: 0.69969300014463576
+    z: 0.25690939819907682
+    w: 0.64141768931957532
+  }
+}
+pose {
+  name: "torso_link_visual_63"
+  id: 497
+  position {
+    x: -0.364299
+    y: 0.180727
+    z: -0.391158
+  }
+  orientation {
+    x: 0.70816937395008184
+    y: -0.63294080307746658
+    z: -0.2484368054686969
+    w: -0.19016106669691865
+  }
+}
+pose {
+  name: "torso_link_visual_64"
+  id: 498
+  position {
+    x: -0.365785
+    y: 0.180537
+    z: -0.39109
+  }
+  orientation {
+    x: -0.94830849516465843
+    y: -0.053192757440127171
+    z: 0.041206516743256053
+    w: 0.310134731257795
+  }
+}
+pose {
+  name: "torso_link_visual_65"
+  id: 499
+  position {
+    x: -0.421278
+    y: 0.173456
+    z: -0.388561
+  }
+  orientation {
+    x: -0.32507914599137094
+    y: 0.31309374082929531
+    z: 0.67642075869086926
+    w: 0.58202303692131274
+  }
+}
+pose {
+  name: "torso_link_visual_66"
+  id: 500
+  position {
+    x: -0.271676
+    y: 0.062366
+    z: 0.030673
+  }
+  orientation {
+    x: 4.3297836457868593e-17
+    y: 4.3297995499995911e-17
+    z: 0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "torso_link_visual_67"
+  id: 501
+  position {
+    x: -0.217176
+    y: 0.030713
+    z: -0.028717
+  }
+  orientation {
+    x: 4.3297836457868864e-17
+    y: 4.329799549999564e-17
+    z: 0.70710807985947366
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "torso_link_visual_68"
+  id: 502
+  position {
+    x: -0.115176
+    y: 0.059279
+    z: 0.122693
+  }
+  orientation {
+    x: -1.6697412764221967e-08
+    y: -0.012584767787983689
+    z: 0.999920808673348
+    w: 1.3266898259414392e-06
+  }
+}
+pose {
+  name: "torso_link_visual_69"
+  id: 503
+  position {
+    x: -0.115176
+    y: 0.059279
+    z: 0.122693
+  }
+  orientation {
+    x: -1.6697412635932127e-08
+    y: -0.012584767787983689
+    z: 0.999920808673348
+    w: 1.3266898259430539e-06
+  }
+}
+pose {
+  name: "torso_link_visual_70"
+  id: 504
+  position {
+    x: -0.115221
+    y: 0.141313
+    z: 0.163763
+  }
+  orientation {
+    x: -1.6697437484664167e-08
+    y: 0.012584767787983689
+    z: -0.999920808673348
+    w: 1.3266898256303134e-06
+  }
+}
+pose {
+  name: "torso_link_visual_71"
+  id: 505
+  position {
+    x: -0.115176
+    y: 0.059279
+    z: 0.122693
+  }
+  orientation {
+    x: -1.6697412764221967e-08
+    y: -0.012584767787983689
+    z: 0.999920808673348
+    w: 1.3266898259414392e-06
+  }
+}
+pose {
+  name: "torso_link_visual_72"
+  id: 506
+  position {
+    x: -0.115176
+    y: 0.098666
+    z: 0.123693
+  }
+  orientation {
+    x: 0.012584767787994767
+    y: 3.5509634395733e-15
+    z: 1.0482699635774937e-15
+    w: 0.99992080867422817
+  }
+}
+pose {
+  name: "torso_link_visual_73"
+  id: 507
+  position {
+    x: -0.115176
+    y: 0.058366
+    z: 0.108173
+  }
+  orientation {
+    x: -3.0616149999973045e-17
+    y: -4.0621413472413848e-23
+    z: -0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_74"
+  id: 508
+  position {
+    x: -0.115026
+    y: 0.052282
+    z: 0.400603
+  }
+  orientation {
+    x: -0.99992079323454675
+    y: 1.2221523278656971e-15
+    z: -7.1026945839232351e-15
+    w: 0.012585994485730305
+  }
+}
+pose {
+  name: "torso_link_visual_75"
+  id: 509
+  position {
+    x: -0.115326
+    y: 0.059279
+    z: 0.122693
+  }
+  orientation {
+    x: -1.6697409371430666e-08
+    y: 0.012584767787983689
+    z: -0.999920808673348
+    w: 1.32668982598414e-06
+  }
+}
+pose {
+  name: "torso_link_visual_76"
+  id: 510
+  position {
+    x: -0.115676
+    y: 0.087786
+    z: 0.170423
+  }
+  orientation {
+    x: -0.70705080169037693
+    y: -0.0089000025087894175
+    z: 0.70705080169037715
+    w: 0.0088948082235638659
+  }
+}
+pose {
+  name: "torso_link_visual_77"
+  id: 511
+  position {
+    x: -0.141426
+    y: 0.078066
+    z: 0.159173
+  }
+  orientation {
+    x: -0.50625155740542216
+    y: -0.5062521069772139
+    z: 0.49366876587119918
+    w: -0.49366923583399774
+  }
+}
+pose {
+  name: "torso_link_visual_78"
+  id: 512
+  position {
+    x: -0.089626
+    y: 0.078066
+    z: 0.159183
+  }
+  orientation {
+    x: -0.70705080169037693
+    y: -0.0089000025087894175
+    z: 0.70705080169037715
+    w: 0.0088948082235638659
+  }
+}
+pose {
+  name: "torso_link_visual_79"
+  id: 513
+  position {
+    x: -0.141426
+    y: 0.078066
+    z: 0.159173
+  }
+  orientation {
+    x: -0.70705080169037693
+    y: -0.0089000025087894175
+    z: 0.70705080169037715
+    w: 0.0088948082235638659
+  }
+}
+pose {
+  name: "torso_link_visual_80"
+  id: 514
+  position {
+    x: -0.088526
+    y: 0.078066
+    z: 0.159183
+  }
+  orientation {
+    x: -0.49366990752547329
+    y: 0.49366809417812979
+    z: 0.50625276197389235
+    w: 0.5062509024072247
+  }
+}
+pose {
+  name: "torso_link_visual_81"
+  id: 515
+  position {
+    x: -0.115676
+    y: 0.087786
+    z: 0.170423
+  }
+  orientation {
+    x: -0.70705080169037693
+    y: -0.0089000025087894175
+    z: 0.70705080169037715
+    w: 0.0088948082235638659
+  }
+}
+pose {
+  name: "torso_link_visual_82"
+  id: 516
+  position {
+    x: -0.115676
+    y: 0.087786
+    z: 0.170423
+  }
+  orientation {
+    x: -0.70705080169037693
+    y: -0.0089000025087894175
+    z: 0.70705080169037715
+    w: 0.0088948082235638659
+  }
+}
+pose {
+  name: "torso_link_visual_83"
+  id: 517
+  position {
+    x: -0.089626
+    y: 0.078066
+    z: 0.159183
+  }
+  orientation {
+    x: -0.70705080169037693
+    y: -0.0089000025087894175
+    z: 0.70705080169037715
+    w: 0.0088948082235638659
+  }
+}
+pose {
+  name: "torso_link_visual_84"
+  id: 518
+  position {
+    x: -0.088526
+    y: 0.078066
+    z: 0.159183
+  }
+  orientation {
+    x: -0.49366990752547329
+    y: 0.49366809417812979
+    z: 0.50625276197389235
+    w: 0.5062509024072247
+  }
+}
+pose {
+  name: "torso_link_visual_85"
+  id: 519
+  position {
+    x: -0.141426
+    y: 0.078066
+    z: 0.159173
+  }
+  orientation {
+    x: -0.70705080169037693
+    y: -0.0089000025087894175
+    z: 0.70705080169037715
+    w: 0.0088948082235638659
+  }
+}
+pose {
+  name: "torso_link_visual_86"
+  id: 520
+  position {
+    x: -0.141426
+    y: 0.078066
+    z: 0.159173
+  }
+  orientation {
+    x: -0.50625155740542216
+    y: -0.5062521069772139
+    z: 0.49366876587119918
+    w: -0.49366923583399774
+  }
+}
+pose {
+  name: "torso_link_visual_87"
+  id: 521
+  position {
+    x: -0.115176
+    y: 0.059279
+    z: 0.122693
+  }
+  orientation {
+    x: -1.6697412764221967e-08
+    y: -0.012584767787983689
+    z: 0.999920808673348
+    w: 1.3266898259414392e-06
+  }
+}
+pose {
+  name: "torso_link_visual_88"
+  id: 522
+  position {
+    x: -0.115176
+    y: 0.058366
+    z: 0.108173
+  }
+  orientation {
+    x: -3.0616149999973045e-17
+    y: -4.0621413878413851e-23
+    z: -0.99999999999911982
+    w: 1.3267948966775328e-06
+  }
+}
+pose {
+  name: "torso_link_visual_89"
+  id: 523
+  position {
+    x: -0.115176
+    y: 0.059279
+    z: 0.122693
+  }
+  orientation {
+    x: -1.6697412764221967e-08
+    y: -0.012584767787983689
+    z: 0.999920808673348
+    w: 1.3266898259414392e-06
+  }
+}
+pose {
+  name: "torso_link_visual_90"
+  id: 524
+  position {
+    x: -0.175676
+    y: 0.145366
+    z: -0.044081
+  }
+  orientation {
+    x: 0.70710807985947366
+    y: -1.0837453976021353e-16
+    z: -1.5167183671609703e-16
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "torso_link_visual_91"
+  id: 525
+  position {
+    x: -0.175676
+    y: 0.145366
+    z: -0.044081
+  }
+  orientation {
+    x: 0.70710807985947366
+    y: -1.0837453976021353e-16
+    z: -1.5167183671609703e-16
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "torso_link_visual_92"
+  id: 526
+  position {
+    x: -0.175676
+    y: 0.145366
+    z: -0.044081
+  }
+  orientation {
+    x: 0.70710807985947366
+    y: -1.0837453976021353e-16
+    z: -1.5167183671609703e-16
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "torso_link_visual_93"
+  id: 527
+  position {
+    x: -0.175676
+    y: 0.145366
+    z: -0.044081
+  }
+  orientation {
+    x: 0.70710807985947366
+    y: -1.0837453976021353e-16
+    z: -1.5167183671609703e-16
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "torso_link_visual_94"
+  id: 528
+  position {
+    x: -0.175676
+    y: 0.145366
+    z: -0.044081
+  }
+  orientation {
+    x: 0.70710807985947366
+    y: -1.0837453976021353e-16
+    z: -1.5167183671609703e-16
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "torso_link_visual_95"
+  id: 529
+  position {
+    x: -0.170376
+    y: 0.145816
+    z: 0.087963
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: 9.381856686843883e-07
+    z: -0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_96"
+  id: 530
+  position {
+    x: -0.059576
+    y: 0.145816
+    z: -0.102288
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: -9.381856686843883e-07
+    z: 0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_97"
+  id: 531
+  position {
+    x: -0.176176
+    y: 0.141741
+    z: -0.004738
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: 9.381856686843883e-07
+    z: -0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_98"
+  id: 532
+  position {
+    x: -0.054912
+    y: 0.145266
+    z: 0.015883
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: -9.381856686843883e-07
+    z: 0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_99"
+  id: 533
+  position {
+    x: -0.054912
+    y: 0.145266
+    z: -0.007383
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: -9.381856686843883e-07
+    z: 0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_100"
+  id: 534
+  position {
+    x: -0.175676
+    y: 0.145366
+    z: -0.044081
+  }
+  orientation {
+    x: 0.70710807985947366
+    y: -1.0837453976021353e-16
+    z: -1.5167183671609703e-16
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "torso_link_visual_101"
+  id: 535
+  position {
+    x: -0.137617
+    y: 0.139366
+    z: 0.031373
+  }
+  orientation {
+    x: 0.5000009183004327
+    y: -0.499999081697881
+    z: 0.50000091830043236
+    w: 0.49999908169788077
+  }
+}
+pose {
+  name: "torso_link_visual_102"
+  id: 536
+  position {
+    x: -0.175672
+    y: 0.145171
+    z: -0.026288
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: -9.381856686843883e-07
+    z: 0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_103"
+  id: 537
+  position {
+    x: -0.175676
+    y: 0.145366
+    z: -0.044081
+  }
+  orientation {
+    x: 0.70710807985947366
+    y: -1.0837453976021353e-16
+    z: -1.5167183671609703e-16
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "torso_link_visual_104"
+  id: 538
+  position {
+    x: -0.175676
+    y: 0.145366
+    z: -0.044081
+  }
+  orientation {
+    x: 0.70710807985947366
+    y: -1.0837453976021353e-16
+    z: -1.5167183671609703e-16
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "torso_link_visual_105"
+  id: 539
+  position {
+    x: -0.175672
+    y: 0.145171
+    z: -0.026288
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: -9.381856686843883e-07
+    z: 0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_106"
+  id: 540
+  position {
+    x: -0.054912
+    y: 0.145266
+    z: 0.027513
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: -9.381856686843883e-07
+    z: 0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_107"
+  id: 541
+  position {
+    x: -0.175676
+    y: 0.145366
+    z: -0.044081
+  }
+  orientation {
+    x: 0.70710807985947366
+    y: -1.0837453976021353e-16
+    z: -1.5167183671609703e-16
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "torso_link_visual_108"
+  id: 542
+  position {
+    x: -0.175672
+    y: 0.145171
+    z: -0.026288
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: -9.381856686843883e-07
+    z: 0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_109"
+  id: 543
+  position {
+    x: -0.175676
+    y: 0.145366
+    z: -0.044081
+  }
+  orientation {
+    x: 0.70710807985947366
+    y: -1.0837453976021353e-16
+    z: -1.5167183671609703e-16
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "torso_link_visual_110"
+  id: 544
+  position {
+    x: -0.175672
+    y: 0.145171
+    z: -0.026288
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: -9.381856686843883e-07
+    z: 0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_111"
+  id: 545
+  position {
+    x: -0.054912
+    y: 0.145266
+    z: 0.00425
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: -9.381856686843883e-07
+    z: 0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_112"
+  id: 546
+  position {
+    x: -0.054912
+    y: 0.145266
+    z: -0.019017
+  }
+  orientation {
+    x: 0.70710678118592529
+    y: -9.381856686843883e-07
+    z: 0.707106781185925
+    w: 9.3818566868438787e-07
+  }
+}
+pose {
+  name: "torso_link_visual_113"
+  id: 547
+  position {
+    x: -0.175676
+    y: 0.145366
+    z: -0.044081
+  }
+  orientation {
+    x: 0.70710807985947366
+    y: -1.0837453976021353e-16
+    z: -1.5167183671609703e-16
+    w: 0.70710548251123639
+  }
+}
+pose {
+  name: "right_shoulder_link_1_visual"
+  id: 550
+  position {
+    x: -0.0005
+    y: -0.008094
+    z: 0.005869
+  }
+  orientation {
+    x: -0.21826141294431703
+    y: -0.21826061122685347
+    z: -0.67257995228976464
+    w: 0.67257748177018883
+  }
+}
+pose {
+  name: "right_shoulder_link_1_visual_1"
+  id: 551
+  position {
+    x: -0.0005
+    y: -0.008094
+    z: 0.005869
+  }
+  orientation {
+    x: -0.21826141269314697
+    y: -0.21826061147802445
+    z: -0.6725799522082565
+    w: 0.67257748185169719
+  }
+}
+pose {
+  name: "right_shoulder_link_1_visual_2"
+  id: 552
+  position {
+    x: -0.0005
+    y: -0.008094
+    z: 0.005869
+  }
+  orientation {
+    x: -0.2182614129443167
+    y: -0.21826061122685381
+    z: -0.67257995228976453
+    w: 0.672577481770189
+  }
+}
+pose {
+  name: "right_shoulder_link_1_visual_3"
+  id: 553
+  position {
+    x: -0.0005
+    y: -0.008094
+    z: 0.005869
+  }
+  orientation {
+    x: -0.21826141294431703
+    y: -0.21826061122685347
+    z: -0.67257995228976464
+    w: 0.67257748177018883
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual"
+  id: 555
+  position {
+    x: -0.0689
+    y: -0.061
+  }
+  orientation {
+    x: 0.67550228295403925
+    y: -0.67550531890473975
+    z: 0.20903128889090378
+    w: 0.20903384922039472
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_1"
+  id: 556
+  position {
+    x: -0.02315
+    y: -0.061
+  }
+  orientation {
+    x: -0.707105482510614
+    y: 0.70710807985885127
+    z: -9.38187391868239e-07
+    w: 9.3818394549737231e-07
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_2"
+  id: 557
+  position {
+    x: -0.02365
+    y: -0.051
+  }
+  orientation {
+    x: 0.707105482510614
+    y: 0.70710807985885127
+    z: 9.3818739175699893e-07
+    w: 9.3818394560861283e-07
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_3"
+  id: 558
+  position {
+    x: -0.03415
+    y: -0.061
+  }
+  orientation {
+    x: 0.077158424403640749
+    y: 0.077158140985444074
+    z: -0.70288577603057179
+    w: 0.7028831941916942
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_4"
+  id: 559
+  position {
+    x: -0.07815
+    y: -0.082653
+    z: -0.05939
+  }
+  orientation {
+    x: 0.707105482510614
+    y: 0.70710807985885127
+    z: 9.3818739170087315e-07
+    w: 9.3818394566473882e-07
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_5"
+  id: 560
+  position {
+    x: -0.04565
+    y: -0.060999
+  }
+  orientation {
+    x: 0.57013609266187038
+    y: -0.5701370769909847
+    z: -0.41826339169275
+    w: -0.4182634151513952
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_6"
+  id: 561
+  position {
+    x: 0.068533
+    y: -0.03125
+    z: 0.04612
+  }
+  orientation {
+    x: -0.30958000094745242
+    y: -0.12270894572934556
+    z: -0.69637920795584807
+    w: 0.6357348003516512
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_7"
+  id: 562
+  position {
+    x: 0.068533
+    y: -0.03125
+    z: 0.04612
+  }
+  orientation {
+    x: -0.30958000094745242
+    y: -0.12270894572934556
+    z: -0.69637920795584807
+    w: 0.6357348003516512
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_8"
+  id: 563
+  position {
+    x: 0.068533
+    y: -0.03125
+    z: 0.04612
+  }
+  orientation {
+    x: -0.30958000094745242
+    y: -0.12270894572934556
+    z: -0.69637920795584807
+    w: 0.6357348003516512
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_9"
+  id: 564
+  position {
+    x: 0.100726
+    y: 0.0348
+    z: 0.13717
+  }
+  orientation {
+    x: 0.44991242155779221
+    y: 0.063114200350269864
+    z: -0.12375573571887287
+    w: 0.8822017504623475
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_10"
+  id: 565
+  position {
+    x: 0.031801
+    y: -0.11228
+    z: -0.05366
+  }
+  orientation {
+    x: 0.23062850068758917
+    y: -0.57918414133706642
+    z: -0.40564420008039909
+    w: 0.66843773684268681
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_11"
+  id: 566
+  position {
+    x: 0.094535
+    y: 0.022098
+    z: 0.11966
+  }
+  orientation {
+    x: -0.5834480040940937
+    y: 0.43324441280569626
+    z: -0.66471913002057492
+    w: 0.1733095019782703
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_12"
+  id: 567
+  position {
+    x: 0.068533
+    y: -0.03125
+    z: 0.04612
+  }
+  orientation {
+    x: -0.30958000094745242
+    y: -0.12270894572934556
+    z: -0.69637920795584807
+    w: 0.6357348003516512
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_13"
+  id: 568
+  position {
+    x: 0.068533
+    y: -0.03125
+    z: 0.04612
+  }
+  orientation {
+    x: -0.30958000094745242
+    y: -0.12270894572934556
+    z: -0.69637920795584807
+    w: 0.6357348003516512
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_14"
+  id: 569
+  position {
+    x: 0.068533
+    y: -0.03125
+    z: 0.04612
+  }
+  orientation {
+    x: -0.696376851512814
+    y: -0.63573741191177124
+    z: 0.30957944009727878
+    w: -0.12271020349538345
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_15"
+  id: 570
+  position {
+    x: 0.05285
+    y: -0.040561
+    z: -0.01483
+  }
+  orientation {
+    x: -0.30567456199125853
+    y: 0.13213699198789641
+    z: -0.04288006247155092
+    w: 0.94194701429659988
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_16"
+  id: 571
+  position {
+    x: 0.088138
+    y: 0.008973
+    z: 0.10157
+  }
+  orientation {
+    x: -0.86034869903082467
+    y: 0.253318959268037
+    z: -0.20509068137346514
+    w: 0.39187680891460519
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_17"
+  id: 572
+  position {
+    x: 0.05285
+    y: -0.066666
+    z: 0.00411
+  }
+  orientation {
+    x: -0.29093650175200131
+    y: -0.31773565517081648
+    z: 0.10310969930963805
+    w: 0.896531313055911
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_18"
+  id: 573
+  position {
+    x: 0.097699
+    y: 0.02859
+    z: 0.12861
+  }
+  orientation {
+    x: -0.88220182838946182
+    y: 0.1237557247871694
+    z: 0.063114221785393929
+    w: 0.44991226875593993
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_19"
+  id: 574
+  position {
+    x: 0.068533
+    y: -0.03125
+    z: 0.04612
+  }
+  orientation {
+    x: -0.30958000094745242
+    y: -0.12270894572934556
+    z: -0.69637920795584807
+    w: 0.6357348003516512
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_20"
+  id: 575
+  position {
+    x: 0.068533
+    y: -0.03125
+    z: 0.04612
+  }
+  orientation {
+    x: -0.30958000094745242
+    y: -0.12270894572934556
+    z: -0.69637920795584807
+    w: 0.6357348003516512
+  }
+}
+pose {
+  name: "right_shoulder_link_2_visual_21"
+  id: 576
+  position {
+    x: 0.068533
+    y: -0.03125
+    z: 0.04612
+  }
+  orientation {
+    x: 0.63573485397247764
+    y: -0.69637918670202215
+    z: 0.12270906634577633
+    w: 0.30957989083493603
+  }
+}
+pose {
+  name: "right_elbow_link_1_visual"
+  id: 578
+  position {
+    x: 0.002024
+    y: 0.033695
+    z: 0.09913
+  }
+  orientation {
+    x: -0.276814553978051
+    y: -0.18512380096578748
+    z: -0.81459046527313428
+    w: 0.47491605037944434
+  }
+}
+pose {
+  name: "right_elbow_link_1_visual_1"
+  id: 579
+  position {
+    x: 0.002024
+    y: 0.033695
+    z: 0.09913
+  }
+  orientation {
+    x: -0.276814553978051
+    y: -0.18512380096578748
+    z: -0.81459046527313428
+    w: 0.47491605037944434
+  }
+}
+pose {
+  name: "right_elbow_link_1_visual_2"
+  id: 580
+  position {
+    x: 0.033973
+    y: 0.099529
+    z: 0.18978
+  }
+  orientation {
+    x: 0.41378380719059937
+    y: -0.12399286026646081
+    z: -0.21568469929232784
+    w: 0.87572189763701414
+  }
+}
+pose {
+  name: "right_elbow_link_1_visual_3"
+  id: 581
+  position {
+    x: 0.033973
+    y: 0.099529
+    z: 0.18978
+  }
+  orientation {
+    x: 0.41378388077997286
+    y: -0.12399260979559848
+    z: -0.21568428255340236
+    w: 0.87572200096958042
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual"
+  id: 583
+  position {
+    x: 0.043256
+    y: 0.120258
+    z: 0.5309
+  }
+  orientation {
+    x: -0.054026751748346945
+    y: -0.0061003865747743941
+    z: -0.24870999639768759
+    w: 0.967050791360528
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual_1"
+  id: 584
+  position {
+    x: 0.041129
+    y: 0.115598
+    z: 0.5212
+  }
+  orientation {
+    x: -0.011793342768274229
+    y: -0.01694311303306463
+    z: -0.24820718753744467
+    w: 0.96848698496254992
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual_2"
+  id: 585
+  position {
+    x: 0.037607
+    y: 0.116094
+    z: 0.60716
+  }
+  orientation {
+    x: -0.62271444207299431
+    y: -0.3627143815780523
+    z: 0.357565603914369
+    w: 0.59397966289050941
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual_3"
+  id: 586
+  position {
+    x: 0.041129
+    y: 0.115598
+    z: 0.5212
+  }
+  orientation {
+    x: -0.011793342768274229
+    y: -0.01694311303306463
+    z: -0.24820718753744467
+    w: 0.96848698496254992
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual_4"
+  id: 587
+  position {
+    x: 0.074209
+    y: 0.177807
+    z: 0.46687
+  }
+  orientation {
+    x: 0.9670507196772582
+    y: -0.24871000449143046
+    z: 0.0061000565876150881
+    w: 0.054028034826354078
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual_5"
+  id: 588
+  position {
+    x: 0.017644
+    y: 0.127699
+    z: 0.47315
+  }
+  orientation {
+    x: 0.63184456826765545
+    y: 0.38923396738888255
+    z: 0.58391679790625528
+    w: -0.32910565674912973
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual_6"
+  id: 589
+  position {
+    x: 0.037419
+    y: 0.116313
+    z: 0.61416
+  }
+  orientation {
+    x: -0.69316279049060958
+    y: 0.1635283740660376
+    z: -0.18748959411076005
+    w: 0.676484640516525
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual_7"
+  id: 590
+  position {
+    x: 0.03719
+    y: 0.116579
+    z: 0.62265
+  }
+  orientation {
+    x: 0.67648372083107655
+    y: -0.1874893771419828
+    z: -0.16352862282613032
+    w: 0.69316368804636808
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual_8"
+  id: 591
+  position {
+    x: 0.041129
+    y: 0.115598
+    z: 0.5212
+  }
+  orientation {
+    x: -0.011793342768274229
+    y: -0.01694311303306463
+    z: -0.24820718753744467
+    w: 0.96848698496254992
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual_9"
+  id: 592
+  position {
+    x: 0.041102
+    y: 0.115629
+    z: 0.5222
+  }
+  orientation {
+    x: -0.011793342768274229
+    y: -0.01694311303306463
+    z: -0.24820718753744467
+    w: 0.96848698496254992
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual_10"
+  id: 593
+  position {
+    x: 0.041129
+    y: 0.115598
+    z: 0.5212
+  }
+  orientation {
+    x: -0.24820943044828128
+    y: -0.968486414782219
+    z: 0.011792778625717348
+    w: -0.016943240277716032
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual_11"
+  id: 594
+  position {
+    x: 0.041129
+    y: 0.115598
+    z: 0.5212
+  }
+  orientation {
+    x: -0.011793342768274229
+    y: -0.01694311303306463
+    z: -0.24820718753744467
+    w: 0.96848698496254992
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual_12"
+  id: 595
+  position {
+    x: 0.04955
+    y: 0.130937
+    z: 0.52095
+  }
+  orientation {
+    x: -0.016943085592328995
+    y: 0.011793382191391245
+    z: 0.96848640743271119
+    w: 0.2482094410073469
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual_13"
+  id: 596
+  position {
+    x: 0.040858
+    y: 0.115519
+    z: 0.52119
+  }
+  orientation {
+    x: -0.011793342768274229
+    y: -0.01694311303306463
+    z: -0.24820718753744467
+    w: 0.96848698496254992
+  }
+}
+pose {
+  name: "right_elbow_link_2_visual_14"
+  id: 597
+  position {
+    x: 0.045901
+    y: 0.112207
+    z: 0.47439
+  }
+  orientation {
+    x: 0.19683009306838134
+    y: -0.36689221526137883
+    z: 0.47018432765253765
+    w: 0.77818681232286491
+  }
+}
+pose {
+  name: "wrist_link_1_visual"
+  id: 599
+  position {
+    x: 0.005027
+    y: -0.00289
+    z: -0.101358
+  }
+  orientation {
+    x: -0.0018833441597095654
+    y: -0.020557371856133315
+    z: -0.6942636193774363
+    w: 0.71942468284462346
+  }
+}
+pose {
+  name: "wrist_link_1_visual_1"
+  id: 600
+  position {
+    x: -0.00169
+    y: -0.021575
+    z: 0.085702
+  }
+  orientation {
+    x: -0.020557334644075068
+    y: 0.0018834074063120588
+    z: 0.71942376160439359
+    w: 0.69426457493369054
+  }
+}
+pose {
+  name: "wrist_link_1_visual_2"
+  id: 601
+  position {
+    x: 0.005034
+    y: -0.00309
+    z: -0.101358
+  }
+  orientation {
+    x: -0.0018833441597095654
+    y: -0.020557371856133315
+    z: -0.6942636193774363
+    w: 0.71942468284462346
+  }
+}
+pose {
+  name: "wrist_link_1_visual_3"
+  id: 602
+  position {
+    x: -0.003317
+    y: 0.033487
+    z: 0.071922
+  }
+  orientation {
+    x: 0.013204563605062418
+    y: -0.0158679294472037
+    z: -0.99962855073202117
+    w: 0.017793506581267233
+  }
+}
+pose {
+  name: "wrist_link_1_visual_4"
+  id: 603
+  position {
+    x: -0.001296
+    y: -0.023948
+    z: 0.073772
+  }
+  orientation {
+    x: 0.92858953704768954
+    y: 0.010366228711893018
+    z: -0.37034179927467703
+    w: 0.021470088445212109
+  }
+}
+pose {
+  name: "wrist_link_1_visual_5"
+  id: 604
+  position {
+    x: 0.005027
+    y: -0.00289
+    z: -0.101358
+  }
+  orientation {
+    x: -0.0018833441597095654
+    y: -0.020557371856133315
+    z: -0.6942636193774363
+    w: 0.71942468284462346
+  }
+}
+pose {
+  name: "wrist_link_1_visual_6"
+  id: 605
+  position {
+    x: 0.005034
+    y: -0.00309
+    z: -0.101358
+  }
+  orientation {
+    x: -0.0018833441597095654
+    y: -0.020557371856133315
+    z: -0.6942636193774363
+    w: 0.71942468284462346
+  }
+}
+pose {
+  name: "wrist_link_1_visual_7"
+  id: 606
+  position {
+    x: 0.005027
+    y: -0.00289
+    z: -0.101358
+  }
+  orientation {
+    x: -0.0018833441597095654
+    y: -0.020557371856133315
+    z: -0.6942636193774363
+    w: 0.71942468284462346
+  }
+}
+pose {
+  name: "wrist_link_1_visual_8"
+  id: 607
+  position {
+    x: -0.003264
+    y: 0.031989
+    z: 0.071972
+  }
+  orientation {
+    x: 0.6942645558809597
+    y: 0.719423763349617
+    z: -0.0018827406480405459
+    w: 0.02055797808493114
+  }
+}
+pose {
+  name: "wrist_link_1_visual_9"
+  id: 608
+  position {
+    x: -0.00169
+    y: -0.021575
+    z: 0.085702
+  }
+  orientation {
+    x: 0.6942645558809597
+    y: 0.719423763349617
+    z: -0.0018827406480405459
+    w: 0.02055797808493114
+  }
+}
+pose {
+  name: "wrist_link_1_visual_10"
+  id: 609
+  position {
+    x: -0.00169
+    y: -0.021575
+    z: 0.085702
+  }
+  orientation {
+    x: -0.0205573693573038
+    y: 0.001883371435123977
+    z: 0.719423761698563
+    w: 0.69426457390582308
+  }
+}
+pose {
+  name: "wrist_link_1_visual_11"
+  id: 610
+  position {
+    x: -0.00169
+    y: -0.021575
+    z: 0.085702
+  }
+  orientation {
+    x: 0.6942645558809597
+    y: 0.719423763349617
+    z: -0.0018827406480405459
+    w: 0.02055797808493114
+  }
+}
+pose {
+  name: "wrist_link_1_visual_12"
+  id: 611
+  position {
+    x: -0.001313
+    y: -0.023448
+    z: 0.073762
+  }
+  orientation {
+    x: 0.42604330623965747
+    y: -0.54989980250758341
+    z: 0.58302214713397715
+    w: 0.41974097293663082
+  }
+}
+pose {
+  name: "ee_link_visual"
+  id: 613
+  position {
+    x: 0.001222
+    y: -0.001054
+    z: 0.03905
+  }
+  orientation {
+    x: 0.99968150505148379
+    y: 0.017447465384256188
+    z: -0.0082793704508079841
+    w: 0.016245812832966573
+  }
+}
+pose {
+  name: "shoulder_link_1_link_visual"
+  id: 615
+  position {
+    x: 0.0005
+    y: 0.009992
+    z: -0.0004
+  }
+  orientation {
+    x: -0.014333124382580173
+    y: 0.014333071734164553
+    z: 0.70696279827724
+    w: 0.70696020146265048
+  }
+}
+pose {
+  name: "shoulder_link_1_link_visual_1"
+  id: 616
+  position {
+    x: 0.0005
+    y: 0.009992
+    z: -0.0004
+  }
+  orientation {
+    x: -0.014333124382576501
+    y: 0.014333071734168226
+    z: 0.70696279827723985
+    w: 0.70696020146265059
+  }
+}
+pose {
+  name: "shoulder_link_1_link_visual_2"
+  id: 617
+  position {
+    x: 0.0005
+    y: 0.009992
+    z: -0.0004
+  }
+  orientation {
+    x: -0.014333124382580279
+    y: 0.014333071734164444
+    z: 0.70696279827724
+    w: 0.70696020146265048
+  }
+}
+pose {
+  name: "shoulder_link_1_link_visual_3"
+  id: 618
+  position {
+    x: 0.0005
+    y: 0.009992
+    z: -0.0004
+  }
+  orientation {
+    x: -0.014333124382576787
+    y: 0.014333071734167939
+    z: 0.70696279827723985
+    w: 0.70696020146265059
+  }
+}
+pose {
+  name: "shoulder_link_2_visual"
+  id: 620
+  position {
+    x: -0.057372
+    y: -0.060305
+    z: -0.056894
+  }
+  orientation {
+    x: 0.013745000089631386
+    y: 0.042388699328433616
+    z: 0.7058364068695846
+    w: 0.70697188054350091
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_1"
+  id: 621
+  position {
+    x: -0.057372
+    y: -0.060305
+    z: -0.056894
+  }
+  orientation {
+    x: 0.013745000089631386
+    y: 0.042388699328433616
+    z: 0.7058364068695846
+    w: 0.70697188054350091
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_2"
+  id: 622
+  position {
+    x: -0.057372
+    y: -0.060305
+    z: -0.056894
+  }
+  orientation {
+    x: 0.013745000089631386
+    y: 0.042388699328433616
+    z: 0.7058364068695846
+    w: 0.70697188054350091
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_3"
+  id: 623
+  position {
+    x: -0.06487
+    y: -0.064123
+    z: -0.151019
+  }
+  orientation {
+    x: -0.01762820286726359
+    y: -0.72019760027206281
+    z: -0.69245018299722472
+    w: 0.038953909856941069
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_4"
+  id: 624
+  position {
+    x: -0.066655
+    y: -0.065032
+    z: -0.17343
+  }
+  orientation {
+    x: 0.027498900746993973
+    y: -0.692083971728905
+    z: 0.72072438180686049
+    w: 0.028634804046298191
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_5"
+  id: 625
+  position {
+    x: -0.063025
+    y: -0.063184
+    z: -0.127861
+  }
+  orientation {
+    x: 0.235424561536293
+    y: 0.69563789806540033
+    z: 0.65143865428208159
+    w: 0.19050162809736421
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_6"
+  id: 626
+  position {
+    x: -0.065782
+    y: -0.064588
+    z: -0.162473
+  }
+  orientation {
+    x: 0.028634703037002454
+    y: 0.72072692396837534
+    z: 0.69208132435575875
+    w: -0.027499005928316816
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_7"
+  id: 627
+  position {
+    x: -0.05285
+    y: -0.054005
+    z: -0.00028
+  }
+  orientation {
+    x: 0.42608192493150171
+    y: -0.018336917957815658
+    z: -0.90445747108475816
+    w: 0.0086390789693268216
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_8"
+  id: 628
+  position {
+    x: -0.057372
+    y: -0.060305
+    z: -0.056894
+  }
+  orientation {
+    x: 0.013745000089631386
+    y: 0.042388699328433616
+    z: 0.7058364068695846
+    w: 0.70697188054350091
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_9"
+  id: 629
+  position {
+    x: -0.05285
+    y: -0.086229
+    z: 0.00102
+  }
+  orientation {
+    x: 0.039692525189123036
+    y: 0.020254162462857623
+    z: 0.99900631997894052
+    w: 0.0008031121800567355
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_10"
+  id: 630
+  position {
+    x: -0.057372
+    y: -0.060305
+    z: -0.056894
+  }
+  orientation {
+    x: 0.013745000089631386
+    y: 0.042388699328433616
+    z: 0.7058364068695846
+    w: 0.70697188054350091
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_11"
+  id: 631
+  position {
+    x: -0.057372
+    y: -0.060305
+    z: -0.056894
+  }
+  orientation {
+    x: 0.013745000089631386
+    y: 0.042388699328433616
+    z: 0.7058364068695846
+    w: 0.70697188054350091
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_12"
+  id: 632
+  position {
+    x: -0.057372
+    y: -0.060305
+    z: -0.056894
+  }
+  orientation {
+    x: 0.013745000089631386
+    y: 0.042388699328433616
+    z: 0.7058364068695846
+    w: 0.70697188054350091
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_13"
+  id: 633
+  position {
+    x: 0.023409
+    y: -0.051254
+    z: -0.00647
+  }
+  orientation {
+    x: 0.013745000089631386
+    y: 0.042388699328433616
+    z: 0.7058364068695846
+    w: 0.70697188054350091
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_14"
+  id: 634
+  position {
+    x: -0.057372
+    y: -0.060305
+    z: -0.056894
+  }
+  orientation {
+    x: 0.013745000089631386
+    y: 0.042388699328433616
+    z: 0.7058364068695846
+    w: 0.70697188054350091
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_15"
+  id: 635
+  position {
+    x: -0.057372
+    y: -0.060305
+    z: -0.056894
+  }
+  orientation {
+    x: 0.013745000089631386
+    y: 0.042388699328433616
+    z: 0.7058364068695846
+    w: 0.70697188054350091
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_16"
+  id: 636
+  position {
+    x: 0.0689
+    y: -0.061
+  }
+  orientation {
+    x: -0.20903295296722882
+    y: -0.20903218514772978
+    z: -0.67550504156249769
+    w: 0.675502560298489
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_17"
+  id: 637
+  position {
+    x: 0.02315
+    y: -0.061
+  }
+  orientation {
+    x: -0.014333124382576872
+    y: -0.014333071734167851
+    z: -0.70696279827723985
+    w: 0.70696020146265059
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_18"
+  id: 638
+  position {
+    x: 0.04565
+    y: -0.061
+  }
+  orientation {
+    x: 0.14628832598590902
+    y: 0.14628778863987024
+    z: -0.69181035138453384
+    w: 0.69180781022788773
+  }
+}
+pose {
+  name: "shoulder_link_2_visual_19"
+  id: 639
+  position {
+    x: 0.03415
+    y: -0.061
+  }
+  orientation {
+    x: 0.69180800432188316
+    y: -0.69181015729003348
+    z: -0.14628870653018514
+    w: -0.14628740809870802
+  }
+}
+pose {
+  name: "elbow_link_1_visual"
+  id: 641
+  position {
+    z: -0.119932
+  }
+  orientation {
+    x: -0.056029172678910957
+    y: 0.69267517557641534
+    z: -0.7190691232315265
+    w: -0.0011953928822024396
+  }
+}
+pose {
+  name: "elbow_link_1_visual_1"
+  id: 642
+  position {
+    z: -0.119932
+  }
+  orientation {
+    x: -0.056029172678910957
+    y: 0.69267517557641534
+    z: -0.7190691232315265
+    w: -0.0011953928822024396
+  }
+}
+pose {
+  name: "elbow_link_1_visual_2"
+  id: 643
+  position {
+    x: 0.009118
+    y: 0.004708
+    z: -0.003884
+  }
+  orientation {
+    x: 0.015413545368153472
+    y: 0.041810852646584587
+    z: 0.73329020839584524
+    w: 0.67845393763388784
+  }
+}
+pose {
+  name: "elbow_link_1_visual_3"
+  id: 644
+  position {
+    x: 0.009118
+    y: 0.004708
+    z: -0.003884
+  }
+  orientation {
+    x: 0.015413545368153472
+    y: 0.041810852646584587
+    z: 0.73329020839584524
+    w: 0.67845393763388784
+  }
+}
+pose {
+  name: "elbow_link_2_visual"
+  id: 646
+  position {
+    x: 0.016041
+    y: -0.063759
+    z: 0.098504
+  }
+  orientation {
+    x: -0.053358334019542542
+    y: 0.86906904859906531
+    z: -0.49150614605708587
+    w: -0.017134332373482511
+  }
+}
+pose {
+  name: "elbow_link_2_visual_1"
+  id: 647
+  position {
+    x: 0.000228
+    y: -0.014146
+    z: -0.010301
+  }
+  orientation {
+    x: 0.30868998484964244
+    y: 0.050915868882946504
+    z: 0.023415963956956148
+    w: 0.94951027386826548
+  }
+}
+pose {
+  name: "elbow_link_2_visual_2"
+  id: 648
+  position {
+  }
+  orientation {
+    x: -0.0509157228092646
+    y: 0.308690008943257
+    z: -0.94951028494871292
+    w: 0.023415514643846187
+  }
+}
+pose {
+  name: "elbow_link_2_visual_3"
+  id: 649
+  position {
+    x: -0.000111
+    y: 0.000584
+    z: -0.000804
+  }
+  orientation {
+    x: -0.0509157228092646
+    y: 0.308690008943257
+    z: -0.94951028494871292
+    w: 0.023415514643846187
+  }
+}
+pose {
+  name: "elbow_link_2_visual_4"
+  id: 650
+  position {
+    x: -0.011314
+    y: 0.061279
+    z: -0.080159
+  }
+  orientation {
+    x: -0.052560125234440175
+    y: 0.88968188586188879
+    z: -0.453128508057049
+    w: -0.019445575089618933
+  }
+}
+pose {
+  name: "elbow_link_2_visual_5"
+  id: 651
+  position {
+  }
+  orientation {
+    x: -0.0509157228092646
+    y: 0.308690008943257
+    z: -0.94951028494871292
+    w: 0.023415514643846187
+  }
+}
+pose {
+  name: "elbow_link_2_visual_6"
+  id: 652
+  position {
+    x: -0.001023
+    y: 0.001696
+    z: -0.010792
+  }
+  orientation {
+    x: -0.049845897844087814
+    y: 0.26697937005527844
+    z: -0.96207136887533484
+    w: 0.025614129369213451
+  }
+}
+pose {
+  name: "elbow_link_2_visual_7"
+  id: 653
+  position {
+    x: 0.033296
+    y: -0.025295
+    z: 0.035476
+  }
+  orientation {
+    x: -0.33542915479939706
+    y: 0.35966210039074209
+    z: 0.65225494318689015
+    w: 0.57679627663616961
+  }
+}
+pose {
+  name: "elbow_link_2_visual_8"
+  id: 654
+  position {
+  }
+  orientation {
+    x: -0.0509157228092646
+    y: 0.308690008943257
+    z: -0.94951028494871292
+    w: 0.023415514643846187
+  }
+}
+pose {
+  name: "elbow_link_2_visual_9"
+  id: 655
+  position {
+    x: -0.010369
+    y: 0.056316
+    z: -0.073323
+  }
+  orientation {
+    x: -0.019445592265998606
+    y: -0.453128217313525
+    z: -0.88968203394192524
+    w: 0.052560118879722666
+  }
+}
+pose {
+  name: "elbow_link_2_visual_10"
+  id: 656
+  position {
+  }
+  orientation {
+    x: -0.0509157228092646
+    y: 0.308690008943257
+    z: -0.94951028494871292
+    w: 0.023415514643846187
+  }
+}
+pose {
+  name: "elbow_link_2_visual_11"
+  id: 657
+  position {
+    x: -0.009591
+    y: 0.05223
+    z: -0.067693
+  }
+  orientation {
+    x: -0.019445592265998606
+    y: -0.453128217313525
+    z: -0.88968203394192524
+    w: 0.052560118879722666
+  }
+}
+pose {
+  name: "elbow_link_2_visual_12"
+  id: 658
+  position {
+  }
+  orientation {
+    x: -0.0509157228092646
+    y: 0.308690008943257
+    z: -0.94951028494871292
+    w: 0.023415514643846187
+  }
+}
+pose {
+  name: "elbow_link_2_visual_13"
+  id: 659
+  position {
+    x: 0.001249
+    y: -0.027743
+    z: 0.038128
+  }
+  orientation {
+    x: 0.44194796340377934
+    y: 0.521201654898801
+    z: -0.51645930032064025
+    w: 0.51604323819455078
+  }
+}
+pose {
+  name: "elbow_link_2_visual_14"
+  id: 660
+  position {
+    x: 0.000196
+    y: 0.000177
+    z: 0.000101
+  }
+  orientation {
+    x: -0.0509157228092646
+    y: 0.308690008943257
+    z: -0.94951028494871292
+    w: 0.023415514643846187
+  }
+}
+pose {
+  name: "overhead"
+  id: 174
+  position {
+    z: 10
+  }
+  orientation {
+    w: 1
+  }
+}
+

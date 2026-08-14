@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<robot name="aws_robomaker_warehouse">
+
+
+
+    <!-- Shelf model -->
+    <link name="shelfF_01_001">
+        <visual>
+            <!-- Assuming a mesh file (replace with actual path if you have one) -->
+            <geometry>
+                <mesh filename="/home/makarand/vector_ws/src/aws-robomaker-small-warehouse-world/models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_visual.DAE"/>
+            </geometry>
+            <material name="gray"/>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="/home/makarand/vector_ws/src/aws-robomaker-small-warehouse-world/models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_collision.DAE"/>
+            </geometry>
+        </collision>
+    </link>
+    
+    <link name="base_link">
+      <inertial>
+        <mass value="1"/>
+        <inertia ixx="1" iyy="1" izz="1" ixy="0" ixz="0" iyz="0"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </inertial>
+    </link>
+
+    <!-- Transformation (pose) -->
+    <joint name="shelfF_01_001_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="shelfF_01_001"/>
+        <origin xyz="-5.795143 -0.956635 0" rpy="0 0 0"/>
+    </joint>
+
+</robot>
+

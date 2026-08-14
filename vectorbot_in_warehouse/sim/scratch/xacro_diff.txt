@@ -1,0 +1,2956 @@
+diff --git a/sim/vector_description/urdf/vector.xacro b/sim/vector_description/urdf/vector.xacro
+index 8ba9529..ffa7e07 100644
+--- a/sim/vector_description/urdf/vector.xacro
++++ b/sim/vector_description/urdf/vector.xacro
+@@ -32,7 +32,7 @@
+             </material>
+         </visual>
+     <collision><origin xyz="0.0 -0.0087 0.0" rpy="0 0 0" /><geometry><box size="0.078 0.1275 0.078" /></geometry></collision></link>
+-    <link name="part_1">
++    <link name="right_wheel_link">
+         <inertial>
+             <mass value="0.795632" />
+             <origin xyz="1.07008e-12 1.44127e-11 -1.19375e-09" rpy="0 -0 0" />
+@@ -48,7 +48,7 @@
+             </material>
+         </visual>
+     <collision><origin xyz="0.0 0.0 0.0" rpy="0 0 0" /><geometry><box size="0.1524 0.037 0.1524" /></geometry></collision></link>
+-    <link name="part_1_1">
++    <link name="left_wheel_link">
+         <inertial>
+             <mass value="0.795632" />
+             <origin xyz="1.07008e-12 0.0185 -1.19375e-09" rpy="0 -0 0" />
+@@ -64,7 +64,12 @@
+             </material>
+         </visual>
+     <collision><origin xyz="0.0 0.0185 0.0" rpy="0 0 0" /><geometry><box size="0.1524 0.037 0.1524" /></geometry></collision></link>
+-    <link name="root">
++        <link name="base_link">
++        <inertial>
++            <mass value="25.0" />
++            <origin xyz="0.0488 0.0656 0.2" rpy="0 0 0" />
++            <inertia ixx="0.5" ixy="0.0" ixz="0.0" iyy="0.5" iyz="0.0" izz="0.8" />
++        </inertial>
+         <visual>
+             <origin xyz="0.219836 0.157455 0.0584722" rpy="2.92124e-16 6.245e-17 1.5708" />
+             <geometry>
+@@ -2494,8 +2499,28 @@
+                 <color rgba="0.768627 0.886275 0.952941 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.121366 0.966282" rpy="-3.23522e-16 -6.12323e-17 3.14159" />
++        <collision>
++            <origin xyz="0.0488 0.0656 0.2" rpy="0 0 0" />
++            <geometry>
++                <box size="0.6762 0.6624 0.4" />
++            </geometry>
++        </collision>
++    </link>
++
++    <link name="torso_link">
++        <inertial>
++            <mass value="15.0" />
++            <origin xyz="-0.101200 0.065600 -0.041427" rpy="0 0 0" />
++            <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3" />
++        </inertial>
++        <collision>
++            <origin xyz="-0.101200 0.065600 -0.041427" rpy="0 0 0" />
++            <geometry>
++                <box size="0.6762 0.6624 1.45" />
++            </geometry>
++        </collision>
++<visual>
++            <origin xyz="-0.115176 0.121366 -0.025145" rpy="-3.23522e-16 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Speaker_1_box.stl" scale="1 1 1" />
+             </geometry>
+@@ -2504,8 +2529,8 @@
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.084824 0.0513664 0.937501" rpy="1.5708 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.065176 0.051366 -0.053926" rpy="1.5708 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -2514,8 +2539,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.184824 0.0517664 0.917101" rpy="0 -1.5708 4.78784e-16" />
++<visual>
++            <origin xyz="0.034824 0.051766 -0.074326" rpy="0 -1.5708 4.78784e-16" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -2524,8 +2549,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.00522396 0.151366 0.902101" rpy="5.38978e-16 -1.18329e-30 -1.5708" />
++<visual>
++            <origin xyz="-0.144776 0.151366 -0.089326" rpy="5.38978e-16 -1.18329e-30 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_1.stl" scale="1 1 1" />
+             </geometry>
+@@ -2534,8 +2559,8 @@
+                 <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 -0.0206336 0.975601" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 -0.020634 -0.015826" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Back_top_plate.stl" scale="1 1 1" />
+             </geometry>
+@@ -2544,8 +2569,8 @@
+                 <color rgba="0.701961 0.701961 0.701961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.084824 0.0509664 1.0171" rpy="1.40939e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.065176 0.050966 0.025673" rpy="1.40939e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_1.stl" scale="1 1 1" />
+             </geometry>
+@@ -2554,8 +2579,8 @@
+                 <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.184824 0.0509664 1.0171" rpy="1.40939e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="0.034824 0.050966 0.025673" rpy="1.40939e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_1.stl" scale="1 1 1" />
+             </geometry>
+@@ -2564,8 +2589,8 @@
+                 <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 0.887101" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 -0.104326" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_17_2.stl" scale="1 1 1" />
+             </geometry>
+@@ -2574,8 +2599,8 @@
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.115176 0.0517664 0.917101" rpy="0 -1.5708 -4.3715e-16" />
++<visual>
++            <origin xyz="-0.265176 0.051766 -0.074326" rpy="0 -1.5708 -4.3715e-16" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -2584,8 +2609,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 0.887101" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 -0.104326" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_12_3.stl" scale="1 1 1" />
+             </geometry>
+@@ -2594,8 +2619,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.064424 0.151366 0.902101" rpy="3.14159 -2.71171e-30 -1.5708" />
++<visual>
++            <origin xyz="-0.085576 0.151366 -0.089326" rpy="3.14159 -2.71171e-30 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -2604,8 +2629,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.00482396 0.0509664 1.0371" rpy="0 1.5708 3.14159" />
++<visual>
++            <origin xyz="-0.145176 0.050966 0.045673" rpy="0 1.5708 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_3.stl" scale="1 1 1" />
+             </geometry>
+@@ -2614,8 +2639,8 @@
+                 <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 0.887101" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 -0.104326" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_8_2.stl" scale="1 1 1" />
+             </geometry>
+@@ -2624,8 +2649,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.00522396 -0.0686336 1.0371" rpy="0 1.5708 -1.5708" />
++<visual>
++            <origin xyz="-0.144776 -0.068634 0.045673" rpy="0 1.5708 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored_1.stl" scale="1 1 1" />
+             </geometry>
+@@ -2634,8 +2659,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.064424 -0.0686336 1.0371" rpy="0 1.5708 -4.71239" />
++<visual>
++            <origin xyz="-0.085576 -0.068634 0.045673" rpy="0 1.5708 -4.71239" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored_Mirrored_1.stl" scale="1 1 1" />
+             </geometry>
+@@ -2644,8 +2669,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.184824 0.0517664 1.0171" rpy="-3.14159 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="0.034824 0.051766 0.025673" rpy="-3.14159 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -2654,8 +2679,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.00522396 0.151366 1.0171" rpy="-6.12323e-17 -2.34809e-30 -1.5708" />
++<visual>
++            <origin xyz="-0.144776 0.151366 0.025673" rpy="-6.12323e-17 -2.34809e-30 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_1.stl" scale="1 1 1" />
+             </geometry>
+@@ -2664,8 +2689,8 @@
+                 <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 0.887101" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 -0.104326" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_9_2.stl" scale="1 1 1" />
+             </geometry>
+@@ -2674,8 +2699,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.035574 0.173666 0.9503" rpy="1.03062e-17 -3.11033e-16 3.14159" />
++<visual>
++            <origin xyz="-0.114426 0.173666 -0.041127" rpy="1.03062e-17 -3.11033e-16 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Torso_front_shield.stl" scale="1 1 1" />
+             </geometry>
+@@ -2684,8 +2709,8 @@
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 0.887101" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 -0.104326" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_7_2.stl" scale="1 1 1" />
+             </geometry>
+@@ -2694,8 +2719,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.115176 0.0509664 0.917101" rpy="0 -1.5708 3.14159" />
++<visual>
++            <origin xyz="-0.265176 0.050966 -0.074326" rpy="0 -1.5708 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_1.stl" scale="1 1 1" />
+             </geometry>
+@@ -2704,8 +2729,8 @@
+                 <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 0.887101" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 -0.104326" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_2_3.stl" scale="1 1 1" />
+             </geometry>
+@@ -2714,8 +2739,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 0.887101" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 -0.104326" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_6_2.stl" scale="1 1 1" />
+             </geometry>
+@@ -2724,8 +2749,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 0.866101" rpy="-3.23522e-16 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 -0.125326" rpy="-3.23522e-16 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/extra_2xMS_2mm_Base_Plate.stl" scale="1 1 1" />
+             </geometry>
+@@ -2734,8 +2759,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.064424 0.151366 1.0171" rpy="3.14159 -1.9475e-30 -1.5708" />
++<visual>
++            <origin xyz="-0.085576 0.151366 0.025673" rpy="3.14159 -1.9475e-30 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -2744,8 +2769,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.084824 0.0513664 0.937501" rpy="1.5708 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.065176 0.051366 -0.053926" rpy="1.5708 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_1.stl" scale="1 1 1" />
+             </geometry>
+@@ -2754,8 +2779,8 @@
+                 <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 0.887101" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 -0.104326" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_4.stl" scale="1 1 1" />
+             </geometry>
+@@ -2764,8 +2789,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 0.887101" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 -0.104326" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_11_2.stl" scale="1 1 1" />
+             </geometry>
+@@ -2774,8 +2799,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.064824 0.0517664 1.0371" rpy="0 1.5708 4.78784e-16" />
++<visual>
++            <origin xyz="-0.085176 0.051766 0.045673" rpy="0 1.5708 4.78784e-16" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored_Mirrored_1.stl" scale="1 1 1" />
+             </geometry>
+@@ -2784,8 +2809,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 0.887101" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 -0.104326" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_16_2.stl" scale="1 1 1" />
+             </geometry>
+@@ -2794,8 +2819,8 @@
+                 <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.184824 0.0509664 0.917101" rpy="0 -1.5708 3.14159" />
++<visual>
++            <origin xyz="0.034824 0.050966 -0.074326" rpy="0 -1.5708 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -2804,8 +2829,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.00522396 0.0513664 0.917101" rpy="0 -1.5708 -1.5708" />
++<visual>
++            <origin xyz="-0.144776 0.051366 -0.074326" rpy="0 -1.5708 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -2814,8 +2839,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.123866 0.992101" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.123866 0.000674" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/_3dprinted_Front_plate.stl" scale="1 1 1" />
+             </geometry>
+@@ -2824,8 +2849,8 @@
+                 <color rgba="0.4 0.4 0.4 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 0.887101" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 -0.104326" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_4_3.stl" scale="1 1 1" />
+             </geometry>
+@@ -2834,8 +2859,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 0.887101" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 -0.104326" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_10_2.stl" scale="1 1 1" />
+             </geometry>
+@@ -2844,8 +2869,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.00482396 0.0517664 1.0371" rpy="0 1.5708 -4.3715e-16" />
++<visual>
++            <origin xyz="-0.145176 0.051766 0.045673" rpy="0 1.5708 -4.3715e-16" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored_1.stl" scale="1 1 1" />
+             </geometry>
+@@ -2854,8 +2879,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 0.887101" rpy="1.97215e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 -0.104326" rpy="1.97215e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_13_2.stl" scale="1 1 1" />
+             </geometry>
+@@ -2864,8 +2889,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.084824 0.0517664 1.0171" rpy="-3.14159 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.065176 0.051766 0.025673" rpy="-3.14159 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -2874,8 +2899,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 1.0857" rpy="7.92292e-16 4.8785e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 0.094273" rpy="7.92292e-16 4.8785e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_1_7.stl" scale="1 1 1" />
+             </geometry>
+@@ -2884,8 +2909,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0513664 1.0851" rpy="-3.26131e-30 -6.12323e-17 3.14159" />
++<visual>
++            <origin xyz="-0.115176 0.051366 0.093673" rpy="-3.26131e-30 -6.12323e-17 3.14159" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_5.stl" scale="1 1 1" />
+             </geometry>
+@@ -2894,8 +2919,8 @@
+                 <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.044674 0.0660664 1.06685" rpy="-3.14159 3.3231e-15 -1.5708" />
++<visual>
++            <origin xyz="-0.105326 0.066066 0.075423" rpy="-3.14159 3.3231e-15 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts.stl" scale="1 1 1" />
+             </geometry>
+@@ -2904,8 +2929,8 @@
+                 <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.044674 0.0660664 1.06685" rpy="-3.14159 3.3231e-15 -1.5708" />
++<visual>
++            <origin xyz="-0.105326 0.066066 0.075423" rpy="-3.14159 3.3231e-15 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_1.stl" scale="1 1 1" />
+             </geometry>
+@@ -2914,8 +2939,8 @@
+                 <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034674 0.0550664 1.0411" rpy="1.5708 -5.10703e-15 -1.5708" />
++<visual>
++            <origin xyz="-0.115326 0.055066 0.049673" rpy="1.5708 -5.10703e-15 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Wheel_25kg.stl" scale="1 1 1" />
+             </geometry>
+@@ -2924,8 +2949,8 @@
+                 <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034674 0.0550664 1.0411" rpy="-3.14159 3.3231e-15 -1.5708" />
++<visual>
++            <origin xyz="-0.115326 0.055066 0.049673" rpy="-3.14159 3.3231e-15 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/_93475A210.stl" scale="1 1 1" />
+             </geometry>
+@@ -2934,8 +2959,8 @@
+                 <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034674 0.0550749 1.0929" rpy="-3.14159 3.3231e-15 -1.5708" />
++<visual>
++            <origin xyz="-0.115326 0.055075 0.101473" rpy="-3.14159 3.3231e-15 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Gear__25R_0_00_.stl" scale="1 1 1" />
+             </geometry>
+@@ -2944,8 +2969,8 @@
+                 <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034674 0.0550749 1.094" rpy="-1.5708 -4.44089e-15 -1.5708" />
++<visual>
++            <origin xyz="-0.115326 0.055075 0.102573" rpy="-1.5708 -4.44089e-15 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_25kg.stl" scale="1 1 1" />
+             </geometry>
+@@ -2954,8 +2979,8 @@
+                 <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034674 0.0550664 1.0411" rpy="-3.14159 3.3231e-15 -1.5708" />
++<visual>
++            <origin xyz="-0.115326 0.055066 0.049673" rpy="-3.14159 3.3231e-15 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/_93475A210.stl" scale="1 1 1" />
+             </geometry>
+@@ -2964,8 +2989,8 @@
+                 <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034674 0.0550664 1.0411" rpy="1.5708 -5.10703e-15 -1.5708" />
++<visual>
++            <origin xyz="-0.115326 0.055066 0.049673" rpy="1.5708 -5.10703e-15 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Wheel_25kg.stl" scale="1 1 1" />
+             </geometry>
+@@ -2974,8 +2999,8 @@
+                 <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034674 0.0550749 1.0929" rpy="-3.14159 3.3231e-15 -1.5708" />
++<visual>
++            <origin xyz="-0.115326 0.055075 0.101473" rpy="-3.14159 3.3231e-15 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Gear__25R_0_00_.stl" scale="1 1 1" />
+             </geometry>
+@@ -2984,8 +3009,8 @@
+                 <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034674 0.0550749 1.094" rpy="-1.5708 -4.44089e-15 -1.5708" />
++<visual>
++            <origin xyz="-0.115326 0.055075 0.102573" rpy="-1.5708 -4.44089e-15 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_25kg.stl" scale="1 1 1" />
+             </geometry>
+@@ -2994,8 +3019,8 @@
+                 <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.044674 0.0660664 1.06685" rpy="-3.14159 3.3231e-15 -1.5708" />
++<visual>
++            <origin xyz="-0.105326 0.066066 0.075423" rpy="-3.14159 3.3231e-15 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_2.stl" scale="1 1 1" />
+             </geometry>
+@@ -3004,8 +3029,8 @@
+                 <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.064424 0.0513664 0.917101" rpy="0 -1.5708 1.5708" />
++<visual>
++            <origin xyz="-0.085576 0.051366 -0.074326" rpy="0 -1.5708 1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3014,8 +3039,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.338723 0.192935 1.2713" rpy="-0.10171 -0.0386824 -0.501488" />
++<visual>
++            <origin xyz="0.188723 0.192935 0.279873" rpy="-0.10171 -0.0386824 -0.501488" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_S2_M_motor_holder_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3024,8 +3049,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.336596 0.188275 1.2616" rpy="-0.0144439 -0.0386824 -0.501488" />
++<visual>
++            <origin xyz="0.186596 0.188275 0.270173" rpy="-0.0144439 -0.0386824 -0.501488" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_E2_2_cover_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3034,8 +3059,8 @@
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.333074 0.188771 1.34756" rpy="-1.60948 0.0144331 1.06875" />
++<visual>
++            <origin xyz="0.183074 0.188771 0.356133" rpy="-1.60948 0.0144331 1.06875" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_Wr_motor_horn_adaptor.stl" scale="1 1 1" />
+             </geometry>
+@@ -3044,8 +3069,8 @@
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.336596 0.188275 1.2616" rpy="-0.0144439 -0.0386824 -0.501488" />
++<visual>
++            <origin xyz="0.186596 0.188275 0.270173" rpy="-0.0144439 -0.0386824 -0.501488" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_E2_1_cover_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3054,8 +3079,8 @@
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.369676 0.250484 1.20727" rpy="3.03988 -0.0386824 -0.501488" />
++<visual>
++            <origin xyz="0.219676 0.250484 0.215843" rpy="3.03988 -0.0386824 -0.501488" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_E1_motor_bearing_holder.stl" scale="1 1 1" />
+             </geometry>
+@@ -3064,8 +3089,8 @@
+                 <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.313111 0.200376 1.21355" rpy="2.77743 -1.462 1.4315" />
++<visual>
++            <origin xyz="0.163111 0.200376 0.222123" rpy="2.77743 -1.462 1.4315" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/ID_DGBB_6200_dummy.stl" scale="1 1 1" />
+             </geometry>
+@@ -3074,8 +3099,8 @@
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.332886 0.18899 1.35456" rpy="-1.58524 -0.0386824 -0.501488" />
++<visual>
++            <origin xyz="0.182886 0.188990 0.363133" rpy="-1.58524 -0.0386824 -0.501488" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/ID_Thrust_51106_dummy.stl" scale="1 1 1" />
+             </geometry>
+@@ -3084,8 +3109,8 @@
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.332657 0.189256 1.36305" rpy="1.55635 -0.0386824 -0.501488" />
++<visual>
++            <origin xyz="0.182657 0.189256 0.371623" rpy="1.55635 -0.0386824 -0.501488" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl" scale="1 1 1" />
+             </geometry>
+@@ -3094,8 +3119,8 @@
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.336596 0.188275 1.2616" rpy="-0.0144439 -0.0386824 -0.501488" />
++<visual>
++            <origin xyz="0.186596 0.188275 0.270173" rpy="-0.0144439 -0.0386824 -0.501488" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_E2_3dp_CHP_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3104,8 +3129,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.336569 0.188306 1.2626" rpy="-0.0144439 -0.0386824 -0.501488" />
++<visual>
++            <origin xyz="0.186569 0.188306 0.271173" rpy="-0.0144439 -0.0386824 -0.501488" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_Wr_2_motorholding_bracket_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3114,8 +3139,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.336596 0.188275 1.2616" rpy="-3.12715 0.0386824 2.6401" />
++<visual>
++            <origin xyz="0.186596 0.188275 0.270173" rpy="-3.12715 0.0386824 2.6401" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_Wr_1_motorholding_bracket.stl" scale="1 1 1" />
+             </geometry>
+@@ -3124,8 +3149,8 @@
+                 <color rgba="0.647059 0.647059 0.647059 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.336596 0.188275 1.2616" rpy="-0.0144439 -0.0386824 -0.501488" />
++<visual>
++            <origin xyz="0.186596 0.188275 0.270173" rpy="-0.0144439 -0.0386824 -0.501488" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_E2_motorholding_bracket_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3134,8 +3159,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.345017 0.203614 1.26135" rpy="0.0144439 0.0386824 2.6401" />
++<visual>
++            <origin xyz="0.195017 0.203614 0.269923" rpy="0.0144439 0.0386824 2.6401" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_E2_3dp_CHP_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3144,8 +3169,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.336325 0.188196 1.26159" rpy="-0.0144439 -0.0386824 -0.501488" />
++<visual>
++            <origin xyz="0.186325 0.188196 0.270163" rpy="-0.0144439 -0.0386824 -0.501488" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_Wr_3_motorholding_bracket_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3154,8 +3179,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.341368 0.184884 1.21479" rpy="-0.0591274 -0.857355 1.11404" />
++<visual>
++            <origin xyz="0.191368 0.184884 0.223363" rpy="-0.0591274 -0.857355 1.11404" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/RS02_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3164,8 +3189,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.332189 0.166627 1.4878" rpy="3.10939 0.0171212 0.0346268" />
++<visual>
++            <origin xyz="0.182189 0.166627 0.496373" rpy="3.10939 0.0171212 0.0346268" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/R_Hand_EE.stl" scale="1 1 1" />
+             </geometry>
+@@ -3174,8 +3199,8 @@
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.191324 0.044272 1.02797" rpy="-6.8579e-17 -0.627584 -1.5708" />
++<visual>
++            <origin xyz="0.041324 0.044272 0.036543" rpy="-6.8579e-17 -0.627584 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_B_S2_cover_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3184,8 +3209,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.191324 0.0442719 1.02797" rpy="7.46888e-10 -0.627584 -1.5708" />
++<visual>
++            <origin xyz="0.041324 0.044272 0.036543" rpy="7.46888e-10 -0.627584 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_S2_3dprinted_CHP.stl" scale="1 1 1" />
+             </geometry>
+@@ -3194,8 +3219,8 @@
+                 <color rgba="0.596078 0.121569 0.67451 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.191324 0.044272 1.02797" rpy="8.91527e-16 -0.627584 -1.5708" />
++<visual>
++            <origin xyz="0.041324 0.044272 0.036543" rpy="8.91527e-16 -0.627584 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_A_S2_cover_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3204,8 +3229,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.191324 0.044272 1.02797" rpy="-6.8579e-17 -0.627584 -1.5708" />
++<visual>
++            <origin xyz="0.041324 0.044272 0.036543" rpy="-6.8579e-17 -0.627584 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_S2_bracket.stl" scale="1 1 1" />
+             </geometry>
+@@ -3214,8 +3239,8 @@
+                 <color rgba="0.647059 0.647059 0.647059 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.146074 0.0523664 1.0221" rpy="3.14159 -0.600202 -1.5708" />
++<visual>
++            <origin xyz="-0.003926 0.052366 0.030673" rpy="3.14159 -0.600202 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/RS02_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3224,8 +3249,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.191824 0.0523664 1.0221" rpy="-3.14159 -3.14635e-16 -1.5708" />
++<visual>
++            <origin xyz="0.041824 0.052366 0.030673" rpy="-3.14159 -3.14635e-16 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl" scale="1 1 1" />
+             </geometry>
+@@ -3234,8 +3259,8 @@
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.191324 0.0623664 1.0221" rpy="3.14159 -6.61744e-24 1.5708" />
++<visual>
++            <origin xyz="0.041324 0.062366 0.030673" rpy="3.14159 -6.61744e-24 1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_S1_cover_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3244,8 +3269,8 @@
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.180824 0.0523664 1.0221" rpy="-1.54958e-15 0.218672 -1.5708" />
++<visual>
++            <origin xyz="0.030824 0.052366 0.030673" rpy="-1.54958e-15 0.218672 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/ID_Thrust_51206_dummy.stl" scale="1 1 1" />
+             </geometry>
+@@ -3254,8 +3279,8 @@
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.136824 0.0307131 0.96271" rpy="3.14159 1.58748e-16 1.5708" />
++<visual>
++            <origin xyz="-0.013176 0.030713 -0.028717" rpy="3.14159 1.58748e-16 1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_S1_motor_bracket_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3264,8 +3289,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.169324 0.0523665 1.0221" rpy="3.14159 1.26587 -1.5708" />
++<visual>
++            <origin xyz="0.019324 0.052367 0.030673" rpy="3.14159 1.26587 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_S1_Motor_bearing_Adaptor.stl" scale="1 1 1" />
+             </geometry>
+@@ -3274,8 +3299,8 @@
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.283613 0.0820491 1.06823" rpy="0.049654 -0.677462 -2.10342" />
++<visual>
++            <origin xyz="0.133613 0.082049 0.076803" rpy="0.049654 -0.677462 -2.10342" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_E1_1_cover_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3284,8 +3309,8 @@
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.283613 0.0820491 1.06823" rpy="0.049654 -0.677462 -2.10342" />
++<visual>
++            <origin xyz="0.133613 0.082049 0.076803" rpy="0.049654 -0.677462 -2.10342" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_E1_2_cover_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3294,8 +3319,8 @@
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.315562 0.147883 1.15888" rpy="0.892732 -0.0386825 -0.501489" />
++<visual>
++            <origin xyz="0.165562 0.147883 0.167453" rpy="0.892732 -0.0386825 -0.501489" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_E1_3dp_CHP.stl" scale="1 1 1" />
+             </geometry>
+@@ -3304,8 +3329,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.315562 0.147883 1.15888" rpy="0.892732 -0.0386824 -0.501488" />
++<visual>
++            <origin xyz="0.165562 0.147883 0.167453" rpy="0.892732 -0.0386824 -0.501488" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_E1_motor_bracket.stl" scale="1 1 1" />
+             </geometry>
+@@ -3314,8 +3339,8 @@
+                 <color rgba="0.647059 0.647059 0.647059 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.337684 0.186366 1.26169" rpy="0.0258509 -0.0321996 -1.53562" />
++<visual>
++            <origin xyz="0.187684 0.186366 0.270263" rpy="0.0258509 -0.0321996 -1.53562" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_Wp_1_motorholding_bracket_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3324,8 +3349,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.330967 0.167681 1.44875" rpy="-0.0258508 0.0321996 1.60597" />
++<visual>
++            <origin xyz="0.180967 0.167681 0.457323" rpy="-0.0258508 0.0321996 1.60597" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/RDS5160_v39.stl" scale="1 1 1" />
+             </geometry>
+@@ -3334,8 +3359,8 @@
+                 <color rgba="0.313726 0.313726 0.313726 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.337691 0.186166 1.26169" rpy="0.0258509 -0.0321996 -1.53562" />
++<visual>
++            <origin xyz="0.187691 0.186166 0.270263" rpy="0.0258509 -0.0321996 -1.53562" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_Wp_1_cover_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3344,8 +3369,8 @@
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.32934 0.222743 1.43497" rpy="0.0322103 0.0258375 -3.10558" />
++<visual>
++            <origin xyz="0.179340 0.222743 0.443543" rpy="0.0322103 0.0258375 -3.10558" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Wheel_v5.stl" scale="1 1 1" />
+             </geometry>
+@@ -3354,8 +3379,8 @@
+                 <color rgba="0.960784 0.960784 0.964706 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.331361 0.165308 1.43682" rpy="3.0972 0.759055 0.00461678" />
++<visual>
++            <origin xyz="0.181361 0.165308 0.445393" rpy="3.0972 0.759055 0.00461678" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_v6.stl" scale="1 1 1" />
+             </geometry>
+@@ -3364,8 +3389,8 @@
+                 <color rgba="0.960784 0.960784 0.964706 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.337684 0.186366 1.26169" rpy="0.0258509 -0.0321996 -1.53562" />
++<visual>
++            <origin xyz="0.187684 0.186366 0.270263" rpy="0.0258509 -0.0321996 -1.53562" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_Wp_2_motorholding_bracket_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3374,8 +3399,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.337691 0.186166 1.26169" rpy="0.0258509 -0.0321996 -1.53562" />
++<visual>
++            <origin xyz="0.187691 0.186166 0.270263" rpy="0.0258509 -0.0321996 -1.53562" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_Wp_2_cover_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3384,8 +3409,8 @@
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.337684 0.186366 1.26169" rpy="0.0258509 -0.0321996 -1.53562" />
++<visual>
++            <origin xyz="0.187684 0.186366 0.270263" rpy="0.0258509 -0.0321996 -1.53562" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_Wp_motor_3dp_piece_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3394,8 +3419,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.329393 0.221245 1.43502" rpy="3.11574 0.0321996 1.60597" />
++<visual>
++            <origin xyz="0.179393 0.221245 0.443593" rpy="3.11574 0.0321996 1.60597" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/_6mm_Bearing_v2.stl" scale="1 1 1" />
+             </geometry>
+@@ -3404,8 +3429,8 @@
+                 <color rgba="0.627451 0.627451 0.627451 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.330967 0.167681 1.44875" rpy="3.11574 0.0321996 1.60597" />
++<visual>
++            <origin xyz="0.180967 0.167681 0.457323" rpy="3.11574 0.0321996 1.60597" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/RDS5160_v39_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3414,8 +3439,8 @@
+                 <color rgba="0.313726 0.313726 0.313726 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.330967 0.167681 1.44875" rpy="-0.0258509 0.0321996 1.60597" />
++<visual>
++            <origin xyz="0.180967 0.167681 0.457323" rpy="-0.0258509 0.0321996 1.60597" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/RDS5160_v39_1.stl" scale="1 1 1" />
+             </geometry>
+@@ -3424,8 +3449,8 @@
+                 <color rgba="0.313726 0.313726 0.313726 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.330967 0.167681 1.44875" rpy="3.11574 0.0321996 1.60597" />
++<visual>
++            <origin xyz="0.180967 0.167681 0.457323" rpy="3.11574 0.0321996 1.60597" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/RDS5160_v39_Mirrored_1.stl" scale="1 1 1" />
+             </geometry>
+@@ -3434,8 +3459,8 @@
+                 <color rgba="0.964706 0.109804 0.407843 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.331344 0.165808 1.43681" rpy="-1.45774 -1.2814 3.06838" />
++<visual>
++            <origin xyz="0.181344 0.165808 0.445383" rpy="-1.45774 -1.2814 3.06838" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/RDS3235_Gear_25R_0_00_v5.stl" scale="1 1 1" />
+             </geometry>
+@@ -3444,8 +3469,8 @@
+                 <color rgba="0.952941 0.796078 0.486275 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.283507 0.0821161 1.06822" rpy="-0.278743 -0.627584 -1.5708" />
++<visual>
++            <origin xyz="0.133507 0.082116 0.076793" rpy="-0.278743 -0.627584 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_upperarm_back_support_bracket_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3454,8 +3479,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.283507 0.0821161 1.06822" rpy="-0.278743 -0.627584 -1.5708" />
++<visual>
++            <origin xyz="0.133507 0.082116 0.076793" rpy="-0.278743 -0.627584 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_S2_Motor_supporting_bracket_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3464,8 +3489,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.283507 0.0821161 1.06822" rpy="-0.278743 -0.627584 -1.5708" />
++<visual>
++            <origin xyz="0.133507 0.082116 0.076793" rpy="-0.278743 -0.627584 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_S2_A_cover_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3474,8 +3499,8 @@
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.3157 0.148166 1.15927" rpy="0.924393 0.224601 -0.166494" />
++<visual>
++            <origin xyz="0.165700 0.148166 0.167843" rpy="0.924393 0.224601 -0.166494" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl" scale="1 1 1" />
+             </geometry>
+@@ -3484,8 +3509,8 @@
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.246775 0.00108567 0.96844" rpy="1.29206 -0.627584 -1.5708" />
++<visual>
++            <origin xyz="0.096775 0.001086 -0.022987" rpy="1.29206 -0.627584 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_S2_Rbearing_Holder.stl" scale="1 1 1" />
+             </geometry>
+@@ -3494,8 +3519,8 @@
+                 <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.309509 0.135464 1.14176" rpy="-1.64292 -0.675756 -1.90931" />
++<visual>
++            <origin xyz="0.159509 0.135464 0.150333" rpy="-1.64292 -0.675756 -1.90931" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_S1_Motor_bearing_Adaptor.stl" scale="1 1 1" />
+             </geometry>
+@@ -3504,8 +3529,8 @@
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.283507 0.0821161 1.06822" rpy="-0.278743 -0.627584 -1.5708" />
++<visual>
++            <origin xyz="0.133507 0.082116 0.076793" rpy="-0.278743 -0.627584 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_E1_1_motorbracket_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3514,8 +3539,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.283507 0.0821161 1.06822" rpy="-0.278743 -0.627584 -1.5708" />
++<visual>
++            <origin xyz="0.133507 0.082116 0.076793" rpy="-0.278743 -0.627584 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_upperarm_front_support_bracket_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3524,8 +3549,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.283507 0.0821161 1.06822" rpy="-2.86285 0.627584 1.5708" />
++<visual>
++            <origin xyz="0.133507 0.082116 0.076793" rpy="-2.86285 0.627584 1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_E1_2_motor_bracket.stl" scale="1 1 1" />
+             </geometry>
+@@ -3534,8 +3559,8 @@
+                 <color rgba="0.980392 0.713726 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.267824 0.072805 1.00727" rpy="-0.646403 0.224601 -0.166494" />
++<visual>
++            <origin xyz="0.117824 0.072805 0.015843" rpy="-0.646403 0.224601 -0.166494" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/ID_DGBB_6200_dummy.stl" scale="1 1 1" />
+             </geometry>
+@@ -3544,8 +3569,8 @@
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.303112 0.122339 1.12367" rpy="-2.23461 -0.154979 -0.648339" />
++<visual>
++            <origin xyz="0.153112 0.122339 0.132243" rpy="-2.23461 -0.154979 -0.648339" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/RS02_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3554,8 +3579,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.267824 0.0467003 1.02621" rpy="-0.751193 -0.534863 0.444259" />
++<visual>
++            <origin xyz="0.117824 0.046700 0.034783" rpy="-0.751193 -0.534863 0.444259" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/RS02_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3564,8 +3589,8 @@
+                 <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.312673 0.141956 1.15071" rpy="-2.2172 0.224601 -0.166494" />
++<visual>
++            <origin xyz="0.162673 0.141956 0.159283" rpy="-2.2172 0.224601 -0.166494" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/ID_Thrust_51206_dummy.stl" scale="1 1 1" />
+             </geometry>
+@@ -3574,8 +3599,8 @@
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.283507 0.0821161 1.06822" rpy="-0.278743 -0.627584 -1.5708" />
++<visual>
++            <origin xyz="0.133507 0.082116 0.076793" rpy="-0.278743 -0.627584 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_S2_B_cover_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3584,8 +3609,8 @@
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.283507 0.0821161 1.06822" rpy="-0.278743 -0.627584 -1.5708" />
++<visual>
++            <origin xyz="0.133507 0.082116 0.076793" rpy="-0.278743 -0.627584 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_S2_M_motor_holder_Mirrored.stl" scale="1 1 1" />
+             </geometry>
+@@ -3594,8 +3619,8 @@
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.283507 0.0821161 1.06822" rpy="2.86285 -0.627584 -1.5708" />
++<visual>
++            <origin xyz="0.133507 0.082116 0.076793" rpy="2.86285 -0.627584 -1.5708" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L1_upperarm_AL_ext.stl" scale="1 1 1" />
+             </geometry>
+@@ -3604,8 +3629,8 @@
+                 <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.079956 0.238738 0.562938" rpy="-0.0743689 0.91752 -1.50298" />
++<visual>
++            <origin xyz="-0.229956 0.238738 -0.428489" rpy="-0.0743689 0.91752 -1.50298" />
+             <geometry>
+                 <mesh filename="file://$(find vector_description)/meshes/L_Hand_EE.stl" scale="1 1 1" />
+             </geometry>
+@@ -3614,1070 +3639,1101 @@
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.121676 0.0623582 1.0217" rpy="-9.45855e-15 0.0405429 1.5708" />
+-            <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_B_S2_cover.stl" scale="1 1 1" />
+-            </geometry>
+-            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+-                <texture />
+-                <color rgba="0.917647 0.917647 0.917647 1" />
+-            </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.121676 0.0623582 1.0217" rpy="9.34049e-16 0.0405429 1.5708" />
++<visual>
++            <origin xyz="-0.378135 0.074362 -0.249484" rpy="0.101897 -0.629318 1.58692" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_S2_3dprinted_CHP.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_Wp_1_motorholding_bracket.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.596078_0.121569_0.674510_0.000000_0.000000">
++            <material name="0.768627_0.886275_0.952941_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.596078 0.121569 0.67451 1" />
++                <color rgba="0.768627 0.886275 0.952941 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.121676 0.0623582 1.0217" rpy="-9.76411e-15 0.0405429 1.5708" />
++<visual>
++            <origin xyz="-0.378137 0.074523 -0.249367" rpy="0.101897 -0.629318 1.58692" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_A_S2_cover.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_Wp_2_cover.stl" scale="1 1 1" />
+             </geometry>
+             <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                 <texture />
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.121676 0.0623582 1.0217" rpy="1.25003e-16 0.0405429 1.5708" />
++<visual>
++            <origin xyz="-0.378137 0.074523 -0.249367" rpy="0.101897 -0.629318 1.58692" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_S2_bracket.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_Wp_1_cover.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
++            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.647059 0.647059 0.647059 1" />
++                <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.202698 0.0530609 0.965206" rpy="0.0794223 0.0405429 1.5708" />
++<visual>
++            <origin xyz="-0.378135 0.074362 -0.249484" rpy="0.101897 -0.629318 1.58692" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_upperarm_front_support_bracket.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_Wp_motor_3dp_piece.stl" scale="1 1 1" />
+             </geometry>
+             <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+                 <texture />
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.202698 0.0530609 0.965206" rpy="0.0794223 0.0405429 1.5708" />
++<visual>
++            <origin xyz="-0.378135 0.074362 -0.249484" rpy="0.101897 -0.629318 1.58692" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_S2_B_cover.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_Wp_2_motorholding_bracket.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
++            <material name="0.498039_0.498039_0.498039_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.917647 0.917647 0.917647 1" />
++                <color rgba="0.498039 0.498039 0.498039 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.202698 0.0530609 0.965206" rpy="0.0794223 0.0405429 1.5708" />
++<visual>
++            <origin xyz="-0.420630 0.180715 -0.398302" rpy="-2.50657 0.0451745 0.126915" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_S2_M_motor_holder.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/RDS5160_v39_1.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
++            <material name="0.313725_0.313725_0.313725_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.972549 0.529412 0.00392157 1" />
++                <color rgba="0.313726 0.313726 0.313726 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.210196 0.0492428 0.871081" rpy="1.60892 -0.0806096 -3.11294" />
++<visual>
++            <origin xyz="-0.420630 0.180715 -0.398302" rpy="-2.50657 0.0451745 0.126915" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_S1_Motor_bearing_Adaptor.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/RDS5160_v39_2.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.964706_0.109804_0.407843_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.964706 0.109804 0.407843 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.211981 0.0483337 0.84867" rpy="-1.53013 -0.0793569 3.13837" />
++<visual>
++            <origin xyz="-0.420630 0.180715 -0.398302" rpy="-2.50657 0.0451745 0.126915" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/RDS5160_v39.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.313725_0.313725_0.313725_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.313726 0.313726 0.313726 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.208351 0.0501822 0.894239" rpy="1.64962 -0.0417011 2.52747" />
++<visual>
++            <origin xyz="-0.396648 0.203202 -0.385293" rpy="3.0397 0.629318 -1.55467" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/RS02.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/RDS5160_v39_3.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.501961_0.501961_0.501961_0.000000_0.000000">
++            <material name="0.313725_0.313725_0.313725_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.501961 0.501961 0.501961 1" />
++                <color rgba="0.313726 0.313726 0.313726 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.211108 0.0487781 0.859627" rpy="1.61147 -0.0793569 3.13837" />
++<visual>
++            <origin xyz="-0.426728 0.172761 -0.388313" rpy="1.64686 0.934389 1.75892" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/ID_Thrust_51206_dummy.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/RDS3235_Gear_25R_0_00_v5.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.952941_0.796078_0.486275_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.952941 0.796078 0.486275 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.198176 0.0593607 1.02182" rpy="0.0636197 0.879514 -3.09255" />
++<visual>
++            <origin xyz="-0.364299 0.180727 -0.391158" rpy="3.0855 0.634273 -1.47714" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/RS02.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Wheel_v5.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.501961_0.501961_0.501961_0.000000_0.000000">
++            <material name="0.960784_0.960784_0.964706_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.501961 0.501961 0.501961 1" />
++                <color rgba="0.960784 0.960784 0.964706 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.202698 0.0530609 0.965206" rpy="0.0794223 0.0405429 1.5708" />
++<visual>
++            <origin xyz="-0.365785 0.180537 -0.391090" rpy="-2.50657 0.0451745 0.126915" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_E1_2_motor_bracket.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/_6mm_Bearing_v2.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
++            <material name="0.627451_0.627451_0.627451_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.980392 0.713726 0.00392157 1" />
++                <color rgba="0.627451 0.627451 0.627451 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.198176 0.0271372 1.02312" rpy="0.040671 -0.0793569 3.13837" />
++<visual>
++            <origin xyz="-0.421278 0.173456 -0.388561" rpy="0.0760591 0.934389 1.75892" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/ID_DGBB_6200_dummy.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_v6.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.960784_0.960784_0.964706_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.960784 0.960784 0.964706 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.202698 0.0530609 0.965206" rpy="0.0794223 0.0405429 1.5708" />
++<visual>
++            <origin xyz="-0.271676 0.062366 0.030673" rpy="1.22465e-16 1.9475e-30 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_S2_A_cover.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_S1_cover.stl" scale="1 1 1" />
+             </geometry>
+             <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                 <texture />
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.202698 0.0530609 0.965206" rpy="0.0794223 0.0405429 1.5708" />
+-            <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_upperarm_back_support_bracket.stl" scale="1 1 1" />
+-            </geometry>
+-            <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+-                <texture />
+-                <color rgba="0.972549 0.529412 0.00392157 1" />
+-            </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.202698 0.0530609 0.965206" rpy="0.0794223 0.0405429 1.5708" />
++<visual>
++            <origin xyz="-0.217176 0.030713 -0.028717" rpy="1.22465e-16 1.18329e-30 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_E1_1_motorbracket.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_S1_motor_bracket.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.498039_0.498039_0.498039_0.000000_0.000000">
++            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.498039 0.498039 0.498039 1" />
++                <color rgba="0.647059 0.647059 0.647059 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.121917 0.0621122 1.01563" rpy="0.0794223 0.0405429 1.5708" />
++<visual>
++            <origin xyz="-0.115176 0.059279 0.122693" rpy="-0.0251702 1.41756e-14 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_S2_Rbearing_Holder.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Neck_motor_cover_B.stl" scale="1 1 1" />
+             </geometry>
+             <material name="0.231373_0.380392_0.705882_0.000000_0.000000">
+                 <texture />
+                 <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.202698 0.0530609 0.965206" rpy="0.0794223 0.0405429 1.5708" />
++<visual>
++            <origin xyz="-0.115176 0.059279 0.122693" rpy="-0.0251702 1.3919e-14 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_S2_Motor_supporting_bracket.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Neck_motor_support_3dprinted.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.647059 0.647059 0.647059 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.202698 0.0530609 0.965206" rpy="0.0794223 0.0405429 1.5708" />
++<visual>
++            <origin xyz="-0.115221 0.141313 0.163763" rpy="-0.0251702 -6.36204e-14 -3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L1_upperarm_AL_ext.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Part_1_8.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.231373_0.380392_0.705882_0.000000_0.000000">
++            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.231373 0.380392 0.705882 1" />
++                <color rgba="0.647059 0.647059 0.647059 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.209778 0.00891758 0.838904" rpy="-2.11532 -0.0823267 -3.06536" />
++<visual>
++            <origin xyz="-0.115176 0.059279 0.122693" rpy="-0.0251702 1.41756e-14 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_E1_motor_bearing_holder.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Camera_B_cross_piece.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.231373_0.380392_0.705882_0.000000_0.000000">
++            <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.231373 0.380392 0.705882 1" />
++                <color rgba="0.980392 0.713726 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.225591 0.0585313 0.730099" rpy="0.631794 0.0823267 0.0762336" />
++<visual>
++            <origin xyz="-0.115176 0.098666 0.123693" rpy="0.0251702 7.07498e-15 2.18575e-15" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_E2_3dp_CHP.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Camera_B_cross_piece.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.980392 0.713726 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.225819 0.072677 0.7404" rpy="-0.631794 -0.0823267 -3.06536" />
++<visual>
++            <origin xyz="-0.115176 0.058366 0.108173" rpy="1.23793e-28 -6.12323e-17 -3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_E2_3dp_CHP.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Neck_bracket_support_3dprinted.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.647059 0.647059 0.647059 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.22593 0.0732608 0.739596" rpy="-0.631794 -0.0823267 -3.06536" />
++<visual>
++            <origin xyz="-0.115026 0.052282 0.400603" rpy="-3.11642 -1.41735e-14 -2.6229e-15" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_Wr_2_motorholding_bracket.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Camera_A_Cross_piece.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.231373_0.380392_0.705882_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.231373 0.380392 0.705882 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.237133 0.133956 0.660241" rpy="-2.20259 -0.0823267 -3.06536" />
++<visual>
++            <origin xyz="-0.115326 0.059279 0.122693" rpy="-0.0251702 -7.38948e-15 -3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Camera_A_Cross_piece.stl" scale="1 1 1" />
+             </geometry>
+             <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.225819 0.072677 0.7404" rpy="-0.631794 -0.0823267 -3.06536" />
++<visual>
++            <origin xyz="-0.115676 0.087786 0.170423" rpy="-1.5708 1.54563 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_E2_2_cover.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_3.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.917647 0.917647 0.917647 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.226842 0.074373 0.729608" rpy="-0.544528 -0.0823267 -3.06536" />
++<visual>
++            <origin xyz="-0.141426 0.078066 0.159173" rpy="-3.14159 1.54563 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_S2_M_motor_holder.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Wheel_25kg_1.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.972549 0.529412 0.00392157 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.192523 0.0473815 0.775876" rpy="0.157961 1.0207 1.78199" />
++<visual>
++            <origin xyz="-0.089626 0.078066 0.159183" rpy="-1.5708 1.54563 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/ID_DGBB_6200_dummy.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Gear__25R_0_00__1.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.225819 0.072677 0.7404" rpy="-0.631794 -0.0823267 -3.06536" />
++<visual>
++            <origin xyz="-0.141426 0.078066 0.159173" rpy="-1.5708 1.54563 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_E2_motorholding_bracket.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/_93475A210_1.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.236188 0.128993 0.667077" rpy="0.939002 -0.0823267 -3.06536" />
++<visual>
++            <origin xyz="-0.088526 0.078066 0.159183" rpy="2.9556e-13 1.54563 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/ID_Thrust_51106_dummy.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_25kg_1.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.225819 0.072677 0.7404" rpy="-0.631794 -0.0823267 -3.06536" />
++<visual>
++            <origin xyz="-0.115676 0.087786 0.170423" rpy="-1.5708 1.54563 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_E2_1_cover.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_4.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.917647 0.917647 0.917647 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.23541 0.124907 0.672707" rpy="0.939002 -0.0823267 -3.06536" />
++<visual>
++            <origin xyz="-0.115676 0.087786 0.170423" rpy="-1.5708 1.54563 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_Wr_motor_horn_adaptor.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_5.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.225819 0.072677 0.7404" rpy="-0.631794 -0.0823267 -3.06536" />
++<visual>
++            <origin xyz="-0.089626 0.078066 0.159183" rpy="-1.5708 1.54563 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_Wr_1_motorholding_bracket.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Gear__25R_0_00__1.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.647059 0.647059 0.647059 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.22457 0.0449337 0.778528" rpy="-0.894002 1.46512 -2.38583" />
++<visual>
++            <origin xyz="-0.088526 0.078066 0.159183" rpy="2.9556e-13 1.54563 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/RS02.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_25kg_1.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.501961_0.501961_0.501961_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.501961 0.501961 0.501961 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.225623 0.0728539 0.740501" rpy="-0.631794 -0.0823267 -3.06536" />
++<visual>
++            <origin xyz="-0.141426 0.078066 0.159173" rpy="-1.5708 1.54563 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_Wr_3_motorholding_bracket.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/_93475A210_1.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.917647 0.917647 0.917647 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.228135 0.0743616 0.741943" rpy="0.101897 -0.629318 1.58692" />
++<visual>
++            <origin xyz="-0.141426 0.078066 0.159173" rpy="-3.14159 1.54563 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_Wp_1_motorholding_bracket.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Wheel_25kg_1.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.768627_0.886275_0.952941_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.768627 0.886275 0.952941 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.228137 0.0745233 0.74206" rpy="0.101897 -0.629318 1.58692" />
++<visual>
++            <origin xyz="-0.115176 0.059279 0.122693" rpy="-0.0251702 1.41756e-14 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_Wp_2_cover.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Neck_Motor_cover_A.stl" scale="1 1 1" />
+             </geometry>
+             <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                 <texture />
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.228137 0.0745233 0.74206" rpy="0.101897 -0.629318 1.58692" />
++<visual>
++            <origin xyz="-0.115176 0.058366 0.108173" rpy="1.24605e-28 -6.12323e-17 -3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_Wp_1_cover.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Neck_bracket.stl" scale="1 1 1" />
+             </geometry>
+             <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                 <texture />
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.228135 0.0743616 0.741943" rpy="0.101897 -0.629318 1.58692" />
++<visual>
++            <origin xyz="-0.115176 0.059279 0.122693" rpy="-0.0251702 1.41756e-14 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_Wp_motor_3dp_piece.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/Camera_mount.stl" scale="1 1 1" />
+             </geometry>
+             <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+                 <texture />
+                 <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.228135 0.0743616 0.741943" rpy="0.101897 -0.629318 1.58692" />
++<visual>
++            <origin xyz="-0.175676 0.145366 -0.044081" rpy="1.5708 6.12323e-17 -3.67761e-16" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_Wp_2_motorholding_bracket.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/EVA_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.498039_0.498039_0.498039_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.498039 0.498039 0.498039 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.27063 0.180715 0.593125" rpy="-2.50657 0.0451745 0.126915" />
++<visual>
++            <origin xyz="-0.175676 0.145366 -0.044081" rpy="1.5708 6.12323e-17 -3.67761e-16" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/RDS5160_v39_1.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/_5INCH_LCD_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.313725_0.313725_0.313725_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.313726 0.313726 0.313726 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.27063 0.180715 0.593125" rpy="-2.50657 0.0451745 0.126915" />
++<visual>
++            <origin xyz="-0.175676 0.145366 -0.044081" rpy="1.5708 6.12323e-17 -3.67761e-16" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/RDS5160_v39_2.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/EVA_stp_1.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.964706_0.109804_0.407843_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.964706 0.109804 0.407843 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.27063 0.180715 0.593125" rpy="-2.50657 0.0451745 0.126915" />
++<visual>
++            <origin xyz="-0.175676 0.145366 -0.044081" rpy="1.5708 6.12323e-17 -3.67761e-16" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/RDS5160_v39.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/_5INCH_TP_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.313725_0.313725_0.313725_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.313726 0.313726 0.313726 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.246648 0.203202 0.606134" rpy="3.0397 0.629318 -1.55467" />
++<visual>
++            <origin xyz="-0.175676 0.145366 -0.044081" rpy="1.5708 6.12323e-17 -3.67761e-16" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/RDS5160_v39_3.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/EVA_stp_2.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.313725_0.313725_0.313725_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.313726 0.313726 0.313726 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.276728 0.172761 0.603114" rpy="1.64686 0.934389 1.75892" />
++<visual>
++            <origin xyz="-0.170376 0.145816 0.087963" rpy="0 1.5708 -3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/RDS3235_Gear_25R_0_00_v5.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/USB_J4_10118194_606F1A_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.952941_0.796078_0.486275_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.952941 0.796078 0.486275 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.214299 0.180727 0.600269" rpy="3.0855 0.634273 -1.47714" />
++<visual>
++            <origin xyz="-0.059576 0.145816 -0.102288" rpy="0 -1.5708 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Wheel_v5.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/USB_J4_10118194_606F1A_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.960784_0.960784_0.964706_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.960784 0.960784 0.964706 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.215785 0.180537 0.600337" rpy="-2.50657 0.0451745 0.126915" />
++<visual>
++            <origin xyz="-0.176176 0.141741 -0.004738" rpy="0 1.5708 -3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/_6mm_Bearing_v2.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/HDMI_J1_47151_0001_61277A9B_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.627451_0.627451_0.627451_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.627451 0.627451 0.627451 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.271278 0.173456 0.602866" rpy="0.0760591 0.934389 1.75892" />
++<visual>
++            <origin xyz="-0.054912 0.145266 0.015883" rpy="0 -1.5708 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_v6.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.960784_0.960784_0.964706_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.960784 0.960784 0.964706 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.211941 0.0483539 0.849168" rpy="-1.53655 -0.0823267 -3.06536" />
++<visual>
++            <origin xyz="-0.054912 0.145266 -0.007383" rpy="0 -1.5708 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_E1_motor_bracket.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.647059 0.647059 0.647059 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.211941 0.0483539 0.849168" rpy="-1.53655 -0.0823267 -3.06536" />
++<visual>
++            <origin xyz="-0.175676 0.145366 -0.044081" rpy="1.5708 6.12323e-17 -3.67761e-16" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_E1_3dp_CHP.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/RTD2660_5INCH_HDMI_PCBA_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.972549 0.529412 0.00392157 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.202823 0.0530618 0.965216" rpy="0.0823748 0.0341349 1.64985" />
++<visual>
++            <origin xyz="-0.137617 0.139366 0.031373" rpy="0 -1.5708 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_E1_1_cover.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/HP2_0_4PIN_SMT_00_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.917647 0.917647 0.917647 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.202823 0.0530618 0.965216" rpy="0.0823748 0.0341349 1.64985" />
++<visual>
++            <origin xyz="-0.175672 0.145171 -0.026288" rpy="0 -1.5708 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_E1_2_cover.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/MINI_HDMI_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.917647 0.917647 0.917647 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.121676 0.0623664 1.0221" rpy="1.22465e-16 1.9475e-30 1.5708" />
++<visual>
++            <origin xyz="-0.175676 0.145366 -0.044081" rpy="1.5708 6.12323e-17 -3.67761e-16" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_S1_cover.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/RTD2660_5INCH_HDMI_PCBA_stp_1.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.917647 0.917647 0.917647 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.067176 0.0307131 0.96271" rpy="1.22465e-16 1.18329e-30 1.5708" />
++<visual>
++            <origin xyz="-0.175676 0.145366 -0.044081" rpy="1.5708 6.12323e-17 -3.67761e-16" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_S1_motor_bracket.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/_30PIN_CONNECTOR_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.647059 0.647059 0.647059 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.076426 0.0523664 1.0221" rpy="6.72682e-16 -0.600202 -1.5708" />
++<visual>
++            <origin xyz="-0.175672 0.145171 -0.026288" rpy="0 -1.5708 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/RS02.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/MINI_HDMI_stp_1.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.501961_0.501961_0.501961_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.501961 0.501961 0.501961 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.122176 0.0523664 1.0221" rpy="-1.25003e-16 -0.0405429 -1.5708" />
++<visual>
++            <origin xyz="-0.054912 0.145266 0.027513" rpy="0 -1.5708 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.099676 0.0523664 1.0221" rpy="9.10617e-17 0.416775 -1.5708" />
++<visual>
++            <origin xyz="-0.175676 0.145366 -0.044081" rpy="1.5708 6.12323e-17 -3.67761e-16" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/L_S1_Motor_bearing_Adaptor.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/_6PIN_CONNECTOR_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.111176 0.0523664 1.0221" rpy="3.14159 0.416775 -1.5708" />
++<visual>
++            <origin xyz="-0.175672 0.145171 -0.026288" rpy="0 -1.5708 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/ID_Thrust_51206_dummy.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/MINI_HDMI_stp_2.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0592787 1.11412" rpy="-0.0251702 1.41756e-14 3.14159" />
++<visual>
++            <origin xyz="-0.175676 0.145366 -0.044081" rpy="1.5708 6.12323e-17 -3.67761e-16" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Neck_motor_cover_B.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/HP_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.231373_0.380392_0.705882_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.231373 0.380392 0.705882 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0592787 1.11412" rpy="-0.0251702 1.3919e-14 3.14159" />
++<visual>
++            <origin xyz="-0.175672 0.145171 -0.026288" rpy="0 -1.5708 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Neck_motor_support_3dprinted.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/MINI_HDMI_stp_3.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.647059 0.647059 0.647059 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.0347791 0.141313 1.15519" rpy="-0.0251702 -6.36204e-14 -3.14159" />
++<visual>
++            <origin xyz="-0.054912 0.145266 0.004250" rpy="0 -1.5708 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Part_1_8.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.647059 0.647059 0.647059 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0592787 1.11412" rpy="-0.0251702 1.41756e-14 3.14159" />
++<visual>
++            <origin xyz="-0.054912 0.145266 -0.019017" rpy="0 -1.5708 3.14159" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Camera_B_cross_piece.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.980392 0.713726 0.00392157 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.098666 1.11512" rpy="0.0251702 7.07498e-15 2.18575e-15" />
++<visual>
++            <origin xyz="-0.175676 0.145366 -0.044081" rpy="1.5708 6.12323e-17 -3.67761e-16" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Camera_B_cross_piece.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/RTD2660_5INCH_HDMI_PCBA_stp_2.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
++            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.980392 0.713726 0.00392157 1" />
++                <color rgba="0.792157 0.819608 0.933333 1" />
+             </material>
+         </visual>
++</link>
++
++
++    <link name="shoulder_link_1_link">
++        <inertial>
++            <mass value="2.0" />
++            <origin xyz="0 0 0" rpy="0 0 0" />
++            <inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05" />
++        </inertial>
+         <visual>
+-            <origin xyz="0.034824 0.0583664 1.0996" rpy="1.23793e-28 -6.12323e-17 -3.14159" />
++            <origin xyz="0.000500 0.009992 -0.000400" rpy="-9.45855e-15 0.0405429 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Neck_bracket_support_3dprinted.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_B_S2_cover.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
++            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.647059 0.647059 0.647059 1" />
++                <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+         <visual>
+-            <origin xyz="0.034974 0.0522821 1.39203" rpy="-3.11642 -1.41735e-14 -2.6229e-15" />
++            <origin xyz="0.000500 0.009992 -0.000400" rpy="9.34049e-16 0.0405429 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Camera_A_Cross_piece.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_S2_3dprinted_CHP.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.596078_0.121569_0.674510_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.596078 0.121569 0.67451 1" />
+             </material>
+         </visual>
+         <visual>
+-            <origin xyz="0.034674 0.0592787 1.11412" rpy="-0.0251702 -7.38948e-15 -3.14159" />
++            <origin xyz="0.000500 0.009992 -0.000400" rpy="-9.76411e-15 0.0405429 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Camera_A_Cross_piece.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_A_S2_cover.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
++            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.615686 0.811765 0.929412 1" />
++                <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+         <visual>
+-            <origin xyz="0.034324 0.0877864 1.16185" rpy="-1.5708 1.54563 1.5708" />
++            <origin xyz="0.000500 0.009992 -0.000400" rpy="1.25003e-16 0.0405429 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_3.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_S2_bracket.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.647059 0.647059 0.647059 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.00857396 0.0780664 1.1506" rpy="-3.14159 1.54563 1.5708" />
++    </link>
++        <joint name="hanging_node_to_root_joint" type="fixed">
++        <origin xyz="-0.149164 0.134455 -0.0890278" rpy="0 -0 1.5708" />
++        <axis xyz="0 0 1" />
++        <parent link="base_link" />
++        <child link="9_1_gearbox_from_mas_automation_1" />
++    </joint>
++    <joint name="hanging_node_to_root_joint_1" type="fixed">
++        <origin xyz="0.287568 0.134455 -0.0890278" rpy="3.14159 0 1.5708" />
++        <axis xyz="0 0 1" />
++        <parent link="base_link" />
++        <child link="9_1_gearbox_from_mas_automation" />
++    </joint>
++    <joint name="left_wheel_joint" type="continuous">
++        <origin xyz="0 0.037 0" rpy="3.14159 -2.46519e-32 3.14159" />
++        <axis xyz="0 -1 0" />
++        <parent link="9_1_gearbox_from_mas_automation_1" />
++        <child link="left_wheel_link" />
++    </joint>
++    <joint name="right_wheel_joint" type="continuous">
++        <origin xyz="0 -0.0185 0" rpy="3.14159 0 3.14159" />
++        <axis xyz="0 -1 0" />
++        <parent link="9_1_gearbox_from_mas_automation" />
++        <child link="right_wheel_link" />
++    </joint>
++    <joint name="torso_joint" type="prismatic">
++        <origin xyz="0.150000 0.000000 0.991427" rpy="0 0 0" />
++        <axis xyz="0 0 1" />
++        <parent link="base_link" />
++        <child link="torso_link" />
++        <limit lower="-0.8" upper="0.8" effort="1000.0" velocity="1.0" />
++    </joint>
++    <joint name="shoulder_link_1" type="revolute">
++        <origin xyz="-0.272176 0.052366 0.030673" rpy="0 0 0" />
++        <axis xyz="0 1 0" />
++        <parent link="torso_link" />
++        <child link="shoulder_link_1_link" />
++        <limit lower="-1.5708" upper="1.5708" effort="200.0" velocity="3.0" />
++    </joint>
++
++    <link name="shoulder_link_2">
++        <inertial>
++            <mass value="2.0" />
++            <origin xyz="0 0 0" rpy="0 0 0" />
++            <inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05" />
++        </inertial>
++<visual>
++            <origin xyz="0 0 0" rpy="0.0794223 0.0405429 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Wheel_25kg_1.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_upperarm_front_support_bracket.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.060374 0.0780662 1.15061" rpy="-1.5708 1.54563 1.5708" />
++        </visual><visual>
++            <origin xyz="0 0 0" rpy="0.0794223 0.0405429 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Gear__25R_0_00__1.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_S2_B_cover.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.00857396 0.0780664 1.1506" rpy="-1.5708 1.54563 1.5708" />
++        </visual><visual>
++            <origin xyz="0 0 0" rpy="0.0794223 0.0405429 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/_93475A210_1.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_S2_M_motor_holder.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.061474 0.0780662 1.15061" rpy="2.9556e-13 1.54563 1.5708" />
++        </visual><visual>
++            <origin xyz="-0.007498 -0.003818 -0.094125" rpy="1.60892 -0.0806096 -3.11294" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_25kg_1.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_S1_Motor_bearing_Adaptor.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.034324 0.0877864 1.16185" rpy="-1.5708 1.54563 1.5708" />
++        </visual><visual>
++            <origin xyz="-0.009283 -0.004727 -0.116536" rpy="-1.53013 -0.0793569 3.13837" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_4.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.034324 0.0877864 1.16185" rpy="-1.5708 1.54563 1.5708" />
++        </visual><visual>
++            <origin xyz="-0.005653 -0.002879 -0.070967" rpy="1.64962 -0.0417011 2.52747" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_5.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/RS02.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.501961_0.501961_0.501961_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.060374 0.0780662 1.15061" rpy="-1.5708 1.54563 1.5708" />
++        </visual><visual>
++            <origin xyz="-0.00841 -0.004283 -0.105579" rpy="1.61147 -0.0793569 3.13837" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Gear__25R_0_00__1.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/ID_Thrust_51206_dummy.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.061474 0.0780662 1.15061" rpy="2.9556e-13 1.54563 1.5708" />
++        </visual><visual>
++            <origin xyz="0.004522 0.0063 0.056614" rpy="0.0636197 0.879514 -3.09255" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_25kg_1.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/RS02.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.501961_0.501961_0.501961_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.00857396 0.0780664 1.1506" rpy="-1.5708 1.54563 1.5708" />
++        </visual><visual>
++            <origin xyz="0 0 0" rpy="0.0794223 0.0405429 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/_93475A210_1.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_E1_2_motor_bracket.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.980392 0.713726 0.00392157 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.00857396 0.0780664 1.1506" rpy="-3.14159 1.54563 1.5708" />
++        </visual><visual>
++            <origin xyz="0.004522 -0.025924 0.057914" rpy="0.040671 -0.0793569 3.13837" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Wheel_25kg_1.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/ID_DGBB_6200_dummy.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0592787 1.11412" rpy="-0.0251702 1.41756e-14 3.14159" />
++        </visual><visual>
++            <origin xyz="0 0 0" rpy="0.0794223 0.0405429 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Neck_Motor_cover_A.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_S2_A_cover.stl" scale="1 1 1" />
+             </geometry>
+             <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                 <texture />
+                 <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0583664 1.0996" rpy="1.24605e-28 -6.12323e-17 -3.14159" />
++        </visual><visual>
++            <origin xyz="0 0 0" rpy="0.0794223 0.0405429 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Neck_bracket.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_upperarm_back_support_bracket.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
++            <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.917647 0.917647 0.917647 1" />
++                <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.034824 0.0592787 1.11412" rpy="-0.0251702 1.41756e-14 3.14159" />
++        </visual><visual>
++            <origin xyz="0 0 0" rpy="0.0794223 0.0405429 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/Camera_mount.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_E1_1_motorbracket.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
++            <material name="0.498039_0.498039_0.498039_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.972549 0.529412 0.00392157 1" />
++                <color rgba="0.498039 0.498039 0.498039 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.025676 0.145366 0.947346" rpy="1.5708 6.12323e-17 -3.67761e-16" />
++        </visual><visual>
++            <origin xyz="0.080781 0.009051 0.050424" rpy="0.0794223 0.0405429 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/EVA_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_S2_Rbearing_Holder.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.231373_0.380392_0.705882_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.025676 0.145366 0.947346" rpy="1.5708 6.12323e-17 -3.67761e-16" />
++        </visual><visual>
++            <origin xyz="0 0 0" rpy="0.0794223 0.0405429 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/_5INCH_LCD_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_S2_Motor_supporting_bracket.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.025676 0.145366 0.947346" rpy="1.5708 6.12323e-17 -3.67761e-16" />
++        </visual><visual>
++            <origin xyz="0 0 0" rpy="0.0794223 0.0405429 1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/EVA_stp_1.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L1_upperarm_AL_ext.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.231373_0.380392_0.705882_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.025676 0.145366 0.947346" rpy="1.5708 6.12323e-17 -3.67761e-16" />
++        </visual><visual>
++            <origin xyz="0.126272 -0.000695 0.056894" rpy="6.72682e-16 -0.600202 -1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/_5INCH_TP_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/RS02.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.501961_0.501961_0.501961_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.501961 0.501961 0.501961 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.025676 0.145366 0.947346" rpy="1.5708 6.12323e-17 -3.67761e-16" />
++        </visual><visual>
++            <origin xyz="0.080522 -0.000695 0.056894" rpy="-1.25003e-16 -0.0405429 -1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/EVA_stp_2.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.020376 0.145816 1.07939" rpy="0 1.5708 -3.14159" />
++        </visual><visual>
++            <origin xyz="0.103022 -0.000695 0.056894" rpy="9.10617e-17 0.416775 -1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/USB_J4_10118194_606F1A_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_S1_Motor_bearing_Adaptor.stl" scale="1 1 1" />
+             </geometry>
+             <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.090424 0.145816 0.889139" rpy="0 -1.5708 3.14159" />
++        </visual><visual>
++            <origin xyz="0.091522 -0.000695 0.056894" rpy="3.14159 0.416775 -1.5708" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/USB_J4_10118194_606F1A_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/ID_Thrust_51206_dummy.stl" scale="1 1 1" />
+             </geometry>
+             <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+                 <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="-0.026176 0.141741 0.986689" rpy="0 1.5708 -3.14159" />
++    </link>
++    <joint name="left_shoulder" type="revolute">
++        <origin xyz="-0.080522 0.000695 -0.056894" rpy="0 0 0" />
++        <axis xyz="0.942628 -0.060305 -0.056894" />
++        <parent link="shoulder_link_1_link" />
++        <child link="shoulder_link_2" />
++        <limit lower="-1.5708" upper="1.5708" effort="200.0" velocity="3.0" />
++    </joint>
++
++    <link name="elbow_link_1">
++        <inertial>
++            <mass value="2.0" />
++            <origin xyz="0 0 0" rpy="0 0 0" />
++            <inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05" />
++        </inertial>
++<visual>
++            <origin xyz="-0.004559 -0.002354 -0.058024" rpy="-1.53655 -0.0823267 -3.06536" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/HDMI_J1_47151_0001_61277A9B_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_E1_motor_bracket.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.647059 0.647059 0.647059 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.0950884 0.145266 1.00731" rpy="0 -1.5708 3.14159" />
++        </visual><visual>
++            <origin xyz="-0.004559 -0.002354 -0.058024" rpy="-1.53655 -0.0823267 -3.06536" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_E1_3dp_CHP.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.0950884 0.145266 0.984044" rpy="0 -1.5708 3.14159" />
++        </visual><visual>
++            <origin xyz="0.004559 0.002354 0.058024" rpy="0.0823748 0.0341349 1.64985" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_E1_1_cover.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.025676 0.145366 0.947346" rpy="1.5708 6.12323e-17 -3.67761e-16" />
++        </visual><visual>
++            <origin xyz="0.004559 0.002354 0.058024" rpy="0.0823748 0.0341349 1.64985" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/RTD2660_5INCH_HDMI_PCBA_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_E1_2_cover.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-        <visual>
+-            <origin xyz="0.0123828 0.139366 1.0228" rpy="0 -1.5708 1.5708" />
++    </link>
++    <joint name="left_bicep" type="revolute">
++        <origin xyz="-0.062056 -0.062658 -0.114908" rpy="0 0 0" />
++        <axis xyz="-0.085206 -0.062658 0.938092" />
++        <parent link="shoulder_link_2" />
++        <child link="elbow_link_1" />
++        <limit lower="-1.5708" upper="1.5708" effort="200.0" velocity="3.0" />
++    </joint>
++
++    <link name="elbow_link_2">
++        <inertial>
++            <mass value="2.0" />
++            <origin xyz="0 0 0" rpy="0 0 0" />
++            <inertia ixx="0.05" ixy="0.0" ixz="0.0" iyy="0.05" iyz="0.0" izz="0.05" />
++        </inertial>
++<visual>
++            <origin xyz="0.016041 -0.063759 0.098504" rpy="-2.11532 -0.0823267 -3.06536" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/HP2_0_4PIN_SMT_00_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_E1_motor_bearing_holder.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.231373_0.380392_0.705882_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.0256722 0.145171 0.965139" rpy="0 -1.5708 3.14159" />
++        </visual><visual>
++            <origin xyz="0.000228 -0.014146 -0.010301" rpy="0.631794 0.0823267 0.0762336" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/MINI_HDMI_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_E2_3dp_CHP.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.025676 0.145366 0.947346" rpy="1.5708 6.12323e-17 -3.67761e-16" />
++        </visual><visual>
++            <origin xyz="0 0 0" rpy="-0.631794 -0.0823267 -3.06536" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/RTD2660_5INCH_HDMI_PCBA_stp_1.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_E2_3dp_CHP.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.025676 0.145366 0.947346" rpy="1.5708 6.12323e-17 -3.67761e-16" />
++        </visual><visual>
++            <origin xyz="-0.000111 0.000584 -0.000804" rpy="-0.631794 -0.0823267 -3.06536" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/_30PIN_CONNECTOR_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_Wr_2_motorholding_bracket.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.231373_0.380392_0.705882_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.231373 0.380392 0.705882 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.0256722 0.145171 0.965139" rpy="0 -1.5708 3.14159" />
++        </visual><visual>
++            <origin xyz="-0.011314 0.061279 -0.080159" rpy="-2.20259 -0.0823267 -3.06536" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/MINI_HDMI_stp_1.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.0950884 0.145266 1.01894" rpy="0 -1.5708 3.14159" />
++        </visual><visual>
++            <origin xyz="0 0 0" rpy="-0.631794 -0.0823267 -3.06536" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_E2_2_cover.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.025676 0.145366 0.947346" rpy="1.5708 6.12323e-17 -3.67761e-16" />
++        </visual><visual>
++            <origin xyz="-0.001023 0.001696 -0.010792" rpy="-0.544528 -0.0823267 -3.06536" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/_6PIN_CONNECTOR_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_S2_M_motor_holder.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.972549 0.529412 0.00392157 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.0256722 0.145171 0.965139" rpy="0 -1.5708 3.14159" />
++        </visual><visual>
++            <origin xyz="0.033296 -0.025295 0.035476" rpy="0.157961 1.0207 1.78199" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/MINI_HDMI_stp_2.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/ID_DGBB_6200_dummy.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.025676 0.145366 0.947346" rpy="1.5708 6.12323e-17 -3.67761e-16" />
++        </visual><visual>
++            <origin xyz="0 0 0" rpy="-0.631794 -0.0823267 -3.06536" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/HP_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_E2_motorholding_bracket.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.0256722 0.145171 0.965139" rpy="0 -1.5708 3.14159" />
++        </visual><visual>
++            <origin xyz="-0.010369 0.056316 -0.073323" rpy="0.939002 -0.0823267 -3.06536" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/MINI_HDMI_stp_3.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/ID_Thrust_51106_dummy.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.0950884 0.145266 0.995677" rpy="0 -1.5708 3.14159" />
++        </visual><visual>
++            <origin xyz="0 0 0" rpy="-0.631794 -0.0823267 -3.06536" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_E2_1_cover.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="0.0950884 0.145266 0.97241" rpy="0 -1.5708 3.14159" />
++        </visual><visual>
++            <origin xyz="-0.009591 0.05223 -0.067693" rpy="0.939002 -0.0823267 -3.06536" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_Wr_motor_horn_adaptor.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.615686 0.811765 0.929412 1" />
+             </material>
+-        </visual>
+-        <visual>
+-            <origin xyz="-0.025676 0.145366 0.947346" rpy="1.5708 6.12323e-17 -3.67761e-16" />
++        </visual><visual>
++            <origin xyz="0 0 0" rpy="-0.631794 -0.0823267 -3.06536" />
+             <geometry>
+-                <mesh filename="file://$(find vector_description)/meshes/RTD2660_5INCH_HDMI_PCBA_stp_2.stl" scale="1 1 1" />
++                <mesh filename="file://$(find vector_description)/meshes/L_Wr_1_motorholding_bracket.stl" scale="1 1 1" />
+             </geometry>
+-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
++            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+                 <texture />
+-                <color rgba="0.792157 0.819608 0.933333 1" />
++                <color rgba="0.647059 0.647059 0.647059 1" />
++            </material>
++        </visual><visual>
++            <origin xyz="0.001249 -0.027743 0.038128" rpy="-0.894002 1.46512 -2.38583" />
++            <geometry>
++                <mesh filename="file://$(find vector_description)/meshes/RS02.stl" scale="1 1 1" />
++            </geometry>
++            <material name="0.501961_0.501961_0.501961_0.000000_0.000000">
++                <texture />
++                <color rgba="0.501961 0.501961 0.501961 1" />
++            </material>
++        </visual><visual>
++            <origin xyz="0.000196 0.000177 0.000101" rpy="-0.631794 -0.0823267 -3.06536" />
++            <geometry>
++                <mesh filename="file://$(find vector_description)/meshes/L_Wr_3_motorholding_bracket.stl" scale="1 1 1" />
++            </geometry>
++            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
++                <texture />
++                <color rgba="0.917647 0.917647 0.917647 1" />
+             </material>
+         </visual>
+-    <collision><origin xyz="0.0488 0.0656 0.7592" rpy="0 0 0" /><geometry><box size="0.6762 0.6624 1.8528" /></geometry></collision></link>
+-    <joint name="hanging_node_to_root_joint" type="fixed">
+-        <origin xyz="-0.149164 0.134455 -0.0890278" rpy="0 -0 1.5708" />
+-        <axis xyz="0 0 1" />
+-        <parent link="root" />
+-        <child link="9_1_gearbox_from_mas_automation_1" />
+-    </joint>
+-    <joint name="hanging_node_to_root_joint_1" type="fixed">
+-        <origin xyz="0.269068 0.134455 -0.0890278" rpy="0 0 -1.5708" />
+-        <axis xyz="0 0 1" />
+-        <parent link="root" />
+-        <child link="part_1" />
+-    </joint>
+-    <joint name="revolute_1" type="revolute">
+-        <origin xyz="0 0.037 0" rpy="3.14159 -2.46519e-32 3.14159" />
+-        <axis xyz="0 -1 0" />
+-        <parent link="9_1_gearbox_from_mas_automation_1" />
+-        <child link="part_1_1" />
+-        <limit effort="1" velocity="1" lower="0" upper="1.5708" />
+-    </joint>
+-    <joint name="revolute_2" type="continuous">
+-        <origin xyz="0 0.0185 0" rpy="3.14159 -0 3.14159" />
+-        <axis xyz="-0 -1 -0" />
+-        <parent link="part_1" />
+-        <child link="9_1_gearbox_from_mas_automation" />
++    </link>
++    <joint name="left_forearm" type="revolute">
++        <origin xyz="-0.103643 -0.040689 -0.2287" rpy="0 0 0" />
++        <axis xyz="-0.125226 0.990011 0.0047" />
++        <parent link="elbow_link_1" />
++        <child link="elbow_link_2" />
++        <limit lower="-1.5708" upper="1.5708" effort="200.0" velocity="3.0" />
+     </joint>
+-<xacro:include filename="vector.gazebo" /><xacro:include filename="vector.ros2_control.xacro" /></robot>
+\ No newline at end of file
++    <xacro:include filename="vector.gazebo" /><xacro:include filename="vector.ros2_control.xacro" /></robot>
+\ No newline at end of file

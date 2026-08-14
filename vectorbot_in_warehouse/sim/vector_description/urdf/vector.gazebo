@@ -1,0 +1,229 @@
+<?xml version="1.0" ?>
+<robot name="vector" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+
+
+<gazebo>
+  <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+    <parameters>$(arg ros2_controllers_config)</parameters>
+  </plugin>
+</gazebo>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     IMPORTANT: self_collide is FALSE on every link.
+     The original xacro had self_collide=true which caused internal
+     mesh collisions between the torso, slider, arms, and base,
+     generating violent physics forces that made the robot wobble.
+     Only the wheels and casters need collision with the ground plane.
+     ══════════════════════════════════════════════════════════════════ -->
+
+<gazebo reference="base_link">
+  <mu1>0.0</mu1>
+  <mu2>0.0</mu2>
+  <self_collide>false</self_collide>
+  <gravity>true</gravity>
+</gazebo>
+
+<gazebo reference="slider_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="torso_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="left_arm_link_1_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="left_shoulder_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="right_arm_link_1_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="right_shoulder_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="right_bicep_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="left_bicep_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="right_forearm_v1_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="left_forearm_v2_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="neck_v2_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="head_v1_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<!-- Wheels: high friction for traction, no self-collide -->
+<gazebo reference="right_wheel_link">
+  <mu1>1.5</mu1>
+  <mu2>1.5</mu2>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="left_wheel_link">
+  <mu1>1.5</mu1>
+  <mu2>1.5</mu2>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="torso_link">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="shoulder_link_1_link">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="shoulder_link_2">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="elbow_link_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="elbow_link_2">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="right_shoulder_link_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="right_shoulder_link_2">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="right_elbow_link_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="right_elbow_link_2">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="wrist_link_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="ee_link">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="camera_1">
+  <self_collide>false</self_collide>
+  <sensor name="head_camera" type="rgbd_camera">
+    <pose>0 0 0 0 0 0</pose>
+    <visualize>true</visualize>
+    <update_rate>30</update_rate>
+    <camera>
+      <camera_info_topic>head_camera/camera_info</camera_info_topic>
+      <horizontal_fov>1.089</horizontal_fov>
+      <image>
+        <format>R8G8B8</format>
+        <width>640</width>
+        <height>480</height>
+      </image>
+      <clip>
+        <near>0.05</near>
+        <far>8.0</far>
+      </clip>
+    </camera>
+    <topic>head_camera</topic>
+    <gz_frame_id>camera_1</gz_frame_id>
+  </sensor>
+</gazebo>
+
+<gazebo reference="left_hand_palm_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="left_hand_finger_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="right_hand_palm_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="right_hand_finger_1">
+  <self_collide>false</self_collide>
+</gazebo>
+
+
+<gazebo reference="livox_mid360_link">
+  <self_collide>false</self_collide>
+  <!-- ── LIVOX MID-360 LiDAR (gpu_lidar approximation) ──────────────────
+       Real specs: 360° H-FOV, -7° to +52° V-FOV (59°), 40 m range,
+       200k pts/s, 0.1 m blind zone, built-in IMU at 200 Hz.
+       Gazebo Harmonic doesn't support the Livox non-repetitive scan
+       pattern, so we use a standard gpu_lidar with matched FOV/range.
+       Horizontal: 720 samples × 360° = 0.5° angular resolution.
+       Vertical:    16 samples ×  59° ≈ 3.7° angular resolution.
+       ──────────────────────────────────────────────────────────────────── -->
+  <sensor name="livox_mid360" type="gpu_ray">
+    <pose>0 0 0 0 0 0</pose>
+    <visualize>true</visualize>
+    <update_rate>10.0</update_rate>
+    <always_on>true</always_on>
+    <ray>
+      <scan>
+        <horizontal>
+          <samples>720</samples>
+          <resolution>1</resolution>
+          <min_angle>-3.141592653589793</min_angle>
+          <max_angle>3.141592653589793</max_angle>
+        </horizontal>
+        <vertical>
+          <samples>16</samples>
+          <resolution>1</resolution>
+          <min_angle>-0.122173</min_angle>   <!-- -7° -->
+          <max_angle>0.907571</max_angle>    <!-- +52° -->
+        </vertical>
+      </scan>
+      <range>
+        <min>0.1</min>
+        <max>500</max>
+        <resolution>0.003</resolution>
+      </range>
+      <noise>
+        <type>gaussian</type>
+        <mean>0.0</mean>
+        <stddev>0.01</stddev>
+      </noise>
+    </ray>
+    <topic>livox_mid360</topic>
+    <gz_frame_id>livox_mid360_link</gz_frame_id>
+  </sensor>
+  <!-- Built-in IMU (Mid-360 has a 3-axis accel/gyro at 200 Hz) -->
+  <sensor name="livox_mid360_imu" type="imu">
+    <pose>0 0 0 0 0 0</pose>
+    <update_rate>200</update_rate>
+    <always_on>true</always_on>
+    <topic>livox_mid360/imu</topic>
+    <gz_frame_id>livox_mid360_link</gz_frame_id>
+  </sensor>
+</gazebo>
+
+
+
+</robot>

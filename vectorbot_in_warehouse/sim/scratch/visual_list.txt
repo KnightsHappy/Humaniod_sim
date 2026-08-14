@@ -1,0 +1,459 @@
+  0: file://$(find vector_description)/meshes/Part_1_1.stl
+  1: file://$(find vector_description)/meshes/Part_10.stl
+  2: file://$(find vector_description)/meshes/Part_6.stl
+  3: file://$(find vector_description)/meshes/Part_11.stl
+  4: file://$(find vector_description)/meshes/Part_20.stl
+  5: file://$(find vector_description)/meshes/Part_18.stl
+  6: file://$(find vector_description)/meshes/Part_14.stl
+  7: file://$(find vector_description)/meshes/Part_9.stl
+  8: file://$(find vector_description)/meshes/Part_13.stl
+  9: file://$(find vector_description)/meshes/Part_5.stl
+ 10: file://$(find vector_description)/meshes/Part_4.stl
+ 11: file://$(find vector_description)/meshes/Part_21.stl
+ 12: file://$(find vector_description)/meshes/Part_1_2.stl
+ 13: file://$(find vector_description)/meshes/Part_7.stl
+ 14: file://$(find vector_description)/meshes/Part_17.stl
+ 15: file://$(find vector_description)/meshes/Part_1_3.stl
+ 16: file://$(find vector_description)/meshes/Part_1_3.stl
+ 17: file://$(find vector_description)/meshes/Part_35.stl
+ 18: file://$(find vector_description)/meshes/Part_12.stl
+ 19: file://$(find vector_description)/meshes/Part_8.stl
+ 20: file://$(find vector_description)/meshes/Part_15.stl
+ 21: file://$(find vector_description)/meshes/Part_22.stl
+ 22: file://$(find vector_description)/meshes/Part_19.stl
+ 23: file://$(find vector_description)/meshes/Part_16.stl
+ 24: file://$(find vector_description)/meshes/Part_2.stl
+ 25: file://$(find vector_description)/meshes/Part_3.stl
+ 26: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD.stl
+ 27: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_1.stl
+ 28: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_2.stl
+ 29: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_3.stl
+ 30: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_4.stl
+ 31: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_5.stl
+ 32: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_6.stl
+ 33: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_7.stl
+ 34: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_8.stl
+ 35: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_9.stl
+ 36: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_10.stl
+ 37: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_11.stl
+ 38: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_12.stl
+ 39: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_13.stl
+ 40: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_14.stl
+ 41: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_15.stl
+ 42: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_16.stl
+ 43: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_17.stl
+ 44: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_18.stl
+ 45: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_19.stl
+ 46: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_20.stl
+ 47: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_21.stl
+ 48: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_22.stl
+ 49: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_23.stl
+ 50: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_24.stl
+ 51: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_25.stl
+ 52: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_26.stl
+ 53: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_27.stl
+ 54: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_28.stl
+ 55: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_29.stl
+ 56: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_30.stl
+ 57: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_31.stl
+ 58: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_32.stl
+ 59: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_33.stl
+ 60: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_34.stl
+ 61: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_35.stl
+ 62: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_36.stl
+ 63: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_37.stl
+ 64: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_38.stl
+ 65: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_39.stl
+ 66: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_40.stl
+ 67: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_41.stl
+ 68: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_42.stl
+ 69: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_43.stl
+ 70: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_44.stl
+ 71: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_45.stl
+ 72: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_46.stl
+ 73: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_47.stl
+ 74: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_48.stl
+ 75: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_49.stl
+ 76: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_50.stl
+ 77: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_51.stl
+ 78: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_52.stl
+ 79: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_53.stl
+ 80: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_54.stl
+ 81: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_4.stl
+ 82: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_26.stl
+ 83: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_51.stl
+ 84: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_37.stl
+ 85: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_32.stl
+ 86: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_47.stl
+ 87: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_39.stl
+ 88: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_19.stl
+ 89: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_7.stl
+ 90: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_9.stl
+ 91: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_53.stl
+ 92: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_36.stl
+ 93: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_44.stl
+ 94: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_24.stl
+ 95: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_21.stl
+ 96: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_48.stl
+ 97: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_29.stl
+ 98: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_10.stl
+ 99: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_35.stl
+100: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_17.stl
+101: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_46.stl
+102: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_41.stl
+103: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_45.stl
+104: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_13.stl
+105: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_3.stl
+106: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_43.stl
+107: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_14.stl
+108: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_49.stl
+109: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_38.stl
+110: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_34.stl
+111: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_8.stl
+112: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_18.stl
+113: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_33.stl
+114: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_25.stl
+115: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_40.stl
+116: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_31.stl
+117: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_20.stl
+118: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_16.stl
+119: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_54.stl
+120: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_28.stl
+121: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_6.stl
+122: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_5.stl
+123: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_50.stl
+124: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_15.stl
+125: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD.stl
+126: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_23.stl
+127: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_1.stl
+128: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_22.stl
+129: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_11.stl
+130: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_2.stl
+131: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_30.stl
+132: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_42.stl
+133: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_12.stl
+134: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_27.stl
+135: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_52.stl
+136: file://$(find vector_description)/meshes/E_STOP.stl
+137: file://$(find vector_description)/meshes/Part_1_4.stl
+138: file://$(find vector_description)/meshes/Part_2_1.stl
+139: file://$(find vector_description)/meshes/E_STOP_1.stl
+140: file://$(find vector_description)/meshes/Belt.stl
+141: file://$(find vector_description)/meshes/Part_12_1.stl
+142: file://$(find vector_description)/meshes/Part_7_1.stl
+143: file://$(find vector_description)/meshes/Part_4_1.stl
+144: file://$(find vector_description)/meshes/Part_12_1.stl
+145: file://$(find vector_description)/meshes/E_STOP_2.stl
+146: file://$(find vector_description)/meshes/Part_12_2.stl
+147: file://$(find vector_description)/meshes/Part_12_1.stl
+148: file://$(find vector_description)/meshes/HGH20CA1R1000Z0C_GW2025030058_8.stl
+149: file://$(find vector_description)/meshes/HGH20CA1R1000Z0C_GW2025030058_6.stl
+150: file://$(find vector_description)/meshes/Part_5_1.stl
+151: file://$(find vector_description)/meshes/Part_7_1.stl
+152: file://$(find vector_description)/meshes/HGH20CA1R1000Z0C_GW2025030058_5.stl
+153: file://$(find vector_description)/meshes/Part_3_1.stl
+154: file://$(find vector_description)/meshes/E_STOP_3.stl
+155: file://$(find vector_description)/meshes/Part_6_1.stl
+156: file://$(find vector_description)/meshes/Pulley_Step.stl
+157: file://$(find vector_description)/meshes/Part_11_1.stl
+158: file://$(find vector_description)/meshes/Part_2_1.stl
+159: file://$(find vector_description)/meshes/Part_3_2.stl
+160: file://$(find vector_description)/meshes/Part_12_1.stl
+161: file://$(find vector_description)/meshes/HGH20CA1R1000Z0C_GW2025030058_7.stl
+162: file://$(find vector_description)/meshes/Part_8_1.stl
+163: file://$(find vector_description)/meshes/Part_4_2.stl
+164: file://$(find vector_description)/meshes/E_STOP_4.stl
+165: file://$(find vector_description)/meshes/HGH20CA1R1000Z0C_GW2025030058_3.stl
+166: file://$(find vector_description)/meshes/Part_6_1.stl
+167: file://$(find vector_description)/meshes/Part_9_1.stl
+168: file://$(find vector_description)/meshes/Part_1_5.stl
+169: file://$(find vector_description)/meshes/Part_2_2.stl
+170: file://$(find vector_description)/meshes/Part_2_1.stl
+171: file://$(find vector_description)/meshes/HGH20CA1R1000Z0C_GW2025030058_4.stl
+172: file://$(find vector_description)/meshes/Part_1_4.stl
+173: file://$(find vector_description)/meshes/Part_10_1.stl
+174: file://$(find vector_description)/meshes/E_STOP_5.stl
+175: file://$(find vector_description)/meshes/Part_7_1.stl
+176: file://$(find vector_description)/meshes/Part_18_1.stl
+177: file://$(find vector_description)/meshes/Part_1_6.stl
+178: file://$(find vector_description)/meshes/Part_13_1.stl
+179: file://$(find vector_description)/meshes/Part_16_1.stl
+180: file://$(find vector_description)/meshes/Part_15_1.stl
+181: file://$(find vector_description)/meshes/Part_17_1.stl
+182: file://$(find vector_description)/meshes/top_lidar_mount_gusset.stl
+183: file://$(find vector_description)/meshes/Part_1_4.stl
+184: file://$(find vector_description)/meshes/Pulley_Step.stl
+185: file://$(find vector_description)/meshes/E_STOP_6.stl
+186: file://$(find vector_description)/meshes/E_STOP_7.stl
+187: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_55.stl
+188: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_56.stl
+189: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_57.stl
+190: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_58.stl
+191: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_59.stl
+192: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_60.stl
+193: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_61.stl
+194: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_62.stl
+195: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_63.stl
+196: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_64.stl
+197: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_65.stl
+198: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_66.stl
+199: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_67.stl
+200: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_68.stl
+201: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_69.stl
+202: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_70.stl
+203: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_71.stl
+204: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_72.stl
+205: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_73.stl
+206: file://$(find vector_description)/meshes/_9_1_Gearbox_from_MAS_Automation_1.stl
+207: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_74.stl
+208: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_75.stl
+209: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_76.stl
+210: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_77.stl
+211: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_78.stl
+212: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_79.stl
+213: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_80.stl
+214: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_81.stl
+215: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_82.stl
+216: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_83.stl
+217: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_84.stl
+218: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_85.stl
+219: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_86.stl
+220: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_87.stl
+221: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_88.stl
+222: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_89.stl
+223: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_90.stl
+224: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_91.stl
+225: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_92.stl
+226: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_93.stl
+227: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_94.stl
+228: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_95.stl
+229: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_96.stl
+230: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_97.stl
+231: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_98.stl
+232: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_99.stl
+233: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_100.stl
+234: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_101.stl
+235: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_102.stl
+236: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_103.stl
+237: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_104.stl
+238: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_105.stl
+239: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_106.stl
+240: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_107.stl
+241: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_108.stl
+242: file://$(find vector_description)/meshes/_3D_ELVM6040V48EH_M17_HD_109.stl
+243: file://$(find vector_description)/meshes/Speaker_1_box.stl
+244: file://$(find vector_description)/meshes/Part_3_Mirrored.stl
+245: file://$(find vector_description)/meshes/Part_3_Mirrored_Mirrored.stl
+246: file://$(find vector_description)/meshes/Part_3_1.stl
+247: file://$(find vector_description)/meshes/Back_top_plate.stl
+248: file://$(find vector_description)/meshes/Part_3_1.stl
+249: file://$(find vector_description)/meshes/Part_3_1.stl
+250: file://$(find vector_description)/meshes/Part_17_2.stl
+251: file://$(find vector_description)/meshes/Part_3_Mirrored.stl
+252: file://$(find vector_description)/meshes/Part_12_3.stl
+253: file://$(find vector_description)/meshes/Part_3_Mirrored.stl
+254: file://$(find vector_description)/meshes/Part_3_3.stl
+255: file://$(find vector_description)/meshes/Part_8_2.stl
+256: file://$(find vector_description)/meshes/Part_3_Mirrored_1.stl
+257: file://$(find vector_description)/meshes/Part_3_Mirrored_Mirrored_1.stl
+258: file://$(find vector_description)/meshes/Part_3_Mirrored.stl
+259: file://$(find vector_description)/meshes/Part_3_1.stl
+260: file://$(find vector_description)/meshes/Part_9_2.stl
+261: file://$(find vector_description)/meshes/Torso_front_shield.stl
+262: file://$(find vector_description)/meshes/Part_7_2.stl
+263: file://$(find vector_description)/meshes/Part_3_1.stl
+264: file://$(find vector_description)/meshes/Part_2_3.stl
+265: file://$(find vector_description)/meshes/Part_6_2.stl
+266: file://$(find vector_description)/meshes/extra_2xMS_2mm_Base_Plate.stl
+267: file://$(find vector_description)/meshes/Part_3_Mirrored.stl
+268: file://$(find vector_description)/meshes/Part_3_1.stl
+269: file://$(find vector_description)/meshes/Part_3_4.stl
+270: file://$(find vector_description)/meshes/Part_11_2.stl
+271: file://$(find vector_description)/meshes/Part_3_Mirrored_Mirrored_1.stl
+272: file://$(find vector_description)/meshes/Part_16_2.stl
+273: file://$(find vector_description)/meshes/Part_3_Mirrored.stl
+274: file://$(find vector_description)/meshes/Part_3_Mirrored.stl
+275: file://$(find vector_description)/meshes/_3dprinted_Front_plate.stl
+276: file://$(find vector_description)/meshes/Part_4_3.stl
+277: file://$(find vector_description)/meshes/Part_10_2.stl
+278: file://$(find vector_description)/meshes/Part_3_Mirrored_1.stl
+279: file://$(find vector_description)/meshes/Part_13_2.stl
+280: file://$(find vector_description)/meshes/Part_3_Mirrored.stl
+281: file://$(find vector_description)/meshes/Part_1_7.stl
+282: file://$(find vector_description)/meshes/Part_3_5.stl
+283: file://$(find vector_description)/meshes/eBom_FreeParts.stl
+284: file://$(find vector_description)/meshes/eBom_FreeParts_1.stl
+285: file://$(find vector_description)/meshes/Wheel_25kg.stl
+286: file://$(find vector_description)/meshes/_93475A210.stl
+287: file://$(find vector_description)/meshes/Gear__25R_0_00_.stl
+288: file://$(find vector_description)/meshes/Wheel_gear_25kg.stl
+289: file://$(find vector_description)/meshes/_93475A210.stl
+290: file://$(find vector_description)/meshes/Wheel_25kg.stl
+291: file://$(find vector_description)/meshes/Gear__25R_0_00_.stl
+292: file://$(find vector_description)/meshes/Wheel_gear_25kg.stl
+293: file://$(find vector_description)/meshes/eBom_FreeParts_2.stl
+294: file://$(find vector_description)/meshes/Part_3_Mirrored_Mirrored.stl
+295: file://$(find vector_description)/meshes/L_S2_M_motor_holder_Mirrored.stl
+296: file://$(find vector_description)/meshes/L_E2_2_cover_Mirrored.stl
+297: file://$(find vector_description)/meshes/L_Wr_motor_horn_adaptor.stl
+298: file://$(find vector_description)/meshes/L_E2_1_cover_Mirrored.stl
+299: file://$(find vector_description)/meshes/L_E1_motor_bearing_holder.stl
+300: file://$(find vector_description)/meshes/ID_DGBB_6200_dummy.stl
+301: file://$(find vector_description)/meshes/ID_Thrust_51106_dummy.stl
+302: file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl
+303: file://$(find vector_description)/meshes/L_E2_3dp_CHP_Mirrored.stl
+304: file://$(find vector_description)/meshes/L_Wr_2_motorholding_bracket_Mirrored.stl
+305: file://$(find vector_description)/meshes/L_Wr_1_motorholding_bracket.stl
+306: file://$(find vector_description)/meshes/L_E2_motorholding_bracket_Mirrored.stl
+307: file://$(find vector_description)/meshes/L_E2_3dp_CHP_Mirrored.stl
+308: file://$(find vector_description)/meshes/L_Wr_3_motorholding_bracket_Mirrored.stl
+309: file://$(find vector_description)/meshes/RS02_Mirrored.stl
+310: file://$(find vector_description)/meshes/R_Hand_EE.stl
+311: file://$(find vector_description)/meshes/L_B_S2_cover_Mirrored.stl
+312: file://$(find vector_description)/meshes/L_S2_3dprinted_CHP.stl
+313: file://$(find vector_description)/meshes/L_A_S2_cover_Mirrored.stl
+314: file://$(find vector_description)/meshes/L_S2_bracket.stl
+315: file://$(find vector_description)/meshes/RS02_Mirrored.stl
+316: file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl
+317: file://$(find vector_description)/meshes/L_S1_cover_Mirrored.stl
+318: file://$(find vector_description)/meshes/ID_Thrust_51206_dummy.stl
+319: file://$(find vector_description)/meshes/L_S1_motor_bracket_Mirrored.stl
+320: file://$(find vector_description)/meshes/L_S1_Motor_bearing_Adaptor.stl
+321: file://$(find vector_description)/meshes/L_E1_1_cover_Mirrored.stl
+322: file://$(find vector_description)/meshes/L_E1_2_cover_Mirrored.stl
+323: file://$(find vector_description)/meshes/L_E1_3dp_CHP.stl
+324: file://$(find vector_description)/meshes/L_E1_motor_bracket.stl
+325: file://$(find vector_description)/meshes/L_Wp_1_motorholding_bracket_Mirrored.stl
+326: file://$(find vector_description)/meshes/RDS5160_v39.stl
+327: file://$(find vector_description)/meshes/L_Wp_1_cover_Mirrored.stl
+328: file://$(find vector_description)/meshes/Wheel_v5.stl
+329: file://$(find vector_description)/meshes/Wheel_gear_v6.stl
+330: file://$(find vector_description)/meshes/L_Wp_2_motorholding_bracket_Mirrored.stl
+331: file://$(find vector_description)/meshes/L_Wp_2_cover_Mirrored.stl
+332: file://$(find vector_description)/meshes/L_Wp_motor_3dp_piece_Mirrored.stl
+333: file://$(find vector_description)/meshes/_6mm_Bearing_v2.stl
+334: file://$(find vector_description)/meshes/RDS5160_v39_Mirrored.stl
+335: file://$(find vector_description)/meshes/RDS5160_v39_1.stl
+336: file://$(find vector_description)/meshes/RDS5160_v39_Mirrored_1.stl
+337: file://$(find vector_description)/meshes/RDS3235_Gear_25R_0_00_v5.stl
+338: file://$(find vector_description)/meshes/L_upperarm_back_support_bracket_Mirrored.stl
+339: file://$(find vector_description)/meshes/L_S2_Motor_supporting_bracket_Mirrored.stl
+340: file://$(find vector_description)/meshes/L_S2_A_cover_Mirrored.stl
+341: file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl
+342: file://$(find vector_description)/meshes/L_S2_Rbearing_Holder.stl
+343: file://$(find vector_description)/meshes/L_S1_Motor_bearing_Adaptor.stl
+344: file://$(find vector_description)/meshes/L_E1_1_motorbracket_Mirrored.stl
+345: file://$(find vector_description)/meshes/L_upperarm_front_support_bracket_Mirrored.stl
+346: file://$(find vector_description)/meshes/L_E1_2_motor_bracket.stl
+347: file://$(find vector_description)/meshes/ID_DGBB_6200_dummy.stl
+348: file://$(find vector_description)/meshes/RS02_Mirrored.stl
+349: file://$(find vector_description)/meshes/RS02_Mirrored.stl
+350: file://$(find vector_description)/meshes/ID_Thrust_51206_dummy.stl
+351: file://$(find vector_description)/meshes/L_S2_B_cover_Mirrored.stl
+352: file://$(find vector_description)/meshes/L_S2_M_motor_holder_Mirrored.stl
+353: file://$(find vector_description)/meshes/L1_upperarm_AL_ext.stl
+354: file://$(find vector_description)/meshes/L_Hand_EE.stl
+355: file://$(find vector_description)/meshes/L_B_S2_cover.stl
+356: file://$(find vector_description)/meshes/L_S2_3dprinted_CHP.stl
+357: file://$(find vector_description)/meshes/L_A_S2_cover.stl
+358: file://$(find vector_description)/meshes/L_S2_bracket.stl
+359: file://$(find vector_description)/meshes/L_upperarm_front_support_bracket.stl
+360: file://$(find vector_description)/meshes/L_S2_B_cover.stl
+361: file://$(find vector_description)/meshes/L_S2_M_motor_holder.stl
+362: file://$(find vector_description)/meshes/L_S1_Motor_bearing_Adaptor.stl
+363: file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl
+364: file://$(find vector_description)/meshes/RS02.stl
+365: file://$(find vector_description)/meshes/ID_Thrust_51206_dummy.stl
+366: file://$(find vector_description)/meshes/RS02.stl
+367: file://$(find vector_description)/meshes/L_E1_2_motor_bracket.stl
+368: file://$(find vector_description)/meshes/ID_DGBB_6200_dummy.stl
+369: file://$(find vector_description)/meshes/L_S2_A_cover.stl
+370: file://$(find vector_description)/meshes/L_upperarm_back_support_bracket.stl
+371: file://$(find vector_description)/meshes/L_E1_1_motorbracket.stl
+372: file://$(find vector_description)/meshes/L_S2_Rbearing_Holder.stl
+373: file://$(find vector_description)/meshes/L_S2_Motor_supporting_bracket.stl
+374: file://$(find vector_description)/meshes/L1_upperarm_AL_ext.stl
+375: file://$(find vector_description)/meshes/L_E1_motor_bearing_holder.stl
+376: file://$(find vector_description)/meshes/L_E2_3dp_CHP.stl
+377: file://$(find vector_description)/meshes/L_E2_3dp_CHP.stl
+378: file://$(find vector_description)/meshes/L_Wr_2_motorholding_bracket.stl
+379: file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl
+380: file://$(find vector_description)/meshes/L_E2_2_cover.stl
+381: file://$(find vector_description)/meshes/L_S2_M_motor_holder.stl
+382: file://$(find vector_description)/meshes/ID_DGBB_6200_dummy.stl
+383: file://$(find vector_description)/meshes/L_E2_motorholding_bracket.stl
+384: file://$(find vector_description)/meshes/ID_Thrust_51106_dummy.stl
+385: file://$(find vector_description)/meshes/L_E2_1_cover.stl
+386: file://$(find vector_description)/meshes/L_Wr_motor_horn_adaptor.stl
+387: file://$(find vector_description)/meshes/L_Wr_1_motorholding_bracket.stl
+388: file://$(find vector_description)/meshes/RS02.stl
+389: file://$(find vector_description)/meshes/L_Wr_3_motorholding_bracket.stl
+390: file://$(find vector_description)/meshes/L_Wp_1_motorholding_bracket.stl
+391: file://$(find vector_description)/meshes/L_Wp_2_cover.stl
+392: file://$(find vector_description)/meshes/L_Wp_1_cover.stl
+393: file://$(find vector_description)/meshes/L_Wp_motor_3dp_piece.stl
+394: file://$(find vector_description)/meshes/L_Wp_2_motorholding_bracket.stl
+395: file://$(find vector_description)/meshes/RDS5160_v39_1.stl
+396: file://$(find vector_description)/meshes/RDS5160_v39_2.stl
+397: file://$(find vector_description)/meshes/RDS5160_v39.stl
+398: file://$(find vector_description)/meshes/RDS5160_v39_3.stl
+399: file://$(find vector_description)/meshes/RDS3235_Gear_25R_0_00_v5.stl
+400: file://$(find vector_description)/meshes/Wheel_v5.stl
+401: file://$(find vector_description)/meshes/_6mm_Bearing_v2.stl
+402: file://$(find vector_description)/meshes/Wheel_gear_v6.stl
+403: file://$(find vector_description)/meshes/L_E1_motor_bracket.stl
+404: file://$(find vector_description)/meshes/L_E1_3dp_CHP.stl
+405: file://$(find vector_description)/meshes/L_E1_1_cover.stl
+406: file://$(find vector_description)/meshes/L_E1_2_cover.stl
+407: file://$(find vector_description)/meshes/L_S1_cover.stl
+408: file://$(find vector_description)/meshes/L_S1_motor_bracket.stl
+409: file://$(find vector_description)/meshes/RS02.stl
+410: file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl
+411: file://$(find vector_description)/meshes/L_S1_Motor_bearing_Adaptor.stl
+412: file://$(find vector_description)/meshes/ID_Thrust_51206_dummy.stl
+413: file://$(find vector_description)/meshes/Neck_motor_cover_B.stl
+414: file://$(find vector_description)/meshes/Neck_motor_support_3dprinted.stl
+415: file://$(find vector_description)/meshes/Part_1_8.stl
+416: file://$(find vector_description)/meshes/Camera_B_cross_piece.stl
+417: file://$(find vector_description)/meshes/Camera_B_cross_piece.stl
+418: file://$(find vector_description)/meshes/Neck_bracket_support_3dprinted.stl
+419: file://$(find vector_description)/meshes/Camera_A_Cross_piece.stl
+420: file://$(find vector_description)/meshes/Camera_A_Cross_piece.stl
+421: file://$(find vector_description)/meshes/eBom_FreeParts_3.stl
+422: file://$(find vector_description)/meshes/Wheel_25kg_1.stl
+423: file://$(find vector_description)/meshes/Gear__25R_0_00__1.stl
+424: file://$(find vector_description)/meshes/_93475A210_1.stl
+425: file://$(find vector_description)/meshes/Wheel_gear_25kg_1.stl
+426: file://$(find vector_description)/meshes/eBom_FreeParts_4.stl
+427: file://$(find vector_description)/meshes/eBom_FreeParts_5.stl
+428: file://$(find vector_description)/meshes/Gear__25R_0_00__1.stl
+429: file://$(find vector_description)/meshes/Wheel_gear_25kg_1.stl
+430: file://$(find vector_description)/meshes/_93475A210_1.stl
+431: file://$(find vector_description)/meshes/Wheel_25kg_1.stl
+432: file://$(find vector_description)/meshes/Neck_Motor_cover_A.stl
+433: file://$(find vector_description)/meshes/Neck_bracket.stl
+434: file://$(find vector_description)/meshes/Camera_mount.stl
+435: file://$(find vector_description)/meshes/EVA_stp.stl
+436: file://$(find vector_description)/meshes/_5INCH_LCD_stp.stl
+437: file://$(find vector_description)/meshes/EVA_stp_1.stl
+438: file://$(find vector_description)/meshes/_5INCH_TP_stp.stl
+439: file://$(find vector_description)/meshes/EVA_stp_2.stl
+440: file://$(find vector_description)/meshes/USB_J4_10118194_606F1A_stp.stl
+441: file://$(find vector_description)/meshes/USB_J4_10118194_606F1A_stp.stl
+442: file://$(find vector_description)/meshes/HDMI_J1_47151_0001_61277A9B_stp.stl
+443: file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl
+444: file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl
+445: file://$(find vector_description)/meshes/RTD2660_5INCH_HDMI_PCBA_stp.stl
+446: file://$(find vector_description)/meshes/HP2_0_4PIN_SMT_00_stp.stl
+447: file://$(find vector_description)/meshes/MINI_HDMI_stp.stl
+448: file://$(find vector_description)/meshes/RTD2660_5INCH_HDMI_PCBA_stp_1.stl
+449: file://$(find vector_description)/meshes/_30PIN_CONNECTOR_stp.stl
+450: file://$(find vector_description)/meshes/MINI_HDMI_stp_1.stl
+451: file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl
+452: file://$(find vector_description)/meshes/_6PIN_CONNECTOR_stp.stl
+453: file://$(find vector_description)/meshes/MINI_HDMI_stp_2.stl
+454: file://$(find vector_description)/meshes/HP_stp.stl
+455: file://$(find vector_description)/meshes/MINI_HDMI_stp_3.stl
+456: file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl
+457: file://$(find vector_description)/meshes/SWITCH_7X3_3X3_5_stp.stl
+458: file://$(find vector_description)/meshes/RTD2660_5INCH_HDMI_PCBA_stp_2.stl

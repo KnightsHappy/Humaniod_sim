@@ -1,0 +1,67 @@
+# ros_gz_bridge config — published on Gazebo side (gz.msgs), republished
+# on ROS side (sensor_msgs / std_msgs / etc).
+#
+# Direction: GZ_TO_ROS for sensor data, ROS_TO_GZ for actuator commands.
+
+# /clock — required so use_sim_time:=true works for the OS nodes.
+- ros_topic_name: "/clock"
+  gz_topic_name: "/clock"
+  ros_type_name: "rosgraph_msgs/msg/Clock"
+  gz_type_name: "gz.msgs.Clock"
+  direction: GZ_TO_ROS
+
+# ── TELEOP COMMANDS (Gazebo GUI → ROS) ────────────────────────────────
+- ros_topic_name: "/cmd_vel"
+  gz_topic_name: "/cmd_vel"
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_type_name: "gz.msgs.Twist"
+  direction: GZ_TO_ROS
+
+# ── HEAD CAMERA (OAK-D Lite — rgbd_camera) ────────────────────────────
+# Gazebo rgbd_camera publishes on base topic /head_camera; subtopics below.
+- ros_topic_name: "/head_camera/image_raw"
+  gz_topic_name: "/head_camera/image"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/head_camera/camera_info"
+  gz_topic_name: "/head_camera/camera_info"
+  ros_type_name: "sensor_msgs/msg/CameraInfo"
+  gz_type_name: "gz.msgs.CameraInfo"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/head_camera/depth/image_raw"
+  gz_topic_name: "/head_camera/depth_image"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/head_camera/points"
+  gz_topic_name: "/head_camera/points"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  gz_type_name: "gz.msgs.PointCloudPacked"
+  direction: GZ_TO_ROS
+
+# ── LIVOX MID-360 LiDAR (top of base column, 360° 3D scan) ────────────
+# LaserScan (2D slice, useful for nav2 costmap)
+- ros_topic_name: "/livox_mid360/scan"
+  gz_topic_name: "/livox_mid360"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS
+
+# PointCloud2 (full 3D point cloud)
+- ros_topic_name: "/livox_mid360/points"
+  gz_topic_name: "/livox_mid360/points"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  gz_type_name: "gz.msgs.PointCloudPacked"
+  direction: GZ_TO_ROS
+
+# Built-in IMU (200 Hz)
+- ros_topic_name: "/livox_mid360/imu"
+  gz_topic_name: "/livox_mid360/imu"
+  ros_type_name: "sensor_msgs/msg/Imu"
+  gz_type_name: "gz.msgs.IMU"
+  direction: GZ_TO_ROS
+

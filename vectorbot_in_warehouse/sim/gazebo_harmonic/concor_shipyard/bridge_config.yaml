@@ -1,0 +1,57 @@
+# ROS 2 Jazzy <-> Gazebo Harmonic Bridge Mapping
+
+# 1. LIDAR 2D Scan
+- gz_topic_name: "/world/concor_shipyard/model/robot/link/lidar_link/sensor/gpu_lidar/scan"
+  ros_topic_name: "/scan"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS
+
+# 2. LIDAR 3D Point Cloud (New!)
+- gz_topic_name: "/world/concor_shipyard/model/robot/link/lidar_link/sensor/gpu_lidar/scan/points"
+  ros_topic_name: "/lidar_points"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  gz_type_name: "gz.msgs.PointCloudPacked"
+  direction: GZ_TO_ROS
+
+# 3. Camera Left
+- gz_topic_name: "/world/concor_shipyard/model/robot/link/camera_link/sensor/camera_left/image"
+  ros_topic_name: "/camera_left/image_raw"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS
+
+# 4. Camera Right
+- gz_topic_name: "/world/concor_shipyard/model/robot/link/camera_link/sensor/camera_right/image"
+  ros_topic_name: "/camera_right/image_raw"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS
+
+# 5. GPS (NavSat)
+- gz_topic_name: "/world/concor_shipyard/model/robot/link/gps_link/sensor/navsat/navsat"
+  ros_topic_name: "/gps/fix"
+  ros_type_name: "sensor_msgs/msg/NavSatFix"
+  gz_type_name: "gz.msgs.NavSat"
+  direction: GZ_TO_ROS
+
+# 6. Odometry (Robot Position Tracking)
+- gz_topic_name: "/model/robot/odometry"
+  ros_topic_name: "/odom"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+# 7. Command Velocity (Sending movement to Robot)
+- gz_topic_name: "/model/robot/cmd_vel"
+  ros_topic_name: "/cmd_vel"
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_type_name: "gz.msgs.Twist"
+  direction: ROS_TO_GZ
+
+# 8. Transform (TF) - This is the "glue" for RViz
+- gz_topic_name: "/model/robot/tf"
+  ros_topic_name: "/tf"
+  ros_type_name: "tf2_msgs/msg/TFMessage"
+  gz_type_name: "gz.msgs.Pose_V"
+  direction: GZ_TO_ROS

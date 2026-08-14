@@ -1,0 +1,21 @@
+digraph G {
+"shoulder_link_2" -> "elbow_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.194\nBuffer length: 5.101\nMost recent transform: 1783954264.45026\nOldest transform: 1783954259.349158\n"];
+"shoulder_link_1_link" -> "shoulder_link_2"[label=" Broadcaster: default_authority\nAverage rate: 10.194\nBuffer length: 5.101\nMost recent transform: 1783954264.45026\nOldest transform: 1783954259.349158\n"];
+"elbow_link_1" -> "elbow_link_2"[label=" Broadcaster: default_authority\nAverage rate: 10.194\nBuffer length: 5.101\nMost recent transform: 1783954264.45026\nOldest transform: 1783954259.349158\n"];
+"torso_link" -> "shoulder_link_1_link"[label=" Broadcaster: default_authority\nAverage rate: 10.194\nBuffer length: 5.101\nMost recent transform: 1783954264.45026\nOldest transform: 1783954259.349158\n"];
+"9_1_gearbox_from_mas_automation_1" -> "left_wheel_link"[label=" Broadcaster: default_authority\nAverage rate: 10.194\nBuffer length: 5.101\nMost recent transform: 1783954264.45026\nOldest transform: 1783954259.349158\n"];
+"base_link" -> "9_1_gearbox_from_mas_automation_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"right_shoulder_link_2" -> "right_elbow_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.194\nBuffer length: 5.101\nMost recent transform: 1783954264.45026\nOldest transform: 1783954259.349158\n"];
+"right_shoulder_link_1" -> "right_shoulder_link_2"[label=" Broadcaster: default_authority\nAverage rate: 10.194\nBuffer length: 5.101\nMost recent transform: 1783954264.45026\nOldest transform: 1783954259.349158\n"];
+"right_elbow_link_1" -> "right_elbow_link_2"[label=" Broadcaster: default_authority\nAverage rate: 10.194\nBuffer length: 5.101\nMost recent transform: 1783954264.45026\nOldest transform: 1783954259.349158\n"];
+"torso_link" -> "right_shoulder_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.194\nBuffer length: 5.101\nMost recent transform: 1783954264.45026\nOldest transform: 1783954259.349158\n"];
+"base_link" -> "torso_link"[label=" Broadcaster: default_authority\nAverage rate: 10.194\nBuffer length: 5.101\nMost recent transform: 1783954264.45026\nOldest transform: 1783954259.349158\n"];
+"9_1_gearbox_from_mas_automation" -> "right_wheel_link"[label=" Broadcaster: default_authority\nAverage rate: 10.194\nBuffer length: 5.101\nMost recent transform: 1783954264.45026\nOldest transform: 1783954259.349158\n"];
+"base_link" -> "9_1_gearbox_from_mas_automation"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"right_elbow_link_2" -> "wrist_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.194\nBuffer length: 5.101\nMost recent transform: 1783954264.45026\nOldest transform: 1783954259.349158\n"];
+"wrist_link_1" -> "ee_link"[label=" Broadcaster: default_authority\nAverage rate: 10.194\nBuffer length: 5.101\nMost recent transform: 1783954264.45026\nOldest transform: 1783954259.349158\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1783954264.4896853"[ shape=plaintext ] ;
+}->"base_link";
+}

@@ -1,0 +1,16 @@
+digraph G {
+"camera_1" -> "camera_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"torso_link" -> "camera_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "livox_mid360_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"odom" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10.286\nBuffer length: 3.5\nMost recent transform: 15.6\nOldest transform: 12.1\n"];
+"9_1_gearbox_from_mas_automation_1" -> "left_wheel_link"[label=" Broadcaster: default_authority\nAverage rate: 16.886\nBuffer length: 4.56\nMost recent transform: 15.66\nOldest transform: 11.1\n"];
+"base_link" -> "9_1_gearbox_from_mas_automation_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"9_1_gearbox_from_mas_automation" -> "right_wheel_link"[label=" Broadcaster: default_authority\nAverage rate: 16.886\nBuffer length: 4.56\nMost recent transform: 15.66\nOldest transform: 11.1\n"];
+"base_link" -> "9_1_gearbox_from_mas_automation"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"torso_link" -> "shoulder_link_1_link"[label=" Broadcaster: default_authority\nAverage rate: 16.886\nBuffer length: 4.56\nMost recent transform: 15.66\nOldest transform: 11.1\n"];
+"base_link" -> "torso_link"[label=" Broadcaster: default_authority\nAverage rate: 16.886\nBuffer length: 4.56\nMost recent transform: 15.66\nOldest transform: 11.1\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1783927280.430216"[ shape=plaintext ] ;
+}->"odom";
+}

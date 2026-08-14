@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:macro name="industrial_robot_ros2_control">
+
+        <ros2_control name="industrial_robot" type="system">
+            <hardware>
+                <plugin>mock_components/GenericSystem</plugin>
+            </hardware>
+            
+            <joint name="left_shoulder_1">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">3.14</param>
+                </state_interface>
+            </joint>
+            <joint name="left_shoulder_2">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">3.14</param>
+                </state_interface>
+            </joint>
+            <joint name="left_elbow_1">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">3.14</param>
+                </state_interface>
+            </joint>
+            <joint name="left_elbow_2">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">3.14</param>
+                </state_interface>
+            </joint>
+            <joint name="left_wrist_roll_joint">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+            </joint>
+            <joint name="right_shoulder_1">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+            </joint>
+            <joint name="right_shoulder_2">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+            </joint>
+            <joint name="right_elbow_1">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+            </joint>
+            <joint name="right_elbow_2">
+                <command_interface name="position"/>
+                <state_interface name="position">
+                  <param name="initial_value">0.0</param>
+                </state_interface>
+            </joint>
+
+        </ros2_control>
+        
+    </xacro:macro>
+</robot>

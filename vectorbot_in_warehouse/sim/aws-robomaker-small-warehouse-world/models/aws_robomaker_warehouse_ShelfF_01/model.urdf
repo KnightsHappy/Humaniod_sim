@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<robot name="aws_robomaker_warehouse_ShelfF_01">
+  <link name="aws_robomaker_warehouse_ShelfF_01">
+    <inertial>
+      <mass value="2"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="0.277" ixy="0" ixz="0" iyy="0.452" iyz="0" izz="0.268"/>
+    </inertial>
+    <collision name="aws_robomaker_warehouse_ShelfF_01__collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/aws_robomaker_warehouse_ShelfF_01_collision.DAE" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="aws_robomaker_warehouse_ShelfF_01__visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/aws_robomaker_warehouse_ShelfF_01_visual.DAE" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="Yellow">
+        <color rgba="0.36 0.25 0.20 1.0"/>
+      </material>
+    </visual>
+  </link>
+</robot>

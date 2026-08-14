@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="concor_shipyard">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <world_frame_orientation>ENU</world_frame_orientation> <latitude_deg>37.7749</latitude_deg> <longitude_deg>-122.4194</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics" />
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands" />
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster" />
+    
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-navsat-system" name="gz::sim::systems::NavSat" />
+
+    <scene>
+        <ambient>0.6 0.6 0.6 1</ambient>
+        <background>0.5 0.7 0.9 1</background>
+        <shadows>true</shadows>
+        <sky>
+            <clouds>
+                <speed>12</speed>
+            </clouds>
+        </sky>
+    </scene>
+    
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>100 100 100 0 0 0</pose>
+      <diffuse>1.0 0.9 0.5 1</diffuse>
+      <specular>0.5 0.5 0.5 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>200 200</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>200 200</size></plane></geometry>
+          <material>
+            <ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse>
+            <pbr><metal><albedo_map>materials/textures/concrete_diffuse.jpg</albedo_map></metal></pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <include>
+      <name>robot</name>
+      <uri>model://shipyard_robot</uri>
+      <pose>0 5 0.5 0 0 0</pose>
+    </include>
+<include><name>container_R0C0S0</name><uri>model://container_R0C0S0</uri><pose>0.0 0.0 1.295 0 0 0</pose></include><include><name>container_R0C0S1</name><uri>model://container_R0C0S1</uri><pose>0.0 0.0 3.885 0 0 0</pose></include><include><name>container_R0C0S2</name><uri>model://container_R0C0S2</uri><pose>0.0 0.0 6.475 0 0 0</pose></include><include><name>container_R0C1S0</name><uri>model://container_R0C1S0</uri><pose>6.26 0.0 1.295 0 0 0</pose></include><include><name>container_R0C1S1</name><uri>model://container_R0C1S1</uri><pose>6.26 0.0 3.885 0 0 0</pose></include><include><name>container_R0C1S2</name><uri>model://container_R0C1S2</uri><pose>6.26 0.0 6.475 0 0 0</pose></include><include><name>container_R0C2S0</name><uri>model://container_R0C2S0</uri><pose>12.52 0.0 1.295 0 0 0</pose></include><include><name>container_R0C2S1</name><uri>model://container_R0C2S1</uri><pose>12.52 0.0 3.885 0 0 0</pose></include><include><name>container_R0C2S2</name><uri>model://container_R0C2S2</uri><pose>12.52 0.0 6.475 0 0 0</pose></include><include><name>container_R0C3S0</name><uri>model://container_R0C3S0</uri><pose>18.78 0.0 1.295 0 0 0</pose></include><include><name>container_R0C3S1</name><uri>model://container_R0C3S1</uri><pose>18.78 0.0 3.885 0 0 0</pose></include><include><name>container_R0C3S2</name><uri>model://container_R0C3S2</uri><pose>18.78 0.0 6.475 0 0 0</pose></include><include><name>container_R0C4S0</name><uri>model://container_R0C4S0</uri><pose>25.04 0.0 1.295 0 0 0</pose></include><include><name>container_R0C4S1</name><uri>model://container_R0C4S1</uri><pose>25.04 0.0 3.885 0 0 0</pose></include><include><name>container_R0C4S2</name><uri>model://container_R0C4S2</uri><pose>25.04 0.0 6.475 0 0 0</pose></include><include><name>container_R0C5S0</name><uri>model://container_R0C5S0</uri><pose>31.299999999999997 0.0 1.295 0 0 0</pose></include><include><name>container_R0C5S1</name><uri>model://container_R0C5S1</uri><pose>31.299999999999997 0.0 3.885 0 0 0</pose></include><include><name>container_R0C5S2</name><uri>model://container_R0C5S2</uri><pose>31.299999999999997 0.0 6.475 0 0 0</pose></include><include><name>container_R0C6S0</name><uri>model://container_R0C6S0</uri><pose>37.56 0.0 1.295 0 0 0</pose></include><include><name>container_R0C6S1</name><uri>model://container_R0C6S1</uri><pose>37.56 0.0 3.885 0 0 0</pose></include><include><name>container_R0C6S2</name><uri>model://container_R0C6S2</uri><pose>37.56 0.0 6.475 0 0 0</pose></include><include><name>container_R0C7S0</name><uri>model://container_R0C7S0</uri><pose>43.82 0.0 1.295 0 0 0</pose></include><include><name>container_R0C7S1</name><uri>model://container_R0C7S1</uri><pose>43.82 0.0 3.885 0 0 0</pose></include><include><name>container_R0C7S2</name><uri>model://container_R0C7S2</uri><pose>43.82 0.0 6.475 0 0 0</pose></include><include><name>container_R0C8S0</name><uri>model://container_R0C8S0</uri><pose>50.08 0.0 1.295 0 0 0</pose></include><include><name>container_R0C8S1</name><uri>model://container_R0C8S1</uri><pose>50.08 0.0 3.885 0 0 0</pose></include><include><name>container_R0C8S2</name><uri>model://container_R0C8S2</uri><pose>50.08 0.0 6.475 0 0 0</pose></include><include><name>container_R0C9S0</name><uri>model://container_R0C9S0</uri><pose>56.339999999999996 0.0 1.295 0 0 0</pose></include><include><name>container_R0C9S1</name><uri>model://container_R0C9S1</uri><pose>56.339999999999996 0.0 3.885 0 0 0</pose></include><include><name>container_R0C9S2</name><uri>model://container_R0C9S2</uri><pose>56.339999999999996 0.0 6.475 0 0 0</pose></include><include><name>container_R1C0S0</name><uri>model://container_R1C0S0</uri><pose>0.0 12.44 1.295 0 0 0</pose></include><include><name>container_R1C0S1</name><uri>model://container_R1C0S1</uri><pose>0.0 12.44 3.885 0 0 0</pose></include><include><name>container_R1C0S2</name><uri>model://container_R1C0S2</uri><pose>0.0 12.44 6.475 0 0 0</pose></include><include><name>container_R1C1S0</name><uri>model://container_R1C1S0</uri><pose>6.26 12.44 1.295 0 0 0</pose></include><include><name>container_R1C1S1</name><uri>model://container_R1C1S1</uri><pose>6.26 12.44 3.885 0 0 0</pose></include><include><name>container_R1C1S2</name><uri>model://container_R1C1S2</uri><pose>6.26 12.44 6.475 0 0 0</pose></include><include><name>container_R1C2S0</name><uri>model://container_R1C2S0</uri><pose>12.52 12.44 1.295 0 0 0</pose></include><include><name>container_R1C2S1</name><uri>model://container_R1C2S1</uri><pose>12.52 12.44 3.885 0 0 0</pose></include><include><name>container_R1C2S2</name><uri>model://container_R1C2S2</uri><pose>12.52 12.44 6.475 0 0 0</pose></include><include><name>container_R1C3S0</name><uri>model://container_R1C3S0</uri><pose>18.78 12.44 1.295 0 0 0</pose></include><include><name>container_R1C3S1</name><uri>model://container_R1C3S1</uri><pose>18.78 12.44 3.885 0 0 0</pose></include><include><name>container_R1C3S2</name><uri>model://container_R1C3S2</uri><pose>18.78 12.44 6.475 0 0 0</pose></include><include><name>container_R1C4S0</name><uri>model://container_R1C4S0</uri><pose>25.04 12.44 1.295 0 0 0</pose></include><include><name>container_R1C4S1</name><uri>model://container_R1C4S1</uri><pose>25.04 12.44 3.885 0 0 0</pose></include><include><name>container_R1C4S2</name><uri>model://container_R1C4S2</uri><pose>25.04 12.44 6.475 0 0 0</pose></include><include><name>container_R1C5S0</name><uri>model://container_R1C5S0</uri><pose>31.299999999999997 12.44 1.295 0 0 0</pose></include><include><name>container_R1C5S1</name><uri>model://container_R1C5S1</uri><pose>31.299999999999997 12.44 3.885 0 0 0</pose></include><include><name>container_R1C5S2</name><uri>model://container_R1C5S2</uri><pose>31.299999999999997 12.44 6.475 0 0 0</pose></include><include><name>container_R1C6S0</name><uri>model://container_R1C6S0</uri><pose>37.56 12.44 1.295 0 0 0</pose></include><include><name>container_R1C6S1</name><uri>model://container_R1C6S1</uri><pose>37.56 12.44 3.885 0 0 0</pose></include><include><name>container_R1C6S2</name><uri>model://container_R1C6S2</uri><pose>37.56 12.44 6.475 0 0 0</pose></include><include><name>container_R1C7S0</name><uri>model://container_R1C7S0</uri><pose>43.82 12.44 1.295 0 0 0</pose></include><include><name>container_R1C7S1</name><uri>model://container_R1C7S1</uri><pose>43.82 12.44 3.885 0 0 0</pose></include><include><name>container_R1C7S2</name><uri>model://container_R1C7S2</uri><pose>43.82 12.44 6.475 0 0 0</pose></include><include><name>container_R1C8S0</name><uri>model://container_R1C8S0</uri><pose>50.08 12.44 1.295 0 0 0</pose></include><include><name>container_R1C8S1</name><uri>model://container_R1C8S1</uri><pose>50.08 12.44 3.885 0 0 0</pose></include><include><name>container_R1C8S2</name><uri>model://container_R1C8S2</uri><pose>50.08 12.44 6.475 0 0 0</pose></include><include><name>container_R1C9S0</name><uri>model://container_R1C9S0</uri><pose>56.339999999999996 12.44 1.295 0 0 0</pose></include><include><name>container_R1C9S1</name><uri>model://container_R1C9S1</uri><pose>56.339999999999996 12.44 3.885 0 0 0</pose></include><include><name>container_R1C9S2</name><uri>model://container_R1C9S2</uri><pose>56.339999999999996 12.44 6.475 0 0 0</pose></include><include><name>container_R2C0S0</name><uri>model://container_R2C0S0</uri><pose>0.0 24.88 1.295 0 0 0</pose></include><include><name>container_R2C0S1</name><uri>model://container_R2C0S1</uri><pose>0.0 24.88 3.885 0 0 0</pose></include><include><name>container_R2C0S2</name><uri>model://container_R2C0S2</uri><pose>0.0 24.88 6.475 0 0 0</pose></include><include><name>container_R2C1S0</name><uri>model://container_R2C1S0</uri><pose>6.26 24.88 1.295 0 0 0</pose></include><include><name>container_R2C1S1</name><uri>model://container_R2C1S1</uri><pose>6.26 24.88 3.885 0 0 0</pose></include><include><name>container_R2C1S2</name><uri>model://container_R2C1S2</uri><pose>6.26 24.88 6.475 0 0 0</pose></include><include><name>container_R2C2S0</name><uri>model://container_R2C2S0</uri><pose>12.52 24.88 1.295 0 0 0</pose></include><include><name>container_R2C2S1</name><uri>model://container_R2C2S1</uri><pose>12.52 24.88 3.885 0 0 0</pose></include><include><name>container_R2C2S2</name><uri>model://container_R2C2S2</uri><pose>12.52 24.88 6.475 0 0 0</pose></include><include><name>container_R2C3S0</name><uri>model://container_R2C3S0</uri><pose>18.78 24.88 1.295 0 0 0</pose></include><include><name>container_R2C3S1</name><uri>model://container_R2C3S1</uri><pose>18.78 24.88 3.885 0 0 0</pose></include><include><name>container_R2C3S2</name><uri>model://container_R2C3S2</uri><pose>18.78 24.88 6.475 0 0 0</pose></include><include><name>container_R2C4S0</name><uri>model://container_R2C4S0</uri><pose>25.04 24.88 1.295 0 0 0</pose></include><include><name>container_R2C4S1</name><uri>model://container_R2C4S1</uri><pose>25.04 24.88 3.885 0 0 0</pose></include><include><name>container_R2C4S2</name><uri>model://container_R2C4S2</uri><pose>25.04 24.88 6.475 0 0 0</pose></include><include><name>container_R2C5S0</name><uri>model://container_R2C5S0</uri><pose>31.299999999999997 24.88 1.295 0 0 0</pose></include><include><name>container_R2C5S1</name><uri>model://container_R2C5S1</uri><pose>31.299999999999997 24.88 3.885 0 0 0</pose></include><include><name>container_R2C5S2</name><uri>model://container_R2C5S2</uri><pose>31.299999999999997 24.88 6.475 0 0 0</pose></include><include><name>container_R2C6S0</name><uri>model://container_R2C6S0</uri><pose>37.56 24.88 1.295 0 0 0</pose></include><include><name>container_R2C6S1</name><uri>model://container_R2C6S1</uri><pose>37.56 24.88 3.885 0 0 0</pose></include><include><name>container_R2C6S2</name><uri>model://container_R2C6S2</uri><pose>37.56 24.88 6.475 0 0 0</pose></include><include><name>container_R2C7S0</name><uri>model://container_R2C7S0</uri><pose>43.82 24.88 1.295 0 0 0</pose></include><include><name>container_R2C7S1</name><uri>model://container_R2C7S1</uri><pose>43.82 24.88 3.885 0 0 0</pose></include><include><name>container_R2C7S2</name><uri>model://container_R2C7S2</uri><pose>43.82 24.88 6.475 0 0 0</pose></include><include><name>container_R2C8S0</name><uri>model://container_R2C8S0</uri><pose>50.08 24.88 1.295 0 0 0</pose></include><include><name>container_R2C8S1</name><uri>model://container_R2C8S1</uri><pose>50.08 24.88 3.885 0 0 0</pose></include><include><name>container_R2C8S2</name><uri>model://container_R2C8S2</uri><pose>50.08 24.88 6.475 0 0 0</pose></include><include><name>container_R2C9S0</name><uri>model://container_R2C9S0</uri><pose>56.339999999999996 24.88 1.295 0 0 0</pose></include><include><name>container_R2C9S1</name><uri>model://container_R2C9S1</uri><pose>56.339999999999996 24.88 3.885 0 0 0</pose></include><include><name>container_R2C9S2</name><uri>model://container_R2C9S2</uri><pose>56.339999999999996 24.88 6.475 0 0 0</pose></include>
+  </world>
+</sdf>

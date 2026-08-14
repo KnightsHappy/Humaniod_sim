@@ -1,0 +1,656 @@
+
+==================================================================
+                    ASSEMBLY STRUCTURE HIERARCHY
+==================================================================
++ Root Assembly
+  + URDF-ID-leftarm <1>
+    + E2 <1>
+      - ID-Thrust-51106-dummy <1>
+      - RS02 <1>
+      - L-E2-1-cover <1>
+      - L-E2-motorholding-bracket <1>
+      - ID-DGBB-6200-dummy <1>
+      - L-Wr-2-motorholding-bracket <1>
+      - L-E2-3dp-CHP <1>
+      - L-E2-3dp-CHP <2>
+      - L-Wr-1-motorholding-bracket <1>
+      - L-E1-motor-bearing-holder <1>
+      - L-Wr-3-motorholding-bracket <1>
+      - L-Wr-motor-horn-adaptor <1>
+      - L-S2-M-motor-holder <1>
+      - L-E2-2-cover <1>
+      - ID-Needle-AXK-3047 <1>
+    + S2 <1>
+      - L-E1-2-motor-bracket <1>
+      - L-S1-Motor-bearing-Adaptor <1>
+      - L-S2-Motor-supporting-bracket <1>
+      - L-upperarm-front-support-bracket <1>
+      - ID-Needle-AXK-3047 <1>
+      - RS02 <1>
+      - RS02 <2>
+      - L-S2-A-cover <1>
+      - L1-upperarm-AL-ext <1>
+      - L-S2-B-cover <1>
+      - L-E1-1-motorbracket <1>
+      - ID-DGBB-6200-dummy <1>
+      - L-upperarm-back-support-bracket <1>
+      - ID-Thrust-51206-dummy <1>
+      - L-S2-M-motor-holder <1>
+      - L-S2-Rbearing-Holder <1>
+    + E1 <1>
+      - L-E1-1-cover <1>
+      - L-E1-motor-bracket <1>
+      - L-E1-3dp-CHP <1>
+      - L-E1-2-cover <1>
+    + Wr <1>
+      + RDS5160 v41 <1>
+        + RDS5160 v39 (1) <1>
+          - RDS3235_Gear 25R 0.00 v5 <1>
+          - RDS5160 v39 <1>
+          - RDS5160 v39 <2>
+          - RDS5160 v39 <3>
+          - RDS5160 v39 <4>
+        + Wheel v5 <1>
+          - Wheel v5 <1>
+          - 6mm Bearing v2 <1>
+        - Wheel_gear v6 <1>
+      - L-Wp-1-motorholding-bracket <1>
+      - L-Wp-motor-3dp-piece <1>
+      - L-Wp-2-cover <1>
+      - L-Wp-2-motorholding-bracket <1>
+      - L-Wp-1-cover <1>
+    + S1 <1>
+      + torso_to_shoulder <1>
+        - L-B-S2-cover <1>
+        - L-S2-bracket <1>
+        - L-A-S2-cover <1>
+        - L-S2-3dprinted-CHP <1>
+    - L-Hand-EE <1>
+  + URDF-ID-rightarm <1>
+    + R-E1 <1>
+      - L-E1-motor-bracket <1>
+      - L-E1-2-cover-Mirrored <1>
+      - L-E1-1-cover-Mirrored <1>
+      - L-E1-3dp-CHP <1>
+    + R-E2 <1>
+      - L-E1-motor-bearing-holder <1>
+      - ID-Thrust-51106-dummy <1>
+      - ID-Needle-AXK-3047 <1>
+      - L-Wr-2-motorholding-bracket-Mirrored <1>
+      - RS02-Mirrored <1>
+      - L-Wr-1-motorholding-bracket <1>
+      - L-E2-3dp-CHP-Mirrored <1>
+      - L-E2-3dp-CHP-Mirrored <2>
+      - L-Wr-3-motorholding-bracket-Mirrored <1>
+      - ID-DGBB-6200-dummy <1>
+      - L-E2-motorholding-bracket-Mirrored <1>
+      - L-E2-1-cover-Mirrored <1>
+      - L-Wr-motor-horn-adaptor <1>
+      - L-E2-2-cover-Mirrored <1>
+      - L-S2-M-motor-holder-Mirrored <1>
+    + R-S2 <1>
+      - ID-Needle-AXK-3047 <1>
+      - L-S2-M-motor-holder-Mirrored <1>
+      - L1-upperarm-AL-ext <1>
+      - L-S2-Motor-supporting-bracket-Mirrored <1>
+      - L-upperarm-front-support-bracket-Mirrored <1>
+      - ID-DGBB-6200-dummy <1>
+      - L-upperarm-back-support-bracket-Mirrored <1>
+      - ID-Thrust-51206-dummy <1>
+      - L-S2-Rbearing-Holder <1>
+      - L-E1-1-motorbracket-Mirrored <1>
+      - L-S2-A-cover-Mirrored <1>
+      - RS02-Mirrored <1>
+      - L-S2-B-cover-Mirrored <1>
+      - L-E1-2-motor-bracket <1>
+      - RS02-Mirrored <2>
+      - L-S1-Motor-bearing-Adaptor <1>
+    + R-Base <1>
+      - L-S1-motor-bracket-Mirrored <1>
+      - L-S1-cover-Mirrored <1>
+      - ID-Needle-AXK-3047 <1>
+      - ID-Thrust-51206-dummy <1>
+      - L-S1-Motor-bearing-Adaptor <1>
+      - RS02-Mirrored <1>
+    + R-Wr <1>
+      - L-Wp-2-motorholding-bracket-Mirrored <1>
+      - RDS5160 v39 <1>
+      - L-Wp-motor-3dp-piece-Mirrored <1>
+      - RDS5160 v39-Mirrored <1>
+      - RDS3235_Gear 25R 0.00 v5 <1>
+      - Wheel v5 <1>
+      - RDS5160 v39-Mirrored <2>
+      - L-Wp-2-cover-Mirrored <1>
+      - L-Wp-1-motorholding-bracket-Mirrored <1>
+      - 6mm Bearing v2 <1>
+      - L-Wp-1-cover-Mirrored <1>
+      - Wheel_gear v6 <1>
+      - RDS5160 v39 <2>
+    + R-S1 <1>
+      - L-S2-bracket <1>
+      - L-A-S2-cover-Mirrored <1>
+      - L-B-S2-cover-Mirrored <1>
+      - L-S2-3dprinted-CHP <1>
+    - R-Hand-EE <1>
+  + WEBCAM-Final-Assembly-Neck-Mechanism <1>
+    + RDS3225 v7-step (1) <1>
+      + RDS3225 <1>
+        - Wheel-25kg <1>
+        - Gear (25R@0.00) <1>
+        - Wheel_gear-25kg <1>
+        + Screws <1>
+          - 93475A210 <1>
+      - eBom-FreeParts <1>
+      - eBom-FreeParts <2>
+      + RDS3225 (1) <1>
+        - Wheel_gear-25kg <1>
+        + Screws (1) <1>
+          - 93475A210 <1>
+        - Wheel-25kg <1>
+        - Gear (25R@0.00) <1>
+      - eBom-FreeParts <3>
+    - Neck-bracket-support-3dprinted <1>
+    - Neck-motor-support-3dprinted <1>
+    - Camera-B-cross-piece <1>
+    + Final-face-assembly-webcam <1>
+      - Part 1 <1>
+    - Neck-Motor-cover-A <1>
+    - Camera-mount <1>
+    - Camera-A-Cross-piece <1>
+    - Camera-B-cross-piece <2>
+    - Camera-A-Cross-piece <2>
+    - Neck-motor-cover-B <1>
+    - Neck-bracket <1>
+  + Torso <1>
+    - HGH20CA1R1000Z0C_GW2025030058_5 <1>
+    - Part 4 <2>
+    - HGH20CA1R1000Z0C_GW2025030058_7 <1>
+    + Base <1>
+      - ID-Needle-AXK-3047 <1>
+      - ID-Thrust-51206-dummy <1>
+      - RS02 <1>
+      - L-S1-Motor-bearing-Adaptor <1>
+      - L-S1-motor-bracket <1>
+      - L-S1-cover <1>
+    + 5inch-hdmi-lcd-h.stp (1) <1>
+      + 5INCH-HDMI-PCBA-ASM_ASM.stp (1) <1>
+        - MINI-HDMI.stp <1>
+        - MINI-HDMI.stp <2>
+        - HDMI-J1_47151-0001_61277A9B.stp <1>
+        - 6PIN-CONNECTOR.stp <1>
+        - SWITCH-7X3_3X3_5.stp <1>
+        - HP.stp <1>
+        - 30PIN-CONNECTOR.stp <1>
+        - SWITCH-7X3_3X3_5.stp <2>
+        - MINI-HDMI.stp <3>
+        - USB-J4_10118194_606F1A.stp <1>
+        - RTD2660-5INCH-HDMI-PCBA.stp <1>
+        - SWITCH-7X3_3X3_5.stp <3>
+        - RTD2660-5INCH-HDMI-PCBA.stp <2>
+        - SWITCH-7X3_3X3_5.stp <4>
+        - SWITCH-7X3_3X3_5.stp <5>
+        - RTD2660-5INCH-HDMI-PCBA.stp <3>
+        - USB-J4_10118194_606F1A.stp <4>
+        - HP2_0-4PIN-SMT-00.stp <3>
+        - MINI-HDMI.stp <4>
+      - 5INCH-TP.stp <1>
+      - EVA.stp <1>
+      - EVA.stp <2>
+      - 5INCH-LCD.stp <1>
+      - EVA.stp <3>
+    - Part 3-Mirrored <1>
+    - extra-2xMS-2mm-Base Plate <1>
+    - Part 3-Mirrored <2>
+    - Part 3 <2>
+    - Part 10 <1>
+    - Part 3-Mirrored-Mirrored <1>
+    - Part 11 <1>
+    - Part 2 <1>
+    - Part 6 <1>
+    + T-Subassembly-neck <1>
+      + RDS3225 v7-step (1) (1) <1>
+        + RDS3225 (2) <1>
+          - Gear (25R@0.00) <1>
+          - Wheel-25kg <1>
+          + Screws (2) <1>
+            - 93475A210 <1>
+          - Wheel_gear-25kg <1>
+        + RDS3225 (3) <1>
+          - Wheel-25kg <1>
+          + Screws (3) <1>
+            - 93475A210 <1>
+          - Wheel_gear-25kg <1>
+          - Gear (25R@0.00) <1>
+        - eBom-FreeParts <1>
+        - eBom-FreeParts <2>
+        - eBom-FreeParts <3>
+      - Part 3 <1>
+      - Part 1 <1>
+    - Part 3 <3>
+    - Part 3 <4>
+    - Speaker-1-box <1>
+    - Part 7 <1>
+    - 3dprinted-Front-plate <1>
+    - Part 3-Mirrored-Mirrored <2>
+    - Part 17 <1>
+    - Part 3 <5>
+    - Back-top-plate <1>
+    - Part 4 <1>
+    - Part 3-Mirrored <5>
+    - Part 12 <1>
+    - Part 3-Mirrored <6>
+    - Part 3 <6>
+    - Part 8 <1>
+    - Part 9 <1>
+    - Part 3-Mirrored <7>
+    - Part 3-Mirrored-Mirrored <3>
+    - Part 3 <7>
+    - Part 3 <8>
+    - Part 16 <1>
+    - Part 3-Mirrored <8>
+    - Part 3-Mirrored <9>
+    - Part 13 <1>
+    - Part 3 <9>
+    - Part 3-Mirrored <10>
+    - Torso-front-shield <1>
+    - Part 3-Mirrored <11>
+    - Part 3-Mirrored-Mirrored <4>
+    - Part 3-Mirrored <12>
+  + Assembly 1 <1>
+    + Top-lidar <1>
+      - Part 17 <1>
+      - Part 1 <1>
+      - Part 13 <1>
+      - Part 16 <1>
+      - Part 15 <1>
+      - top-lidar-mount-gusset <1>
+      - Part 18 <1>
+    - Part 2 <1>
+    - Part 9 <1>
+    - Part 4 <1>
+    - Pulley Step <1>
+    - Part 1 <1>
+    - Pulley Step <2>
+    - Part 1 <2>
+    - HGH20CA1R1000Z0C_GW2025030058_3 <1>
+    - HGH20CA1R1000Z0C_GW2025030058_6 <1>
+    - Part 5 <1>
+    - Part 2 <2>
+    - Part 6 <1>
+    - E-STOP <1>
+    - E-STOP <2>
+    - E-STOP <3>
+    - E-STOP <4>
+    - E-STOP <5>
+    - E-STOP <6>
+    - E-STOP <7>
+    - E-STOP <8>
+    - Part 6 <2>
+    - Part 12 <1>
+    - Part 10 <1>
+    - Part 7 <1>
+    - Part 1 <3>
+    - Belt <1>
+    - Part 1 <4>
+    - Part 12 <2>
+    - Part 12 <3>
+    - Part 11 <1>
+    - Part 7 <2>
+    - Part 7 <3>
+    - Part 3 <1>
+    - Part 8 <1>
+    - Part 2 <3>
+    - Part 2 <4>
+    - HGH20CA1R1000Z0C_GW2025030058_8 <1>
+    - Part 12 <4>
+    - HGH20CA1R1000Z0C_GW2025030058_4 <1>
+    - Part 12 <5>
+    + Subassembly-Base-motor+gearbox <1>
+      - 3D_ELVM6040V48EH-M17-HD <1>
+      - 3D_ELVM6040V48EH-M17-HD <2>
+      - 3D_ELVM6040V48EH-M17-HD <3>
+      - 3D_ELVM6040V48EH-M17-HD <4>
+      - 3D_ELVM6040V48EH-M17-HD <5>
+      - 3D_ELVM6040V48EH-M17-HD <6>
+      - 3D_ELVM6040V48EH-M17-HD <7>
+      - 3D_ELVM6040V48EH-M17-HD <8>
+      - 3D_ELVM6040V48EH-M17-HD <9>
+      - 3D_ELVM6040V48EH-M17-HD <10>
+      - 3D_ELVM6040V48EH-M17-HD <12>
+      - 3D_ELVM6040V48EH-M17-HD <13>
+      - 3D_ELVM6040V48EH-M17-HD <14>
+      - 3D_ELVM6040V48EH-M17-HD <15>
+      - 3D_ELVM6040V48EH-M17-HD <16>
+      - 3D_ELVM6040V48EH-M17-HD <17>
+      - 3D_ELVM6040V48EH-M17-HD <18>
+      - 3D_ELVM6040V48EH-M17-HD <19>
+      - 3D_ELVM6040V48EH-M17-HD <20>
+      - 3D_ELVM6040V48EH-M17-HD <21>
+      - 3D_ELVM6040V48EH-M17-HD <22>
+      - 3D_ELVM6040V48EH-M17-HD <23>
+      - 3D_ELVM6040V48EH-M17-HD <24>
+      - 3D_ELVM6040V48EH-M17-HD <25>
+      - 3D_ELVM6040V48EH-M17-HD <26>
+      - 3D_ELVM6040V48EH-M17-HD <27>
+      - 3D_ELVM6040V48EH-M17-HD <28>
+      - 3D_ELVM6040V48EH-M17-HD <29>
+      - 9-1-Gearbox-from-MAS-Automation <1>
+      - 3D_ELVM6040V48EH-M17-HD <30>
+      - 3D_ELVM6040V48EH-M17-HD <31>
+      - 3D_ELVM6040V48EH-M17-HD <32>
+      - 3D_ELVM6040V48EH-M17-HD <33>
+      - 3D_ELVM6040V48EH-M17-HD <34>
+      - 3D_ELVM6040V48EH-M17-HD <35>
+      - 3D_ELVM6040V48EH-M17-HD <36>
+      - 3D_ELVM6040V48EH-M17-HD <37>
+      - 3D_ELVM6040V48EH-M17-HD <38>
+      - 3D_ELVM6040V48EH-M17-HD <39>
+      - 3D_ELVM6040V48EH-M17-HD <40>
+      - 3D_ELVM6040V48EH-M17-HD <41>
+      - 3D_ELVM6040V48EH-M17-HD <42>
+      - 3D_ELVM6040V48EH-M17-HD <43>
+      - 3D_ELVM6040V48EH-M17-HD <44>
+      - 3D_ELVM6040V48EH-M17-HD <45>
+      - 3D_ELVM6040V48EH-M17-HD <46>
+      - 3D_ELVM6040V48EH-M17-HD <47>
+      - 3D_ELVM6040V48EH-M17-HD <48>
+      - 3D_ELVM6040V48EH-M17-HD <49>
+      - 3D_ELVM6040V48EH-M17-HD <50>
+      - 3D_ELVM6040V48EH-M17-HD <51>
+      - 3D_ELVM6040V48EH-M17-HD <53>
+      - 3D_ELVM6040V48EH-M17-HD <54>
+      - 3D_ELVM6040V48EH-M17-HD <55>
+      - 3D_ELVM6040V48EH-M17-HD <56>
+      - 3D_ELVM6040V48EH-M17-HD <57>
+    - Part 3 <2>
+  + Assembly 12 <1>
+    - Part 1 <1>
+    - Part 1 <2>
+  + Gearbox+basebottom <1>
+    - 9-1-Gearbox-from-MAS-Automation <1>
+    + Base-motor+gearbox-subassembly (1) <1>
+      - 3D_ELVM6040V48EH-M17-HD <1>
+      - 3D_ELVM6040V48EH-M17-HD <3>
+      - 3D_ELVM6040V48EH-M17-HD <2>
+      - 3D_ELVM6040V48EH-M17-HD <4>
+      - 3D_ELVM6040V48EH-M17-HD <5>
+      - 3D_ELVM6040V48EH-M17-HD <6>
+      - 3D_ELVM6040V48EH-M17-HD <7>
+      - 3D_ELVM6040V48EH-M17-HD <8>
+      - 3D_ELVM6040V48EH-M17-HD <9>
+      - 3D_ELVM6040V48EH-M17-HD <10>
+      - 3D_ELVM6040V48EH-M17-HD <11>
+      - 3D_ELVM6040V48EH-M17-HD <12>
+      - 3D_ELVM6040V48EH-M17-HD <13>
+      - 3D_ELVM6040V48EH-M17-HD <14>
+      - 3D_ELVM6040V48EH-M17-HD <15>
+      - 3D_ELVM6040V48EH-M17-HD <16>
+      - 3D_ELVM6040V48EH-M17-HD <17>
+      - 3D_ELVM6040V48EH-M17-HD <18>
+      - 3D_ELVM6040V48EH-M17-HD <19>
+      - 3D_ELVM6040V48EH-M17-HD <20>
+      - 3D_ELVM6040V48EH-M17-HD <21>
+      - 3D_ELVM6040V48EH-M17-HD <22>
+      - 3D_ELVM6040V48EH-M17-HD <23>
+      - 3D_ELVM6040V48EH-M17-HD <24>
+      - 3D_ELVM6040V48EH-M17-HD <25>
+      - 3D_ELVM6040V48EH-M17-HD <26>
+      - 3D_ELVM6040V48EH-M17-HD <27>
+      - 3D_ELVM6040V48EH-M17-HD <28>
+      - 3D_ELVM6040V48EH-M17-HD <29>
+      - 3D_ELVM6040V48EH-M17-HD <30>
+      - 3D_ELVM6040V48EH-M17-HD <31>
+      - 3D_ELVM6040V48EH-M17-HD <32>
+      - 3D_ELVM6040V48EH-M17-HD <33>
+      - 3D_ELVM6040V48EH-M17-HD <34>
+      - 3D_ELVM6040V48EH-M17-HD <35>
+      - 3D_ELVM6040V48EH-M17-HD <37>
+      - 3D_ELVM6040V48EH-M17-HD <38>
+      - 3D_ELVM6040V48EH-M17-HD <39>
+      - 3D_ELVM6040V48EH-M17-HD <40>
+      - 3D_ELVM6040V48EH-M17-HD <41>
+      - 3D_ELVM6040V48EH-M17-HD <42>
+      - 3D_ELVM6040V48EH-M17-HD <43>
+      - 3D_ELVM6040V48EH-M17-HD <44>
+      - 3D_ELVM6040V48EH-M17-HD <45>
+      - 3D_ELVM6040V48EH-M17-HD <46>
+      - 3D_ELVM6040V48EH-M17-HD <47>
+      - 3D_ELVM6040V48EH-M17-HD <48>
+      - 3D_ELVM6040V48EH-M17-HD <49>
+      - 3D_ELVM6040V48EH-M17-HD <50>
+      - 3D_ELVM6040V48EH-M17-HD <51>
+      - 3D_ELVM6040V48EH-M17-HD <52>
+      - 3D_ELVM6040V48EH-M17-HD <53>
+      - 3D_ELVM6040V48EH-M17-HD <54>
+      - 3D_ELVM6040V48EH-M17-HD <55>
+      - 3D_ELVM6040V48EH-M17-HD <56>
+    + Base-motor+gearbox-subassembly (1) (1) <1>
+      - 3D_ELVM6040V48EH-M17-HD <1>
+      - 3D_ELVM6040V48EH-M17-HD <2>
+      - 3D_ELVM6040V48EH-M17-HD <3>
+      - 3D_ELVM6040V48EH-M17-HD <4>
+      - 3D_ELVM6040V48EH-M17-HD <5>
+      - 3D_ELVM6040V48EH-M17-HD <6>
+      - 3D_ELVM6040V48EH-M17-HD <7>
+      - 3D_ELVM6040V48EH-M17-HD <8>
+      - 3D_ELVM6040V48EH-M17-HD <9>
+      - 3D_ELVM6040V48EH-M17-HD <10>
+      - 3D_ELVM6040V48EH-M17-HD <11>
+      - 3D_ELVM6040V48EH-M17-HD <12>
+      - 3D_ELVM6040V48EH-M17-HD <13>
+      - 3D_ELVM6040V48EH-M17-HD <14>
+      - 3D_ELVM6040V48EH-M17-HD <15>
+      - 3D_ELVM6040V48EH-M17-HD <16>
+      - 3D_ELVM6040V48EH-M17-HD <17>
+      - 9-1-Gearbox-from-MAS-Automation <1>
+      - 3D_ELVM6040V48EH-M17-HD <18>
+      - 3D_ELVM6040V48EH-M17-HD <19>
+      - 3D_ELVM6040V48EH-M17-HD <20>
+      - 3D_ELVM6040V48EH-M17-HD <21>
+      - 3D_ELVM6040V48EH-M17-HD <22>
+      - 3D_ELVM6040V48EH-M17-HD <23>
+      - 3D_ELVM6040V48EH-M17-HD <24>
+      - 3D_ELVM6040V48EH-M17-HD <25>
+      - 3D_ELVM6040V48EH-M17-HD <26>
+      - 3D_ELVM6040V48EH-M17-HD <27>
+      - 3D_ELVM6040V48EH-M17-HD <28>
+      - 3D_ELVM6040V48EH-M17-HD <29>
+      - 3D_ELVM6040V48EH-M17-HD <30>
+      - 3D_ELVM6040V48EH-M17-HD <31>
+      - 3D_ELVM6040V48EH-M17-HD <32>
+      - 3D_ELVM6040V48EH-M17-HD <33>
+      - 3D_ELVM6040V48EH-M17-HD <34>
+      - 3D_ELVM6040V48EH-M17-HD <36>
+      - 3D_ELVM6040V48EH-M17-HD <37>
+      - 3D_ELVM6040V48EH-M17-HD <38>
+      - 3D_ELVM6040V48EH-M17-HD <39>
+      - 3D_ELVM6040V48EH-M17-HD <40>
+      - 3D_ELVM6040V48EH-M17-HD <41>
+      - 3D_ELVM6040V48EH-M17-HD <42>
+      - 3D_ELVM6040V48EH-M17-HD <43>
+      - 3D_ELVM6040V48EH-M17-HD <44>
+      - 3D_ELVM6040V48EH-M17-HD <45>
+      - 3D_ELVM6040V48EH-M17-HD <46>
+      - 3D_ELVM6040V48EH-M17-HD <48>
+      - 3D_ELVM6040V48EH-M17-HD <49>
+      - 3D_ELVM6040V48EH-M17-HD <50>
+      - 3D_ELVM6040V48EH-M17-HD <51>
+      - 3D_ELVM6040V48EH-M17-HD <52>
+      - 3D_ELVM6040V48EH-M17-HD <53>
+      - 3D_ELVM6040V48EH-M17-HD <54>
+      - 3D_ELVM6040V48EH-M17-HD <55>
+      - 3D_ELVM6040V48EH-M17-HD <56>
+      - 3D_ELVM6040V48EH-M17-HD <57>
+    + Base Bottom <1>
+      - Part 2 <1>
+      - Part 9 <1>
+      - Part 8 <1>
+      - Part 3 <1>
+      - Part 1 <1>
+      - Part 21 <1>
+      - Part 18 <1>
+      - Part 6 <1>
+      - Part 14 <1>
+      - Part 16 <1>
+      - Part 17 <1>
+      - Part 1 <2>
+      - Part 15 <1>
+      - Part 5 <1>
+      - Part 20 <1>
+      - Part 19 <1>
+      - Part 22 <1>
+      - Part 35 <1>
+      - Part 10 <1>
+      - Part 1 <4>
+      - Part 1 <3>
+      - Part 7 <1>
+      - Part 4 <1>
+      - Part 11 <1>
+      - Part 13 <1>
+      - Part 12 <1>
+
+==================================================================
+                     FLATTENED PARTS SUMMARY
+==================================================================
+Part Name                                          | Qty  
+----------------------------------------------------------
+30PIN-CONNECTOR.stp                                | 1    
+3D_ELVM6040V48EH-M17-HD                            | 165  
+3dprinted-Front-plate                              | 1    
+5INCH-LCD.stp                                      | 1    
+5INCH-TP.stp                                       | 1    
+6PIN-CONNECTOR.stp                                 | 1    
+6mm Bearing v2                                     | 2    
+9-1-Gearbox-from-MAS-Automation                    | 3    
+93475A210                                          | 4    
+Back-top-plate                                     | 1    
+Belt                                               | 1    
+Camera-A-Cross-piece                               | 2    
+Camera-B-cross-piece                               | 2    
+Camera-mount                                       | 1    
+E-STOP                                             | 8    
+EVA.stp                                            | 3    
+Gear (25R@0.00)                                    | 4    
+HDMI-J1_47151-0001_61277A9B.stp                    | 1    
+HGH20CA1R1000Z0C_GW2025030058_3                    | 1    
+HGH20CA1R1000Z0C_GW2025030058_4                    | 1    
+HGH20CA1R1000Z0C_GW2025030058_5                    | 1    
+HGH20CA1R1000Z0C_GW2025030058_6                    | 1    
+HGH20CA1R1000Z0C_GW2025030058_7                    | 1    
+HGH20CA1R1000Z0C_GW2025030058_8                    | 1    
+HP.stp                                             | 1    
+HP2_0-4PIN-SMT-00.stp                              | 1    
+ID-DGBB-6200-dummy                                 | 4    
+ID-Needle-AXK-3047                                 | 6    
+ID-Thrust-51106-dummy                              | 2    
+ID-Thrust-51206-dummy                              | 4    
+L-A-S2-cover                                       | 1    
+L-A-S2-cover-Mirrored                              | 1    
+L-B-S2-cover                                       | 1    
+L-B-S2-cover-Mirrored                              | 1    
+L-E1-1-cover                                       | 1    
+L-E1-1-cover-Mirrored                              | 1    
+L-E1-1-motorbracket                                | 1    
+L-E1-1-motorbracket-Mirrored                       | 1    
+L-E1-2-cover                                       | 1    
+L-E1-2-cover-Mirrored                              | 1    
+L-E1-2-motor-bracket                               | 2    
+L-E1-3dp-CHP                                       | 2    
+L-E1-motor-bearing-holder                          | 2    
+L-E1-motor-bracket                                 | 2    
+L-E2-1-cover                                       | 1    
+L-E2-1-cover-Mirrored                              | 1    
+L-E2-2-cover                                       | 1    
+L-E2-2-cover-Mirrored                              | 1    
+L-E2-3dp-CHP                                       | 2    
+L-E2-3dp-CHP-Mirrored                              | 2    
+L-E2-motorholding-bracket                          | 1    
+L-E2-motorholding-bracket-Mirrored                 | 1    
+L-Hand-EE                                          | 1    
+L-S1-Motor-bearing-Adaptor                         | 4    
+L-S1-cover                                         | 1    
+L-S1-cover-Mirrored                                | 1    
+L-S1-motor-bracket                                 | 1    
+L-S1-motor-bracket-Mirrored                        | 1    
+L-S2-3dprinted-CHP                                 | 2    
+L-S2-A-cover                                       | 1    
+L-S2-A-cover-Mirrored                              | 1    
+L-S2-B-cover                                       | 1    
+L-S2-B-cover-Mirrored                              | 1    
+L-S2-M-motor-holder                                | 2    
+L-S2-M-motor-holder-Mirrored                       | 2    
+L-S2-Motor-supporting-bracket                      | 1    
+L-S2-Motor-supporting-bracket-Mirrored             | 1    
+L-S2-Rbearing-Holder                               | 2    
+L-S2-bracket                                       | 2    
+L-Wp-1-cover                                       | 1    
+L-Wp-1-cover-Mirrored                              | 1    
+L-Wp-1-motorholding-bracket                        | 1    
+L-Wp-1-motorholding-bracket-Mirrored               | 1    
+L-Wp-2-cover                                       | 1    
+L-Wp-2-cover-Mirrored                              | 1    
+L-Wp-2-motorholding-bracket                        | 1    
+L-Wp-2-motorholding-bracket-Mirrored               | 1    
+L-Wp-motor-3dp-piece                               | 1    
+L-Wp-motor-3dp-piece-Mirrored                      | 1    
+L-Wr-1-motorholding-bracket                        | 2    
+L-Wr-2-motorholding-bracket                        | 1    
+L-Wr-2-motorholding-bracket-Mirrored               | 1    
+L-Wr-3-motorholding-bracket                        | 1    
+L-Wr-3-motorholding-bracket-Mirrored               | 1    
+L-Wr-motor-horn-adaptor                            | 2    
+L-upperarm-back-support-bracket                    | 1    
+L-upperarm-back-support-bracket-Mirrored           | 1    
+L-upperarm-front-support-bracket                   | 1    
+L-upperarm-front-support-bracket-Mirrored          | 1    
+L1-upperarm-AL-ext                                 | 2    
+MINI-HDMI.stp                                      | 4    
+Neck-Motor-cover-A                                 | 1    
+Neck-bracket                                       | 1    
+Neck-bracket-support-3dprinted                     | 1    
+Neck-motor-cover-B                                 | 1    
+Neck-motor-support-3dprinted                       | 1    
+Part 1                                             | 13   
+Part 10                                            | 3    
+Part 11                                            | 3    
+Part 12                                            | 7    
+Part 13                                            | 3    
+Part 14                                            | 1    
+Part 15                                            | 2    
+Part 16                                            | 3    
+Part 17                                            | 3    
+Part 18                                            | 2    
+Part 19                                            | 1    
+Part 2                                             | 6    
+Part 20                                            | 1    
+Part 21                                            | 1    
+Part 22                                            | 1    
+Part 3                                             | 12   
+Part 3-Mirrored                                    | 10   
+Part 3-Mirrored-Mirrored                           | 4    
+Part 35                                            | 1    
+Part 4                                             | 4    
+Part 5                                             | 2    
+Part 6                                             | 4    
+Part 7                                             | 5    
+Part 8                                             | 3    
+Part 9                                             | 3    
+Pulley Step                                        | 2    
+R-Hand-EE                                          | 1    
+RDS3235_Gear 25R 0.00 v5                           | 2    
+RDS5160 v39                                        | 6    
+RDS5160 v39-Mirrored                               | 2    
+RS02                                               | 4    
+RS02-Mirrored                                      | 4    
+RTD2660-5INCH-HDMI-PCBA.stp                        | 3    
+SWITCH-7X3_3X3_5.stp                               | 5    
+Speaker-1-box                                      | 1    
+Torso-front-shield                                 | 1    
+USB-J4_10118194_606F1A.stp                         | 2    
+Wheel v5                                           | 2    
+Wheel-25kg                                         | 4    
+Wheel_gear v6                                      | 2    
+Wheel_gear-25kg                                    | 4    
+eBom-FreeParts                                     | 6    
+extra-2xMS-2mm-Base Plate                          | 1    
+top-lidar-mount-gusset                             | 1    

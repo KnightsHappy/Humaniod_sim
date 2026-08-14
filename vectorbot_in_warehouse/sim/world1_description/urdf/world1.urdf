@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<robot name="world1">
+
+  <!-- Material -->
+  <material name="silver">
+    <color rgba="0.55 0.55 0.55 1.0	"/>
+  </material>
+
+  <!-- Gazebo plugin (optional for PyBullet but kept) -->
+  <gazebo>
+    <plugin filename="libgazebo_ros_control.so" name="control"/>
+  </gazebo>
+
+  <gazebo reference="base_link">
+    <material>Gazebo/Silver</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+    <self_collide>true</self_collide>
+    <gravity>true</gravity>
+  </gazebo>
+
+  <!-- World geometry -->
+  <link name="base_link">
+
+    <!-- Inertial (kept simple) -->
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+
+    <!-- Visual mesh (pretty model) -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+
+    <!-- ✅ Replace mesh collision with simple box walls & floor -->
+    <!-- Floor -->
+    <collision name="floor">
+      <origin xyz="0 0 -0.05" rpy="0 0 0"/>
+      <geometry>
+        <box size="4 4 0.1"/>
+      </geometry>
+    </collision>
+
+    <!-- Wall 1 (left) -->
+    <collision name="wall1">
+      <origin xyz="-20 0 0.5" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1 4 1"/>
+      </geometry>
+    </collision>
+
+    <!-- Wall 2 (right) -->
+    <collision name="wall2">
+      <origin xyz="20 0 0.5" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1 4 1"/>
+      </geometry>
+    </collision>
+
+    <!-- Wall 3 (back) -->
+    <collision name="wall3">
+      <origin xyz="0 -20 0.5" rpy="0 0 0"/>
+      <geometry>
+        <box size="4 0.1 1"/>
+      </geometry>
+    </collision>
+
+    <!-- Wall 4 (front) -->
+    <collision name="wall4">
+      <origin xyz="0 20I 0.5" rpy="0 0 0"/>
+     <geometry>
+        <box size="4 0.1 1"/>
+      </geometry>
+    </collision>
+
+  </link>
+</robot>
+

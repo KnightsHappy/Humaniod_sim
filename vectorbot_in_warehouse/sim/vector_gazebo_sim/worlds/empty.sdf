@@ -1,0 +1,189 @@
+<?xml version="1.0" ?>
+<sdf version="1.10">
+  <world name="vector_world">
+
+    <!-- ────────────────────────────────────────────────────────────────
+         PHYSICS / REAL-TIME TUNING
+         RTF = max_step_size × real_time_update_rate
+         Default = 1.0. If slow, drop real_time_update_rate to 500.
+         Never raise max_step_size above 0.002.
+         ──────────────────────────────────────────────────────────────── -->
+    <physics name="default_physics" default="true" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <!-- Server-side simulation plugins -->
+    <plugin filename="gz-sim-physics-system"        name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system"  name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-imu-system"            name="gz::sim::systems::Imu"/>
+
+    <!-- Sensors — enables lidar/camera/IMU once you add them to the URDF -->
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range><constant>0.9</constant>
+        <linear>0.01</linear><quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <surface><friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction></surface>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material>
+            <ambient>0.4 0.4 0.4 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0.0 0.0 0.0 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ────────────────────────────────────────────────────────────────
+         GUI PLUGIN STACK — Gazebo Harmonic requires the full set of
+         plugins to render the 3D viewport. Missing any one of these
+         causes the blank gray/orange screen you see with a working
+         PRIME offload setup.
+         ──────────────────────────────────────────────────────────────── -->
+    <gui fullscreen="0">
+
+      <!-- 3D viewport — the core rendering panel -->
+      <plugin filename="MinimalScene" name="3D View">
+        <gz-gui>
+          <title>3D View</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">docked</property>
+        </gz-gui>
+        <engine>ogre2</engine>
+        <scene>scene</scene>
+        <ambient_light>0.4 0.4 0.4</ambient_light>
+        <background_color>0.3 0.3 0.3</background_color>
+        <!-- Camera starts slightly behind and above the robot -->
+        <camera_pose>3.5 -3.5 2.0 0 0.4 2.35</camera_pose>
+        <camera_clip>
+          <near>0.01</near>
+          <far>1000</far>
+        </camera_clip>
+      </plugin>
+
+      <!-- GzSceneManager wires the server-side scene to the GUI renderer.
+           Without this the viewport loads but the scene is never populated
+           — you get a blank background even when the robot is spawned. -->
+      <plugin filename="GzSceneManager" name="Scene Manager">
+        <gz-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="height">5</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="z">0</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="cardBackground">false</property>
+        </gz-gui>
+      </plugin>
+
+      <!-- InteractiveViewControl provides click-drag orbit navigation -->
+      <plugin filename="InteractiveViewControl" name="Interactive view control">
+        <gz-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="height">5</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="z">0</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="cardBackground">false</property>
+        </gz-gui>
+      </plugin>
+
+      <!-- CameraTracking for following an entity -->
+      <plugin filename="CameraTracking" name="Camera Tracking">
+        <gz-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="height">5</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="z">0</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="cardBackground">false</property>
+        </gz-gui>
+      </plugin>
+
+      <!-- WorldControl: play/pause/step buttons -->
+      <plugin filename="WorldControl" name="World control">
+        <gz-gui>
+          <title>World control</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="height">72</property>
+          <property type="double" key="width">121</property>
+          <property type="double" key="z">1</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="cardBackground">false</property>
+          <property type="double" key="anchorsCornerX">0</property>
+          <property type="double" key="anchorsCornerY">0</property>
+        </gz-gui>
+        <play_pause>true</play_pause>
+        <step>true</step>
+        <start_paused>false</start_paused>
+      </plugin>
+
+      <!-- WorldStats: sim time / RTF overlay in corner -->
+      <plugin filename="WorldStats" name="World stats">
+        <gz-gui>
+          <title>World stats</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="height">110</property>
+          <property type="double" key="width">290</property>
+          <property type="double" key="z">1</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="cardBackground">false</property>
+          <property type="double" key="anchorsCornerX">1</property>
+          <property type="double" key="anchorsCornerY">0</property>
+        </gz-gui>
+        <sim_time>true</sim_time>
+        <real_time>true</real_time>
+        <real_time_factor>true</real_time_factor>
+        <iterations>true</iterations>
+      </plugin>
+
+      <!-- EntityTree: left-panel model/link browser -->
+      <plugin filename="EntityTree" name="Entity tree">
+        <gz-gui>
+          <property type="string" key="state">docked_collapsed</property>
+        </gz-gui>
+      </plugin>
+
+      <!-- Teleop: WASD keys, sliders, and direction buttons for robot control.
+           Publishes geometry_msgs/Twist on the specified topic.
+           The twist_to_stamped bridge in sim.launch.py converts this to
+           TwistStamped for the diff_drive_controller. -->
+      <plugin filename="Teleop" name="Teleop">
+        <gz-gui>
+          <property type="double" key="x">0</property>
+          <property type="double" key="y">0</property>
+          <property type="double" key="width">400</property>
+          <property type="double" key="height">900</property>
+          <property type="string" key="state">docked</property>
+        </gz-gui>
+        <topic>/cmd_vel</topic>
+      </plugin>
+
+    </gui>
+  </world>
+</sdf>

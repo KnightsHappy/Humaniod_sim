@@ -1,0 +1,62 @@
+# 1. Base Robot Control
+- gz_topic_name: "/model/tugbot/cmd_vel"
+  ros_topic_name: "/cmd_vel"
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_type_name: "gz.msgs.Twist"
+  direction: ROS_TO_GZ
+
+# 2. Base Robot Odometry
+- gz_topic_name: "/model/tugbot/odometry"
+  ros_topic_name: "/odom"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+# 3. Dynamic Frame Transforms
+- gz_topic_name: "/model/tugbot/tf"
+  ros_topic_name: "/tf"
+  ros_type_name: "tf2_msgs/msg/TFMessage"
+  gz_type_name: "gz.msgs.Pose_V"
+  direction: GZ_TO_ROS
+
+# 4a. Front 2D Laser Scanner
+- gz_topic_name: "/world/world_demo/model/tugbot/link/scan_front/sensor/scan_front/scan"
+  ros_topic_name: "/scan_front"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS
+
+# 4b. Back 2D Laser Scanner
+- gz_topic_name: "/world/world_demo/model/tugbot/link/scan_back/sensor/scan_back/scan"
+  ros_topic_name: "/scan_back"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS
+
+# 4c. Merged 2D Laser Scanner
+- gz_topic_name: "/world/world_demo/model/tugbot/link/scan_omni/sensor/scan_omni/scan"
+  ros_topic_name: "/merged_lidar/scan"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS
+
+# 5. 3D Velodyne Lidar Point Cloud
+- gz_topic_name: "/world/world_demo/model/tugbot/link/scan_omni/sensor/scan_omni/scan/points"
+  ros_topic_name: "/merged_lidar_3d"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  gz_type_name: "gz.msgs.PointCloudPacked"
+  direction: GZ_TO_ROS
+
+# 6. Front Camera Raw
+- gz_topic_name: "/world/world_demo/model/tugbot/link/camera_front/sensor/color/image"
+  ros_topic_name: "/camera_front/color/image_raw"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS
+
+# 7. Back Camera Raw
+- gz_topic_name: "/world/world_demo/model/tugbot/link/camera_back/sensor/color/image"
+  ros_topic_name: "/camera_back/color/image_raw"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: GZ_TO_ROS

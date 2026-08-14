@@ -1,0 +1,25 @@
+# colcon build artifacts
+build/
+install/
+log/
+.colcon/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# other ROS
+devel/
+logs/
+bin/
+lib/
+build_isolated/
+devel_isolated/
