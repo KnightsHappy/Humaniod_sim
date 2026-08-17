@@ -2881,116 +2881,6 @@
             </material>
         </visual>
 <visual>
-            <origin xyz="-0.105326 0.066066 0.075423" rpy="-3.14159 3.3231e-15 -1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.105326 0.066066 0.075423" rpy="-3.14159 3.3231e-15 -1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_1.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115326 0.055066 0.049673" rpy="1.5708 -5.10703e-15 -1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Wheel_25kg.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115326 0.055066 0.049673" rpy="-3.14159 3.3231e-15 -1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/_93475A210.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115326 0.055075 0.101473" rpy="-3.14159 3.3231e-15 -1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Gear__25R_0_00_.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115326 0.055075 0.102573" rpy="-1.5708 -4.44089e-15 -1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_25kg.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115326 0.055066 0.049673" rpy="-3.14159 3.3231e-15 -1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/_93475A210.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115326 0.055066 0.049673" rpy="1.5708 -5.10703e-15 -1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Wheel_25kg.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115326 0.055075 0.101473" rpy="-3.14159 3.3231e-15 -1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Gear__25R_0_00_.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115326 0.055075 0.102573" rpy="-1.5708 -4.44089e-15 -1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_25kg.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.105326 0.066066 0.075423" rpy="-3.14159 3.3231e-15 -1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_2.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
             <origin xyz="-0.085576 0.051366 -0.074326" rpy="0 -1.5708 1.5708" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/Part_3_Mirrored_Mirrored.stl" scale="1 1 1" />
@@ -3021,216 +2911,8 @@
                 <color rgba="0.647059 0.647059 0.647059 1" />
             </material>
         </visual>
-<visual>
-            <origin xyz="-0.115176 0.059279 0.122693" rpy="-0.0251702 1.41756e-14 3.14159" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Neck_motor_cover_B.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.231373_0.380392_0.705882_0.000000_0.000000">
-                <texture />
-                <color rgba="0.231373 0.380392 0.705882 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115176 0.059279 0.122693" rpy="-0.0251702 1.3919e-14 3.14159" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Neck_motor_support_3dprinted.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
-                <texture />
-                <color rgba="0.647059 0.647059 0.647059 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115176 0.059279 0.122693" rpy="-0.0251702 1.41756e-14 3.14159" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Camera_B_cross_piece.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
-                <texture />
-                <color rgba="0.980392 0.713726 0.00392157 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115176 0.098666 0.123693" rpy="0.0251702 7.07498e-15 2.18575e-15" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Camera_B_cross_piece.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
-                <texture />
-                <color rgba="0.980392 0.713726 0.00392157 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115176 0.058366 0.108173" rpy="1.23793e-28 -6.12323e-17 -3.14159" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Neck_bracket_support_3dprinted.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
-                <texture />
-                <color rgba="0.647059 0.647059 0.647059 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115026 0.052282 0.400603" rpy="-3.11642 -1.41735e-14 -2.6229e-15" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Camera_A_Cross_piece.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
-                <texture />
-                <color rgba="0.615686 0.811765 0.929412 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115326 0.059279 0.122693" rpy="-0.0251702 -7.38948e-15 -3.14159" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Camera_A_Cross_piece.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
-                <texture />
-                <color rgba="0.615686 0.811765 0.929412 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115676 0.087786 0.170423" rpy="-1.5708 1.54563 1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_3.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.141426 0.078066 0.159173" rpy="-3.14159 1.54563 1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Wheel_25kg_1.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.089626 0.078066 0.159183" rpy="-1.5708 1.54563 1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Gear__25R_0_00__1.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.141426 0.078066 0.159173" rpy="-1.5708 1.54563 1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/_93475A210_1.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.088526 0.078066 0.159183" rpy="2.9556e-13 1.54563 1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_25kg_1.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115676 0.087786 0.170423" rpy="-1.5708 1.54563 1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_4.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115676 0.087786 0.170423" rpy="-1.5708 1.54563 1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_5.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.089626 0.078066 0.159183" rpy="-1.5708 1.54563 1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Gear__25R_0_00__1.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.088526 0.078066 0.159183" rpy="2.9556e-13 1.54563 1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_25kg_1.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.141426 0.078066 0.159173" rpy="-1.5708 1.54563 1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/_93475A210_1.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.141426 0.078066 0.159173" rpy="-3.14159 1.54563 1.5708" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Wheel_25kg_1.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
-                <texture />
-                <color rgba="0.792157 0.819608 0.933333 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115176 0.059279 0.122693" rpy="-0.0251702 1.41756e-14 3.14159" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Neck_Motor_cover_A.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
-                <texture />
-                <color rgba="0.917647 0.917647 0.917647 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115176 0.058366 0.108173" rpy="1.24605e-28 -6.12323e-17 -3.14159" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Neck_bracket.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
-                <texture />
-                <color rgba="0.917647 0.917647 0.917647 1" />
-            </material>
-        </visual>
-<visual>
-            <origin xyz="-0.115176 0.059279 0.122693" rpy="-0.0251702 1.41756e-14 3.14159" />
-            <geometry>
-                <mesh filename="file://$(find vector_description)/meshes/Camera_mount.stl" scale="1 1 1" />
-            </geometry>
-            <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
-                <texture />
-                <color rgba="0.972549 0.529412 0.00392157 1" />
-            </material>
-        </visual>
+
+
 <visual>
             <origin xyz="-0.175676 0.145366 -0.044081" rpy="1.5708 6.12323e-17 -3.67761e-16" />
             <geometry>
@@ -3512,6 +3194,361 @@
             </material>
         </visual>
 </link>
+
+    <!-- neck_link_1: Neck-bracket and Neck-bracket-support-3dprinted split from torso_link -->
+    <link name="neck_link_1">
+        <inertial>
+            <mass value="0.15" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="1.0e-04" ixy="0.0" ixz="0.0" iyy="1.0e-04" iyz="0.0" izz="1.0e-04" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="1.23793e-28 -6.12323e-17 -3.14159" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Neck_bracket_support_3dprinted.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+                <texture />
+                <color rgba="0.647059 0.647059 0.647059 1" />
+            </material>
+        </visual>
+        <visual>
+            <origin xyz="0 0 0" rpy="1.24605e-28 -6.12323e-17 -3.14159" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Neck_bracket.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                <texture />
+                <color rgba="0.917647 0.917647 0.917647 1" />
+            </material>
+        </visual>
+    </link>
+
+    <joint name="torso_to_neck_1_joint" type="revolute">
+        <origin xyz="-0.115176 0.058366 0.108173" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+        <parent link="torso_link" />
+        <child link="neck_link_1" />
+        <limit lower="-1.5708" upper="1.5708" effort="50.0" velocity="3.0" />
+    </joint>
+
+    <!-- neck_link_2: WEBCAM-Final-Assembly-Neck-Mechanism parts split from torso_link -->
+    <link name="neck_link_2">
+        <inertial>
+            <mass value="0.25" />
+            <origin xyz="0.115326 -0.055066 -0.049673" rpy="0 0 0" />
+            <inertia ixx="2.0e-04" ixy="0.0" ixz="0.0" iyy="2.0e-04" iyz="0.0" izz="2.0e-04" />
+        </inertial>
+<visual>
+            <origin xyz="0.01 0.011 0.02575" rpy="-3.14159 3.3231e-15 -1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0.01 0.011 0.02575" rpy="-3.14159 3.3231e-15 -1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_1.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0 0 0" rpy="1.5708 -5.10703e-15 -1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Wheel_25kg.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0 0 0" rpy="-3.14159 3.3231e-15 -1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/_93475A210.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0 0.000009 0.0518" rpy="-3.14159 3.3231e-15 -1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Gear__25R_0_00_.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0 0.000009 0.0529" rpy="-1.5708 -4.44089e-15 -1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_25kg.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0 0 0" rpy="-3.14159 3.3231e-15 -1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/_93475A210.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0 0 0" rpy="1.5708 -5.10703e-15 -1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Wheel_25kg.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0 0.000009 0.0518" rpy="-3.14159 3.3231e-15 -1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Gear__25R_0_00_.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0 0.000009 0.0529" rpy="-1.5708 -4.44089e-15 -1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_25kg.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0.01 0.011 0.02575" rpy="-3.14159 3.3231e-15 -1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_2.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0.00015 0.004213 0.07302" rpy="-0.0251702 1.41756e-14 3.14159" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Neck_motor_cover_B.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.231373_0.380392_0.705882_0.000000_0.000000">
+                <texture />
+                <color rgba="0.231373 0.380392 0.705882 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0.00015 0.004213 0.07302" rpy="-0.0251702 1.3919e-14 3.14159" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Neck_motor_support_3dprinted.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.647059_0.647059_0.647059_0.000000_0.000000">
+                <texture />
+                <color rgba="0.647059 0.647059 0.647059 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0.00015 0.004213 0.07302" rpy="-0.0251702 1.41756e-14 3.14159" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Camera_B_cross_piece.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+                <texture />
+                <color rgba="0.980392 0.713726 0.00392157 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0.00015 0.0436 0.07402" rpy="0.0251702 7.07498e-15 2.18575e-15" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Camera_B_cross_piece.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.980392_0.713725_0.003922_0.000000_0.000000">
+                <texture />
+                <color rgba="0.980392 0.713726 0.00392157 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0.0003 -0.002784 0.35093" rpy="-3.11642 -1.41735e-14 -2.6229e-15" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Camera_A_Cross_piece.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                <texture />
+                <color rgba="0.615686 0.811765 0.929412 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0 0.004213 0.07302" rpy="-0.0251702 -7.38948e-15 -3.14159" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Camera_A_Cross_piece.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.615686_0.811765_0.929412_0.000000_0.000000">
+                <texture />
+                <color rgba="0.615686 0.811765 0.929412 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="-0.00035 0.03272 0.12075" rpy="-1.5708 1.54563 1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_3.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="-0.0261 0.023 0.1095" rpy="-3.14159 1.54563 1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Wheel_25kg_1.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0.0257 0.023 0.10951" rpy="-1.5708 1.54563 1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Gear__25R_0_00__1.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="-0.0261 0.023 0.1095" rpy="-1.5708 1.54563 1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/_93475A210_1.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0.0268 0.023 0.10951" rpy="2.9556e-13 1.54563 1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_25kg_1.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="-0.00035 0.03272 0.12075" rpy="-1.5708 1.54563 1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_4.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="-0.00035 0.03272 0.12075" rpy="-1.5708 1.54563 1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/eBom_FreeParts_5.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0.0257 0.023 0.10951" rpy="-1.5708 1.54563 1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Gear__25R_0_00__1.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0.0268 0.023 0.10951" rpy="2.9556e-13 1.54563 1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Wheel_gear_25kg_1.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="-0.0261 0.023 0.1095" rpy="-1.5708 1.54563 1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/_93475A210_1.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="-0.0261 0.023 0.1095" rpy="-3.14159 1.54563 1.5708" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Wheel_25kg_1.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.792157_0.819608_0.933333_0.000000_0.000000">
+                <texture />
+                <color rgba="0.792157 0.819608 0.933333 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0.00015 0.004213 0.07302" rpy="-0.0251702 1.41756e-14 3.14159" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Neck_Motor_cover_A.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.917647_0.917647_0.917647_0.000000_0.000000">
+                <texture />
+                <color rgba="0.917647 0.917647 0.917647 1" />
+            </material>
+        </visual>
+<visual>
+            <origin xyz="0.00015 0.004213 0.07302" rpy="-0.0251702 1.41756e-14 3.14159" />
+            <geometry>
+                <mesh filename="file://$(find vector_description)/meshes/Camera_mount.stl" scale="1 1 1" />
+            </geometry>
+            <material name="0.972549_0.529412_0.003922_0.000000_0.000000">
+                <texture />
+                <color rgba="0.972549 0.529412 0.00392157 1" />
+            </material>
+        </visual>
+    </link>
+
+    <joint name="neck_1_to_neck_2_joint" type="revolute">
+        <origin xyz="-0.00015 -0.0033 -0.0585" rpy="0 0 0" />
+        <axis xyz="1 0 0" />
+        <parent link="neck_link_1" />
+        <child link="neck_link_2" />
+        <limit lower="-0.7854" upper="0.7854" effort="30.0" velocity="2.0" />
+    </joint>
+
 
 
 
@@ -4916,10 +4953,11 @@
             </material>
         </visual>
     </link>
+    
     <joint name="camera_1_joint" type="fixed">
-        <parent link="torso_link" />
+        <parent link="neck_link_2" />
         <child link="camera_1" />
-        <origin xyz="-0.115221 0.141313 0.163763" rpy="-0.0251702 0.0 -3.14159" />
+        <origin xyz="0.000105 0.086247 0.114090" rpy="-0.0251702 0.0 -3.14159" />
     </joint>
 
     <!-- Livox Mid-360 LiDAR Frame Integration -->
