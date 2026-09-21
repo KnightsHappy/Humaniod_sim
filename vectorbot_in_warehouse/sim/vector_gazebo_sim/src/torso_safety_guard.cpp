@@ -117,10 +117,10 @@ public:
       [this](sensor_msgs::msg::JointState::SharedPtr msg) {
         std::lock_guard<std::mutex> lk(state_mutex_);
         for (size_t i = 0; i < msg->name.size(); ++i) {
-          if (msg->name[i] == "left_shoulder" || msg->name[i] == "shoulder_link_1") l_shoulder1_ = msg->position[i];
-          if (msg->name[i] == "left_forearm")    l_elbow2_    = msg->position[i];
-          if (msg->name[i] == "right_shoulder" || msg->name[i] == "right_shoulder_1")  r_shoulder1_ = msg->position[i];
-          if (msg->name[i] == "right_forearm")   r_elbow2_    = msg->position[i];
+          if (msg->name[i] == "left_shoulder_1" || msg->name[i] == "left_shoulder" || msg->name[i] == "shoulder_link_1") l_shoulder1_ = msg->position[i];
+          if (msg->name[i] == "left_elbow_2" || msg->name[i] == "left_forearm")    l_elbow2_    = msg->position[i];
+          if (msg->name[i] == "right_shoulder_1" || msg->name[i] == "right_shoulder_2" || msg->name[i] == "right_shoulder")  r_shoulder1_ = msg->position[i];
+          if (msg->name[i] == "right_elbow_2" || msg->name[i] == "right_forearm")   r_elbow2_    = msg->position[i];
           if (msg->name[i] == "slider_z_axis" || msg->name[i] == "torso_joint")   torso_pos_   = msg->position[i];
         }
         have_state_ = true;

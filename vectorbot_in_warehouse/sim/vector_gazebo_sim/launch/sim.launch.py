@@ -32,12 +32,12 @@ from launch_ros.substitutions import FindPackageShare
 def resolve_active_joints():
     """The active joints the JTC controls in simulation."""
     return [
-        "left_shoulder",
-        "right_shoulder_2",
-        "left_bicep",
-        "left_forearm",
-        "right_bicep",
-        "right_forearm",
+        "left_shoulder_1",
+        "right_shoulder_1",
+        "left_elbow_1",
+        "left_elbow_2",
+        "right_elbow_1",
+        "right_elbow_2",
     ]
 
 def write_jtc_override(joints, out_path):

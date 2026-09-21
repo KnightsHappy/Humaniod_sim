@@ -3638,7 +3638,7 @@
         <limit lower="0.0" upper="0.15" effort="1000.0" velocity="1.0" />
         <dynamics damping="50.0" friction="5.0" />
     </joint>
-    <joint name="shoulder_link_1" type="fixed">
+    <joint name="torso_to_left_shoulder" type="fixed">
         <origin xyz="-0.272176 0.052366 0.030673" rpy="0 0 0" />
         <parent link="torso_link" />
         <child link="shoulder_link_1_link" />
@@ -3853,7 +3853,7 @@
       </material>
     </visual>
   </link>
-    <joint name="left_shoulder" type="revolute">
+    <joint name="left_shoulder_1" type="revolute">
     <origin rpy="0 0 0" xyz="-0.02315 0.061 0.0"/>
     <axis xyz="1 0 0"/>
     <parent link="shoulder_link_1_link"/>
@@ -3910,7 +3910,7 @@
       </material>
     </visual>
   </link>
-    <joint name="left_bicep" type="revolute">
+    <joint name="left_elbow_1" type="revolute">
     <origin rpy="0 0 0" xyz="-0.066615 -0.065012 -0.053"/>
     <axis xyz="0 0 1"/>
     <parent link="shoulder_link_2"/>
@@ -4077,7 +4077,7 @@
       </material>
     </visual>
   </link>
-    <joint name="left_forearm" type="revolute">
+    <joint name="left_elbow_2" type="revolute">
     <origin rpy="0 0 0" xyz="-0.013878 0.024323 -0.2287"/>
     <axis xyz="1 0 0"/>
     <parent link="elbow_link_1"/>
@@ -4286,7 +4286,7 @@
             </material>
         </visual>
     </link>
-    <joint name="right_shoulder_1" type="fixed">
+    <joint name="torso_to_right_shoulder" type="fixed">
         <origin xyz="0.041824 0.052366 0.030674" rpy="0 0 0" />
         <parent link="torso_link" />
         <child link="right_shoulder_link_1" />
@@ -4500,7 +4500,7 @@
             </material>
         </visual>
     </link>
-    <joint name="right_shoulder_2" type="revolute">
+    <joint name="right_shoulder_1" type="revolute">
         <origin xyz="0.023150 0.061000 -0.000001" rpy="0 0 0" />
         <axis xyz="1 0 0" />
         <parent link="right_shoulder_link_1" />
@@ -4554,7 +4554,7 @@
             </material>
         </visual>
     </link>
-    <joint name="right_bicep" type="revolute">
+    <joint name="right_elbow_1" type="revolute">
         <origin xyz="0.100588 0.034517 0.136780" rpy="0 0 0" />
         <axis xyz="0 0 1" />
         <parent link="right_shoulder_link_2" />
@@ -4707,7 +4707,7 @@
             </material>
         </visual>
     </link>
-    <joint name="right_forearm" type="revolute">
+    <joint name="right_elbow_2" type="revolute">
         <origin xyz="-0.002451 0.052493 0.054670" rpy="0 0 0" />
         <axis xyz="1 0 0" />
         <parent link="right_elbow_link_1" />

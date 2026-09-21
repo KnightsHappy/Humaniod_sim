@@ -30,7 +30,7 @@
       <state_interface name="effort"/>
     </joint>
 
-    <joint name="left_shoulder">
+    <joint name="left_shoulder_1">
       <command_interface name="position"/>
       <state_interface name="position">
         <param name="initial_value">0.0</param>
@@ -38,7 +38,7 @@
       <state_interface name="velocity"/>
     </joint>
 
-    <joint name="right_shoulder_2">
+    <joint name="right_shoulder_1">
       <command_interface name="position"/>
       <state_interface name="position">
         <param name="initial_value">0.0</param>
@@ -46,7 +46,7 @@
       <state_interface name="velocity"/>
     </joint>
 
-    <joint name="left_bicep">
+    <joint name="left_elbow_1">
       <command_interface name="position"/>
       <state_interface name="position">
         <param name="initial_value">0.0</param>
@@ -54,7 +54,7 @@
       <state_interface name="velocity"/>
     </joint>
 
-    <joint name="left_forearm">
+    <joint name="left_elbow_2">
       <command_interface name="position"/>
       <state_interface name="position">
         <param name="initial_value">0.0</param>
@@ -62,7 +62,7 @@
       <state_interface name="velocity"/>
     </joint>
 
-    <joint name="right_bicep">
+    <joint name="right_elbow_1">
       <command_interface name="position"/>
       <state_interface name="position">
         <param name="initial_value">0.0</param>
@@ -70,7 +70,7 @@
       <state_interface name="velocity"/>
     </joint>
 
-    <joint name="right_forearm">
+    <joint name="right_elbow_2">
       <command_interface name="position"/>
       <state_interface name="position">
         <param name="initial_value">0.0</param>

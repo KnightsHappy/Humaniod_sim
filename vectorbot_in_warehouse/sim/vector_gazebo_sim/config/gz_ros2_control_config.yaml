@@ -75,12 +75,12 @@ joint_trajectory_controller:
   ros__parameters:
     use_sim_time: true
     joints:
-      - left_shoulder
-      - right_shoulder_2
-      - left_bicep
-      - left_forearm
-      - right_bicep
-      - right_forearm
+      - left_shoulder_1
+      - right_shoulder_1
+      - left_elbow_1
+      - left_elbow_2
+      - right_elbow_1
+      - right_elbow_2
     command_interfaces: [position]
     state_interfaces:   [position, velocity]
     allow_partial_joints_goal: true
