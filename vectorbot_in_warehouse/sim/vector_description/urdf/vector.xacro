@@ -3224,12 +3224,10 @@
         </visual>
     </link>
 
-    <joint name="torso_to_neck_1_joint" type="revolute">
+    <joint name="torso_to_neck_1_joint" type="fixed">
         <origin xyz="-0.115176 0.058366 0.108173" rpy="0 0 0" />
-        <axis xyz="0 0 1" />
         <parent link="torso_link" />
         <child link="neck_link_1" />
-        <limit lower="-1.5708" upper="1.5708" effort="50.0" velocity="3.0" />
     </joint>
 
     <!-- neck_link_2: WEBCAM-Final-Assembly-Neck-Mechanism parts split from torso_link -->
@@ -3541,12 +3539,10 @@
         </visual>
     </link>
 
-    <joint name="neck_1_to_neck_2_joint" type="revolute">
+    <joint name="neck_1_to_neck_2_joint" type="fixed">
         <origin xyz="-0.00015 -0.0033 -0.0585" rpy="0 0 0" />
-        <axis xyz="1 0 0" />
         <parent link="neck_link_1" />
         <child link="neck_link_2" />
-        <limit lower="-0.7854" upper="0.7854" effort="30.0" velocity="2.0" />
     </joint>
 
 
@@ -3642,12 +3638,10 @@
         <limit lower="0.0" upper="0.15" effort="1000.0" velocity="1.0" />
         <dynamics damping="50.0" friction="5.0" />
     </joint>
-    <joint name="shoulder_link_1" type="revolute">
+    <joint name="shoulder_link_1" type="fixed">
         <origin xyz="-0.272176 0.052366 0.030673" rpy="0 0 0" />
-        <axis xyz="0 1 0" />
         <parent link="torso_link" />
         <child link="shoulder_link_1_link" />
-        <limit lower="-1.5708" upper="1.5708" effort="200.0" velocity="3.0" />
     </joint>
 
     <link name="shoulder_link_2">
@@ -4216,12 +4210,10 @@
         </visual>
     </link>
 
-    <joint name="left_wrist_1" type="revolute">
+    <joint name="left_wrist_1" type="fixed">
         <origin xyz="-0.011314 0.061279 -0.080159" rpy="0 0 0" />
-        <axis xyz="0 0 1" />
         <parent link="elbow_link_2" />
         <child link="left_wrist_link_1" />
-        <limit lower="-1.5708" upper="1.5708" effort="100.0" velocity="100.0" />
     </joint>
 
     <link name="left_ee_link">
@@ -4241,12 +4233,10 @@
         </visual>
     </link>
 
-    <joint name="left_wrist_2" type="revolute">
+    <joint name="left_wrist_2" type="fixed">
         <origin xyz="0.157177 0.104782 -0.097303" rpy="0 0 0" />
-        <axis xyz="0 1 0" />
         <parent link="left_wrist_link_1" />
         <child link="left_ee_link" />
-        <limit lower="-1.5708" upper="1.5708" effort="100.0" velocity="100.0" />
     </joint>
 
     <!-- Right Arm Kinematic Chain -->
@@ -4296,12 +4286,10 @@
             </material>
         </visual>
     </link>
-    <joint name="right_shoulder_1" type="revolute">
+    <joint name="right_shoulder_1" type="fixed">
         <origin xyz="0.041824 0.052366 0.030674" rpy="0 0 0" />
-        <axis xyz="0 1 0" />
         <parent link="torso_link" />
         <child link="right_shoulder_link_1" />
-        <limit lower="-1.5708" upper="1.5708" effort="200.0" velocity="3.0" />
     </joint>
 
     <link name="right_shoulder_link_2">
@@ -4525,11 +4513,11 @@
         
         <inertial>
             <mass value="0.201722" />
-            <origin xyz="0.045124 0.118985 0.215977" rpy="0 0 0" />
+            <origin xyz="0.011151 0.019456 0.026197" rpy="0 0 0" />
             <inertia ixx="3.046196763e-04" ixy="3.085643807e-05" ixz="-1.590604662e-05" iyy="3.372139626e-04" iyz="-2.782942357e-05" izz="3.408239011e-04" />
         </inertial>
 <visual>
-            <origin xyz="0.002024 0.033695 0.099130" rpy="0.049654 -0.677462 -2.10342" />
+            <origin xyz="-0.031949 -0.065834 -0.090650" rpy="0.049654 -0.677462 -2.10342" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_E1_1_cover_Mirrored.stl" scale="1 1 1" />
             </geometry>
@@ -4538,7 +4526,7 @@
                 <color rgba="0.917647 0.917647 0.917647 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.002024 0.033695 0.099130" rpy="0.049654 -0.677462 -2.10342" />
+            <origin xyz="-0.031949 -0.065834 -0.090650" rpy="0.049654 -0.677462 -2.10342" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_E1_2_cover_Mirrored.stl" scale="1 1 1" />
             </geometry>
@@ -4547,7 +4535,7 @@
                 <color rgba="0.917647 0.917647 0.917647 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.033973 0.099529 0.189780" rpy="0.892732 -0.0386825 -0.501489" />
+            <origin xyz="0.000000 0.000000 0.000000" rpy="0.892732 -0.0386825 -0.501489" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_E1_3dp_CHP.stl" scale="1 1 1" />
             </geometry>
@@ -4556,7 +4544,7 @@
                 <color rgba="0.972549 0.529412 0.00392157 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.033973 0.099529 0.189780" rpy="0.892732 -0.0386824 -0.501488" />
+            <origin xyz="0.000000 0.000000 0.000000" rpy="0.892732 -0.0386824 -0.501488" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_E1_motor_bracket.stl" scale="1 1 1" />
             </geometry>
@@ -4567,7 +4555,7 @@
         </visual>
     </link>
     <joint name="right_bicep" type="revolute">
-        <origin xyz="0.066615 -0.065012 -0.053000" rpy="0 0 0" />
+        <origin xyz="0.100588 0.034517 0.136780" rpy="0 0 0" />
         <axis xyz="0 0 1" />
         <parent link="right_shoulder_link_2" />
         <child link="right_elbow_link_1" />
@@ -4579,11 +4567,11 @@
         
         <inertial>
             <mass value="1.330643" />
-            <origin xyz="0.042829 0.115010 0.499581" rpy="0 0 0" />
+            <origin xyz="0.025185 -0.012689 0.026431" rpy="0 0 0" />
             <inertia ixx="3.969889367e-03" ixy="-6.592137380e-05" ixz="8.982148639e-05" iyy="3.872671202e-03" iyz="-1.689695973e-04" izz="9.453651944e-04" />
         </inertial>
 <visual>
-            <origin xyz="0.043256 0.120258 0.530900" rpy="-0.10171 -0.0386824 -0.501488" />
+            <origin xyz="0.025612 -0.007441 0.057750" rpy="-0.10171 -0.0386824 -0.501488" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_S2_M_motor_holder_Mirrored.stl" scale="1 1 1" />
             </geometry>
@@ -4592,7 +4580,7 @@
                 <color rgba="0.972549 0.529412 0.00392157 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.041129 0.115598 0.521200" rpy="-0.0144439 -0.0386824 -0.501488" />
+            <origin xyz="0.023485 -0.012101 0.048050" rpy="-0.0144439 -0.0386824 -0.501488" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_E2_2_cover_Mirrored.stl" scale="1 1 1" />
             </geometry>
@@ -4601,7 +4589,7 @@
                 <color rgba="0.917647 0.917647 0.917647 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.037607 0.116094 0.607160" rpy="-1.60948 0.0144331 1.06875" />
+            <origin xyz="0.019963 -0.011605 0.134010" rpy="-1.60948 0.0144331 1.06875" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_Wr_motor_horn_adaptor.stl" scale="1 1 1" />
             </geometry>
@@ -4610,7 +4598,7 @@
                 <color rgba="0.615686 0.811765 0.929412 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.041129 0.115598 0.521200" rpy="-0.0144439 -0.0386824 -0.501488" />
+            <origin xyz="0.023485 -0.012101 0.048050" rpy="-0.0144439 -0.0386824 -0.501488" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_E2_1_cover_Mirrored.stl" scale="1 1 1" />
             </geometry>
@@ -4619,7 +4607,7 @@
                 <color rgba="0.917647 0.917647 0.917647 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.074209 0.177807 0.466870" rpy="3.03988 -0.0386824 -0.501488" />
+            <origin xyz="0.056565 0.050108 -0.006280" rpy="3.03988 -0.0386824 -0.501488" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_E1_motor_bearing_holder.stl" scale="1 1 1" />
             </geometry>
@@ -4628,7 +4616,7 @@
                 <color rgba="0.231373 0.380392 0.705882 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.017644 0.127699 0.473150" rpy="2.77743 -1.462 1.4315" />
+            <origin xyz="0.000000 0.000000 0.000000" rpy="2.77743 -1.462 1.4315" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/ID_DGBB_6200_dummy.stl" scale="1 1 1" />
             </geometry>
@@ -4637,7 +4625,7 @@
                 <color rgba="0.615686 0.811765 0.929412 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.037419 0.116313 0.614160" rpy="-1.58524 -0.0386824 -0.501488" />
+            <origin xyz="0.019775 -0.011386 0.141010" rpy="-1.58524 -0.0386824 -0.501488" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/ID_Thrust_51106_dummy.stl" scale="1 1 1" />
             </geometry>
@@ -4646,7 +4634,7 @@
                 <color rgba="0.615686 0.811765 0.929412 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.037190 0.116579 0.622650" rpy="1.55635 -0.0386824 -0.501488" />
+            <origin xyz="0.019546 -0.011120 0.149500" rpy="1.55635 -0.0386824 -0.501488" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/ID_Needle_AXK_3047.stl" scale="1 1 1" />
             </geometry>
@@ -4655,7 +4643,7 @@
                 <color rgba="0.615686 0.811765 0.929412 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.041129 0.115598 0.521200" rpy="-0.0144439 -0.0386824 -0.501488" />
+            <origin xyz="0.023485 -0.012101 0.048050" rpy="-0.0144439 -0.0386824 -0.501488" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_E2_3dp_CHP_Mirrored.stl" scale="1 1 1" />
             </geometry>
@@ -4664,7 +4652,7 @@
                 <color rgba="0.972549 0.529412 0.00392157 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.041102 0.115629 0.522200" rpy="-0.0144439 -0.0386824 -0.501488" />
+            <origin xyz="0.023458 -0.012070 0.049050" rpy="-0.0144439 -0.0386824 -0.501488" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_Wr_2_motorholding_bracket_Mirrored.stl" scale="1 1 1" />
             </geometry>
@@ -4673,7 +4661,7 @@
                 <color rgba="0.972549 0.529412 0.00392157 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.041129 0.115598 0.521200" rpy="-3.12715 0.0386824 2.6401" />
+            <origin xyz="0.023485 -0.012101 0.048050" rpy="-3.12715 0.0386824 2.6401" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_Wr_1_motorholding_bracket.stl" scale="1 1 1" />
             </geometry>
@@ -4682,7 +4670,7 @@
                 <color rgba="0.647059 0.647059 0.647059 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.041129 0.115598 0.521200" rpy="-0.0144439 -0.0386824 -0.501488" />
+            <origin xyz="0.023485 -0.012101 0.048050" rpy="-0.0144439 -0.0386824 -0.501488" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_E2_motorholding_bracket_Mirrored.stl" scale="1 1 1" />
             </geometry>
@@ -4691,7 +4679,7 @@
                 <color rgba="0.972549 0.529412 0.00392157 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.049550 0.130937 0.520950" rpy="0.0144439 0.0386824 2.6401" />
+            <origin xyz="0.031906 0.003238 0.047800" rpy="0.0144439 0.0386824 2.6401" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_E2_3dp_CHP_Mirrored.stl" scale="1 1 1" />
             </geometry>
@@ -4700,7 +4688,7 @@
                 <color rgba="0.972549 0.529412 0.00392157 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.040858 0.115519 0.521190" rpy="-0.0144439 -0.0386824 -0.501488" />
+            <origin xyz="0.023214 -0.012180 0.048040" rpy="-0.0144439 -0.0386824 -0.501488" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/L_Wr_3_motorholding_bracket_Mirrored.stl" scale="1 1 1" />
             </geometry>
@@ -4709,7 +4697,7 @@
                 <color rgba="0.972549 0.529412 0.00392157 1" />
             </material>
         </visual><visual>
-            <origin xyz="0.045901 0.112207 0.474390" rpy="-0.0591274 -0.857355 1.11404" />
+            <origin xyz="0.028257 -0.015492 0.001240" rpy="-0.0591274 -0.857355 1.11404" />
             <geometry>
                 <mesh filename="file://$(find vector_description)/meshes/RS02_Mirrored.stl" scale="1 1 1" />
             </geometry>
@@ -4720,7 +4708,7 @@
         </visual>
     </link>
     <joint name="right_forearm" type="revolute">
-        <origin xyz="0.013878 0.024323 -0.228700" rpy="0 0 0" />
+        <origin xyz="-0.002451 0.052493 0.054670" rpy="0 0 0" />
         <axis xyz="1 0 0" />
         <parent link="right_elbow_link_1" />
         <child link="right_elbow_link_2" />
@@ -4854,12 +4842,10 @@
             </material>
         </visual>
     </link>
-    <joint name="right_wrist_1" type="revolute">
-        <origin xyz="0.037190 0.116579 0.622648" rpy="0 0 0" />
-        <axis xyz="0 0 1" />
+    <joint name="right_wrist_1" type="fixed">
+        <origin xyz="0.019546 -0.011120 0.149498" rpy="0 0 0" />
         <parent link="right_elbow_link_2" />
         <child link="wrist_link_1" />
-        <limit lower="-1.5708" upper="1.5708" effort="100.0" velocity="100.0" />
     </joint>
 
     <link name="ee_link">
@@ -4881,12 +4867,10 @@
             </material>
         </visual>
     </link>
-    <joint name="right_wrist_2" type="revolute">
+    <joint name="right_wrist_2" type="fixed">
         <origin xyz="-0.001689 -0.021575 0.085702" rpy="0 0 0" />
-        <axis xyz="0 1 0" />
         <parent link="wrist_link_1" />
         <child link="ee_link" />
-        <limit lower="-1.5708" upper="1.5708" effort="100.0" velocity="100.0" />
     </joint>
 
     <!-- Caster wheel - Part 1<3> in Basebottom subassembly (Onshape), Y=-0.224 side -->

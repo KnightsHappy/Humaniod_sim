@@ -30,7 +30,7 @@
       <state_interface name="effort"/>
     </joint>
 
-    <joint name="shoulder_link_1">
+    <joint name="left_shoulder">
       <command_interface name="position"/>
       <state_interface name="position">
         <param name="initial_value">0.0</param>
@@ -38,7 +38,7 @@
       <state_interface name="velocity"/>
     </joint>
 
-    <joint name="left_shoulder">
+    <joint name="right_shoulder_2">
       <command_interface name="position"/>
       <state_interface name="position">
         <param name="initial_value">0.0</param>
@@ -62,22 +62,6 @@
       <state_interface name="velocity"/>
     </joint>
 
-    <joint name="right_shoulder_1">
-      <command_interface name="position"/>
-      <state_interface name="position">
-        <param name="initial_value">0.0</param>
-      </state_interface>
-      <state_interface name="velocity"/>
-    </joint>
-
-    <joint name="right_shoulder_2">
-      <command_interface name="position"/>
-      <state_interface name="position">
-        <param name="initial_value">0.0</param>
-      </state_interface>
-      <state_interface name="velocity"/>
-    </joint>
-
     <joint name="right_bicep">
       <command_interface name="position"/>
       <state_interface name="position">
@@ -87,54 +71,6 @@
     </joint>
 
     <joint name="right_forearm">
-      <command_interface name="position"/>
-      <state_interface name="position">
-        <param name="initial_value">0.0</param>
-      </state_interface>
-      <state_interface name="velocity"/>
-    </joint>
-
-    <joint name="right_wrist_1">
-      <command_interface name="position"/>
-      <state_interface name="position">
-        <param name="initial_value">0.0</param>
-      </state_interface>
-      <state_interface name="velocity"/>
-    </joint>
-
-    <joint name="right_wrist_2">
-      <command_interface name="position"/>
-      <state_interface name="position">
-        <param name="initial_value">0.0</param>
-      </state_interface>
-      <state_interface name="velocity"/>
-    </joint>
-
-    <joint name="torso_to_neck_1_joint">
-      <command_interface name="position"/>
-      <state_interface name="position">
-        <param name="initial_value">0.0</param>
-      </state_interface>
-      <state_interface name="velocity"/>
-    </joint>
-
-    <joint name="neck_1_to_neck_2_joint">
-      <command_interface name="position"/>
-      <state_interface name="position">
-        <param name="initial_value">0.0</param>
-      </state_interface>
-      <state_interface name="velocity"/>
-    </joint>
-
-    <joint name="left_wrist_1">
-      <command_interface name="position"/>
-      <state_interface name="position">
-        <param name="initial_value">0.0</param>
-      </state_interface>
-      <state_interface name="velocity"/>
-    </joint>
-
-    <joint name="left_wrist_2">
       <command_interface name="position"/>
       <state_interface name="position">
         <param name="initial_value">0.0</param>
